@@ -1,3 +1,37 @@
 {
-  "reels": []
+  "schema_version": "3.0",
+  "metric_notes": {
+    "skip_rate": "Instagram skip rate percentage when available",
+    "avg_watch_seconds": "average watch time in seconds",
+    "reel_duration": "video duration in seconds",
+    "follows": "new follows attributed to or observed from the reel when available",
+    "profile_visits": "profile visits from reel when available",
+    "non_follower_reach_pct": "percentage of reached accounts that were non-followers"
+  },
+  "reels": [
+    {
+      "slug": "baseline_skzoo_cdmx_prior_reel",
+      "artist": "Stray Kids / SKZOO",
+      "topic_type": "MEXICO_FAN_EVENT",
+      "winning_hook_type": "FAN_IDENTITY",
+      "posted_at": null,
+      "data_source": "user_reported_prior_insights",
+      "reel_duration": 8.0,
+      "metrics": {
+        "views": 90,
+        "reach": 73,
+        "avg_watch_seconds": 5.0,
+        "skip_rate": 74.0,
+        "likes": 6,
+        "comments": 1,
+        "shares": 0,
+        "saves": 0,
+        "reposts": 0,
+        "profile_visits": 1,
+        "follows": 0,
+        "non_follower_reach_pct": 100.0
+      },
+      "learning_note": "Useful baseline only. Do not change strategy from one reel alone; wait for at least 3 comparable reels. The main warning is a high skip rate and zero follow conversion."
+    }
+  ]
 }
