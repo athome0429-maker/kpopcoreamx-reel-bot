@@ -1,4 +1,20 @@
 {
   "schema_version": "3.0",
-  "generated": []
+  "generated": [
+    {
+      "mexico_date": "2026-09-09",
+      "news_id": "STRAYKIDS-CDMX-LOWAVAIL-20260909",
+      "artist": "Stray Kids",
+      "topic_type": "TICKET_SALE_OR_STATUS",
+      "slug": "straykids_straycity_cdmx_low_availability_20260909",
+      "final_score": 100,
+      "mexico_utility_score": 15,
+      "follow_score": 15,
+      "winning_hook_type": "FOMO_URGENCY",
+      "winning_hook": "¡POCA DISPONIBILIDAD!",
+      "generated_at": "2026-09-10T04:02:19+09:00",
+      "workflow_run_id": 34392557928,
+      "artifact_id": 10120239155
+    }
+  ]
 }
