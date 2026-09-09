@@ -1,5 +1,5 @@
 {
-  "slug": "2026-09-08_skz_straycity_cdmx_v21",
+  "slug": "2026-09-08_skz_straycity_cdmx_v21_final",
   "brand": "@kpopcoreamx",
   "width": 1080,
   "height": 1920,
@@ -10,10 +10,10 @@
       "duration": 0.7,
       "headline": "¡POCOS BOLETOS!",
       "subheadline": "STRAY KIDS EN CDMX",
-      "fit_mode": "cover",
+      "fit_mode": "contain",
       "focus_x": 0.5,
-      "focus_y": 0.32,
-      "zoom": 1.12
+      "focus_y": 0.34,
+      "zoom": 1.11
     },
     {
       "image_url": "https://storage.orshot.com/cloud/w-8339/renders/brand_assets/straykids_group_thisandthat_1jpg-sOBVmShlSJH.jpeg",
