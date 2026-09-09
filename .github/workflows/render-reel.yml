@@ -11,9 +11,17 @@ on:
     paths:
       - 'data/render_request.json'
 
+permissions:
+  contents: read
+
+concurrency:
+  group: kpop-reel-render
+  cancel-in-progress: false
+
 jobs:
   render:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,11 +30,16 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
 
-      - name: Install FFmpeg
+      - name: Ensure FFmpeg
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v ffprobe >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+          ffmpeg -version | head -1
 
       - name: Install Python deps
         run: pip install -r requirements.txt
@@ -40,11 +53,16 @@ jobs:
             echo "path=data/render_request.json" >> $GITHUB_OUTPUT
           fi
 
-      - name: Render reel
+      - name: Render and verify reel
         run: python scripts/render_reel.py --payload "${{ steps.payload.outputs.path }}"
 
-      - name: Upload MP4 artifact
+      - name: Upload Reel package
         uses: actions/upload-artifact@v4
         with:
           name: reel-output
-          path: out/*.mp4
+          path: |
+            out/*.mp4
+            out/*_cover.jpg
+            out/*_manifest.json
+          if-no-files-found: error
+          retention-days: 14
