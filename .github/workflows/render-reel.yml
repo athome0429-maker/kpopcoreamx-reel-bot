@@ -59,6 +59,9 @@ jobs:
       - name: Render and verify reel
         run: python scripts/render_reel.py --payload data/_render_normalized.json
 
+      - name: Add v3 strategy metadata to manifest
+        run: python scripts/enrich_manifest.py --payload data/_render_normalized.json --out-dir out
+
       - name: Upload Reel package
         uses: actions/upload-artifact@v4
         with:
