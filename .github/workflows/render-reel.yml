@@ -53,8 +53,11 @@ jobs:
             echo "path=data/render_request.json" >> $GITHUB_OUTPUT
           fi
 
+      - name: Normalize payload
+        run: python scripts/normalize_payload.py --input "${{ steps.payload.outputs.path }}" --output data/_render_normalized.json
+
       - name: Render and verify reel
-        run: python scripts/render_reel.py --payload "${{ steps.payload.outputs.path }}"
+        run: python scripts/render_reel.py --payload data/_render_normalized.json
 
       - name: Upload Reel package
         uses: actions/upload-artifact@v4
