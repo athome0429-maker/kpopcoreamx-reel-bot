@@ -9,7 +9,7 @@ on:
         default: 'data/render_request.json'
   push:
     paths:
-      - 'data/*.json'
+      - 'data/render_request.json'
 
 jobs:
   render:
