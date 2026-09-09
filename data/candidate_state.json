@@ -1,40 +1,111 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-09",
-  "last_updated_at": "2026-09-09T16:00:28+09:00",
+  "last_updated_at": "2026-09-10T04:00:00+09:00",
   "candidates": [
+    {
+      "news_id": "STRAYKIDS-CDMX-LOWAVAIL-20260909",
+      "artist": "Stray Kids",
+      "headline_ko": "STRAYCITY CDMX 9월 25·26일 두 공연 모두 Ticketmaster México에서 'Poca disponibilidad' 표시",
+      "topic_type": "TICKET_SALE_OR_STATUS",
+      "base_score": 100,
+      "performance_adjustment": 0,
+      "diversity_penalty": 0,
+      "final_score": 100,
+      "score_breakdown_v3": {
+        "freshness": 15,
+        "mexico_relevance": 15,
+        "mexico_utility": 15,
+        "mexico_fandom_interest": 10,
+        "winning_hook": 15,
+        "follow_score": 15,
+        "share_potential": 5,
+        "comment_potential": 5,
+        "visual_strength": 5
+      },
+      "hook_trials": [
+        {
+          "type": "MEXICO_UTILITY",
+          "text": "POCA DISPONIBILIDAD EN CDMX",
+          "score": 98,
+          "score_breakdown": {"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}
+        },
+        {
+          "type": "HARD_NUMBER",
+          "text": "2 FECHAS: 25 Y 26 SEP",
+          "score": 95,
+          "score_breakdown": {"instant_comprehension":25,"mexico_relevance":23,"specificity_and_truth":20,"curiosity_or_emotion":12,"mobile_readability":15}
+        },
+        {
+          "type": "FOMO_URGENCY",
+          "text": "¡POCA DISPONIBILIDAD EN AMBAS FECHAS!",
+          "score": 99,
+          "score_breakdown": {"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":15,"mobile_readability":14}
+        },
+        {
+          "type": "FAN_IDENTITY",
+          "text": "STAY MÉXICO: ¿25 O 26?",
+          "score": 91,
+          "score_breakdown": {"instant_comprehension":24,"mexico_relevance":25,"specificity_and_truth":18,"curiosity_or_emotion":12,"mobile_readability":12}
+        },
+        {
+          "type": "CURIOSITY_CONTRAST",
+          "text": "¿TODAVÍA HAY BOLETOS PARA STRAYCITY?",
+          "score": 92,
+          "score_breakdown": {"instant_comprehension":24,"mexico_relevance":22,"specificity_and_truth":18,"curiosity_or_emotion":15,"mobile_readability":13}
+        }
+      ],
+      "winning_hook": "¡POCA DISPONIBILIDAD EN AMBAS FECHAS!",
+      "winning_hook_type": "FOMO_URGENCY",
+      "discovered_at": "2026-09-10T04:00:00+09:00",
+      "event_time": "2026-09-25T18:30:00-06:00",
+      "source_urls": [
+        "https://www.ticketmaster.com.mx/stray-kids-boletos/artist/2593788",
+        "https://www.ocesa.com.mx/todos-los-eventos/stray-kids-boletos-ae1182958",
+        "https://www.livenation.lat/en/event/straycity-latin-america-mexico-city-tickets-edp1678267"
+      ],
+      "mexico_relevance_reason": "Ticketmaster México가 9월 25일과 26일 Estadio GNP Seguros의 STRAYCITY MEXICO CITY 두 날짜 모두를 현재 'Poca disponibilidad'로 표시한다. 멕시코 팬이 즉시 확인·구매 행동을 할 수 있는 시간 민감 정보다.",
+      "follow_reason": "티켓 상태가 다시 바뀔 수 있고 공연일까지 추가 운영·입장·현장 정보가 이어질 수 있어 후속 업데이트를 팔로우할 이유가 강하다.",
+      "v3_status": "READY_BREAKING_EXCEPTION"
+    },
     {
       "news_id": "AESPA-CDMX-20260911-D2",
       "artist": "aespa",
       "headline_ko": "aespa 멕시코시티 공연 D-2",
       "topic_type": "MEXICO_CONCERT",
-      "legacy_v2_3_score": 92,
-      "v3_status": "PENDING_RESCORE",
-      "base_score": null,
+      "base_score": 91,
       "performance_adjustment": 0,
       "diversity_penalty": 0,
-      "final_score": null,
+      "final_score": 91,
       "score_breakdown_v3": {
-        "freshness": null,
-        "mexico_relevance": null,
-        "mexico_utility": null,
-        "mexico_fandom_interest": null,
-        "winning_hook": null,
-        "follow_score": null,
-        "share_potential": null,
-        "comment_potential": null,
-        "visual_strength": null
+        "freshness": 12,
+        "mexico_relevance": 15,
+        "mexico_utility": 14,
+        "mexico_fandom_interest": 9,
+        "winning_hook": 14,
+        "follow_score": 13,
+        "share_potential": 4,
+        "comment_potential": 5,
+        "visual_strength": 5
       },
-      "hook_trials": [],
-      "winning_hook": null,
-      "winning_hook_type": null,
+      "hook_trials": [
+        {"type":"MEXICO_UTILITY","text":"AESPA EN CDMX ESTE VIERNES","score":96},
+        {"type":"HARD_NUMBER","text":"11 SEP · 8 PM · CDMX","score":95},
+        {"type":"FOMO_URGENCY","text":"FALTAN 2 DÍAS PARA AESPA","score":97},
+        {"type":"FAN_IDENTITY","text":"MY MÉXICO: AESPA YA CASI LLEGA","score":90},
+        {"type":"CURIOSITY_CONTRAST","text":"¿LISTA PARA SYNK EN CDMX?","score":88}
+      ],
+      "winning_hook": "FALTAN 2 DÍAS PARA AESPA",
+      "winning_hook_type": "FOMO_URGENCY",
       "discovered_at": "2026-09-09T16:00:28+09:00",
       "event_time": "2026-09-11T20:00:00-06:00",
       "source_urls": [
         "https://www.ticketmaster.com.mx/aespa-boletos/artist/2887549",
         "https://www.ocesa.com.mx/todos-los-eventos/aespa-boletos-ae1422768"
       ],
-      "mexico_relevance_reason": "CDMX 직접 관련 공연이며 공식 티켓사와 공연사에서 일정이 확인됨. 공연 이틀 전이라 시의성과 팬 참여 가능성이 높음."
+      "mexico_relevance_reason": "Ticketmaster México와 OCESA에서 9월 11일 오후 8시 Palacio de los Deportes 공연 및 Hi-Bye 업그레이드가 확인된다.",
+      "follow_reason": "공연 직전 추가 공지와 당일 현장 정보로 이어질 수 있어 후속 업데이트 가치가 있다.",
+      "v3_status": "RESCORED"
     }
   ]
 }
