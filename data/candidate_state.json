@@ -1,4 +1,5 @@
 {
+  "schema_version": "3.0",
   "mexico_date": "2026-09-09",
   "last_updated_at": "2026-09-09T16:00:28+09:00",
   "candidates": [
@@ -6,11 +7,33 @@
       "news_id": "AESPA-CDMX-20260911-D2",
       "artist": "aespa",
       "headline_ko": "aespa 멕시코시티 공연 D-2",
-      "score_total": 92,
-      "score_breakdown": {"freshness":17,"mexico_relevance":20,"mexico_fandom_interest":14,"first_second_hook":14,"comments":9,"shares":9,"photo_material":4,"follow_conversion":5},
+      "topic_type": "MEXICO_CONCERT",
+      "legacy_v2_3_score": 92,
+      "v3_status": "PENDING_RESCORE",
+      "base_score": null,
+      "performance_adjustment": 0,
+      "diversity_penalty": 0,
+      "final_score": null,
+      "score_breakdown_v3": {
+        "freshness": null,
+        "mexico_relevance": null,
+        "mexico_utility": null,
+        "mexico_fandom_interest": null,
+        "winning_hook": null,
+        "follow_score": null,
+        "share_potential": null,
+        "comment_potential": null,
+        "visual_strength": null
+      },
+      "hook_trials": [],
+      "winning_hook": null,
+      "winning_hook_type": null,
       "discovered_at": "2026-09-09T16:00:28+09:00",
       "event_time": "2026-09-11T20:00:00-06:00",
-      "source_urls": ["https://www.ticketmaster.com.mx/aespa-boletos/artist/2887549","https://www.ocesa.com.mx/todos-los-eventos/aespa-boletos-ae1422768"],
+      "source_urls": [
+        "https://www.ticketmaster.com.mx/aespa-boletos/artist/2887549",
+        "https://www.ocesa.com.mx/todos-los-eventos/aespa-boletos-ae1422768"
+      ],
       "mexico_relevance_reason": "CDMX 직접 관련 공연이며 공식 티켓사와 공연사에서 일정이 확인됨. 공연 이틀 전이라 시의성과 팬 참여 가능성이 높음."
     }
   ]
