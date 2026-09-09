@@ -8,14 +8,17 @@ from urllib.parse import urlparse
 
 import requests
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+MAX_IMAGE_BYTES = 20 * 1024 * 1024
 
 
-def run(cmd):
-    print("$", " ".join(cmd))
-    subprocess.run(cmd, check=True)
+def run(cmd, capture=False):
+    print("$", " ".join(map(str, cmd)))
+    return subprocess.run(cmd, check=True, text=True, capture_output=capture)
 
 
 def load_payload(path):
@@ -24,16 +27,48 @@ def load_payload(path):
 
 
 def ext_from_src(src):
-    return os.path.splitext(urlparse(src).path)[1].lower() or ".jpg"
+    ext = os.path.splitext(urlparse(src).path)[1].lower()
+    return ext if ext in {".jpg", ".jpeg", ".png", ".webp"} else ".jpg"
+
+
+def http_session():
+    s = requests.Session()
+    retry = Retry(total=3, connect=3, read=3, backoff_factor=0.7, status_forcelist=[429, 500, 502, 503, 504], allowed_methods=["GET"])
+    s.mount("https://", HTTPAdapter(max_retries=retry))
+    s.mount("http://", HTTPAdapter(max_retries=retry))
+    s.headers.update({"User-Agent": "Mozilla/5.0 (KPOP-Corea-MX-ReelBot/2.2)"})
+    return s
 
 
 def download_or_copy(src, out_path):
     if src.startswith(("http://", "https://")):
-        r = requests.get(src, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
-        r.raise_for_status()
-        out_path.write_bytes(r.content)
+        with http_session().get(src, timeout=30, stream=True) as r:
+            r.raise_for_status()
+            ctype = (r.headers.get("content-type") or "").lower()
+            if ctype and not ctype.startswith("image/"):
+                raise ValueError(f"URL did not return an image: {src} ({ctype})")
+            total = 0
+            with open(out_path, "wb") as f:
+                for chunk in r.iter_content(1024 * 256):
+                    if not chunk:
+                        continue
+                    total += len(chunk)
+                    if total > MAX_IMAGE_BYTES:
+                        raise ValueError(f"Image too large (>20MB): {src}")
+                    f.write(chunk)
     else:
         shutil.copy(src, out_path)
+
+
+def validate_image(path, scene_no):
+    try:
+        with Image.open(path) as im:
+            w, h = im.size
+            if max(w, h) < 720:
+                raise ValueError(f"Scene {scene_no} image resolution too low: {w}x{h}")
+            im.verify()
+    except Exception as e:
+        raise ValueError(f"Scene {scene_no} invalid image: {e}") from e
 
 
 def font(size, bold=True):
@@ -63,11 +98,11 @@ def prepare_photo(scene, src_path, out_path, width, height):
         bg = bg.filter(ImageFilter.GaussianBlur(34))
         bg = Image.blend(bg, Image.new("RGB", (width, height), "black"), 0.22).convert("RGBA")
         fg = src.copy()
-        fg.thumbnail((width, int(height * 0.70)), Image.Resampling.LANCZOS)
-        x, y = (width - fg.width) // 2, max(70, int(height * 0.08))
+        fg.thumbnail((int(width * 0.96), int(height * 0.72)), Image.Resampling.LANCZOS)
+        x, y = (width - fg.width) // 2, max(55, int(height * 0.055))
         shadow = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-        sh = Image.new("RGBA", fg.size, (0, 0, 0, 175)).filter(ImageFilter.GaussianBlur(20))
-        shadow.alpha_composite(sh, (x, y + 18))
+        sh = Image.new("RGBA", fg.size, (0, 0, 0, 165)).filter(ImageFilter.GaussianBlur(18))
+        shadow.alpha_composite(sh, (x, y + 16))
         bg.alpha_composite(shadow)
         bg.alpha_composite(fg.convert("RGBA"), (x, y))
         bg.convert("RGB").save(out_path, quality=95)
@@ -100,7 +135,7 @@ def make_overlay(scene, brand, width, height, out_path):
     d.multiline_text((width // 2, headline_y + 6), headline, font=hf, anchor="mm", align="center", fill=(0, 0, 0, 125), spacing=4)
     d.multiline_text((width // 2, headline_y), headline, font=hf, anchor="mm", align="center", fill="white", spacing=4, stroke_width=2, stroke_fill=(0, 0, 0, 115))
 
-    if sub:
+    if sub and sub != brand:
         sf = fit_text(d, sub, width - 180, 120, 42, 28, 3)
         b = d.multiline_textbbox((0, 0), sub, font=sf, spacing=3, align="center")
         sw, sh = b[2] - b[0], b[3] - b[1]
@@ -127,7 +162,7 @@ def render_scene(base_path, overlay_path, out_path, duration, width, height, fps
         f"eq=contrast=1.03:brightness=-0.01:saturation=1.03[bg];"
         f"[1:v]format=rgba[fg];[bg][fg]overlay=0:0:format=auto"
     )
-    run(["ffmpeg", "-y", "-loop", "1", "-i", str(base_path), "-i", str(overlay_path), "-filter_complex", vf, "-t", str(duration), "-r", str(fps), "-an", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out_path)])
+    run(["ffmpeg", "-y", "-loop", "1", "-i", str(base_path), "-i", str(overlay_path), "-filter_complex", vf, "-t", str(duration), "-r", str(fps), "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out_path)])
 
 
 def concat_segments(paths, out_path):
@@ -138,41 +173,88 @@ def concat_segments(paths, out_path):
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c", "copy", "-movflags", "+faststart", str(out_path)])
 
 
+def probe_video(path):
+    p = run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=codec_name,width,height,r_frame_rate,pix_fmt", "-show_entries", "format=duration", "-of", "json", str(path)], capture=True)
+    info = json.loads(p.stdout)
+    stream = info["streams"][0]
+    duration = float(info["format"]["duration"])
+    if stream.get("codec_name") != "h264":
+        raise ValueError(f"Output codec is not H.264: {stream.get('codec_name')}")
+    if (int(stream.get("width", 0)), int(stream.get("height", 0))) != (1080, 1920):
+        raise ValueError(f"Output dimensions invalid: {stream.get('width')}x{stream.get('height')}")
+    if not 5.8 <= duration <= 8.2:
+        raise ValueError(f"Output duration invalid: {duration:.2f}s")
+    return {"codec": stream.get("codec_name"), "width": stream.get("width"), "height": stream.get("height"), "fps": stream.get("r_frame_rate"), "pixel_format": stream.get("pix_fmt"), "duration": round(duration, 3)}
+
+
+def validate_payload(payload):
+    scenes = payload.get("scenes") or []
+    if len(scenes) != 5:
+        raise ValueError(f"Exactly 5 scenes required, got {len(scenes)}")
+    total = sum(float(s.get("duration", 0)) for s in scenes)
+    if not 6.0 <= total <= 8.0:
+        raise ValueError(f"Total duration {total:.2f}s outside 6.0-8.0s")
+    first = float(scenes[0].get("duration", 0))
+    if not 0.5 <= first <= 0.9:
+        raise ValueError(f"First hook duration must be 0.5-0.9s, got {first:.2f}s")
+    for i, s in enumerate(scenes, 1):
+        if not (s.get("image_url") or s.get("image_path")):
+            raise ValueError(f"Scene {i} missing image source")
+        if not s.get("headline", "").strip():
+            raise ValueError(f"Scene {i} missing headline")
+        if len(s.get("headline", "").replace("\n", " ")) > 52:
+            raise ValueError(f"Scene {i} headline too long")
+        if len(s.get("subheadline", "").replace("\n", " ")) > 58:
+            raise ValueError(f"Scene {i} subheadline too long")
+    return total
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--payload", required=True)
     args = ap.parse_args()
     payload = load_payload(args.payload)
+    total = validate_payload(payload)
     slug = payload.get("slug", "reel_output")
     brand = payload.get("brand", "@kpopcoreamx")
     width, height, fps = int(payload.get("width", 1080)), int(payload.get("height", 1920)), int(payload.get("fps", 30))
+    if (width, height, fps) != (1080, 1920, 30):
+        raise ValueError("Renderer v2.2 requires 1080x1920 at 30fps")
     scenes = payload["scenes"]
-    total = sum(float(s["duration"]) for s in scenes)
-    if not 5.5 <= total <= 8.5:
-        raise ValueError(f"Total duration {total:.2f}s outside target range 5.5-8.5s")
 
     root = Path(__file__).resolve().parents[1]
     tmp, out_dir = root / "tmp" / slug, root / "out"
     shutil.rmtree(tmp, ignore_errors=True)
     tmp.mkdir(parents=True, exist_ok=True)
     out_dir.mkdir(parents=True, exist_ok=True)
-    segments = []
+    for old in out_dir.glob("*"):
+        if old.is_file():
+            old.unlink()
 
+    segments = []
+    source_manifest = []
     for idx, scene in enumerate(scenes, 1):
         src = scene.get("image_url") or scene.get("image_path")
-        if not src:
-            raise ValueError(f"Scene {idx} missing image source")
         raw = tmp / f"raw_{idx}{ext_from_src(src)}"
         base, overlay, segment = tmp / f"base_{idx}.jpg", tmp / f"overlay_{idx}.png", tmp / f"segment_{idx}.mp4"
         download_or_copy(src, raw)
+        validate_image(raw, idx)
         prepare_photo(scene, raw, base, width, height)
         make_overlay(scene, brand, width, height, overlay)
         render_scene(base, overlay, segment, float(scene["duration"]), width, height, fps, scene)
         segments.append(segment)
+        source_manifest.append({"scene": idx, "image_url": scene.get("image_url"), "source_url": scene.get("source_url"), "image_credit": scene.get("image_credit"), "headline": scene.get("headline"), "duration": scene.get("duration"), "fit_mode": scene.get("fit_mode", "auto")})
 
     final = out_dir / f"{slug}.mp4"
     concat_segments(segments, final)
+    info = probe_video(final)
+    cover = out_dir / f"{slug}_cover.jpg"
+    run(["ffmpeg", "-y", "-ss", "0.10", "-i", str(final), "-frames:v", "1", "-q:v", "2", str(cover)])
+    manifest = out_dir / f"{slug}_manifest.json"
+    manifest.write_text(json.dumps({"slug": slug, "brand": brand, "target_duration": total, "output": info, "news_id": payload.get("news_id"), "verified_at": payload.get("verified_at"), "scenes": source_manifest}, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Saved: {final}")
+    print(f"Cover: {cover}")
+    print(f"Verified: {json.dumps(info)}")
 
 
 if __name__ == "__main__":
