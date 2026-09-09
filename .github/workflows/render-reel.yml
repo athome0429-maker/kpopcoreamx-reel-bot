@@ -6,9 +6,10 @@ on:
       payload_path:
         description: 'JSON payload path'
         required: false
-        default: 'data/sample_payload.json'
-  schedule:
-    - cron: '0 2,8,14,20 * * *'
+        default: 'data/render_request.json'
+  push:
+    paths:
+      - 'data/*.json'
 
 jobs:
   render:
@@ -36,7 +37,7 @@ jobs:
           if [ -n "${{ github.event.inputs.payload_path }}" ]; then
             echo "path=${{ github.event.inputs.payload_path }}" >> $GITHUB_OUTPUT
           else
-            echo "path=data/sample_payload.json" >> $GITHUB_OUTPUT
+            echo "path=data/render_request.json" >> $GITHUB_OUTPUT
           fi
 
       - name: Render reel
