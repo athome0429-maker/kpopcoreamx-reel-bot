@@ -1,0 +1,142 @@
+{
+  "schema_version": "3.0",
+  "strategy_name": "K-pop Reel Scout v3.0",
+  "goal": "maximize follower conversion for @kpopcoreamx among Mexican K-pop fans, not raw views alone",
+  "publishing": {
+    "default_post_time_kst": "12:30",
+    "default_post_time_cdmx": "21:30",
+    "final_selection_time_kst": "10:00",
+    "research_times_kst": ["04:00", "16:00", "22:00"],
+    "breaking_exception_score": 96,
+    "max_reels_per_mexico_day": 1
+  },
+  "candidate_scoring": {
+    "weights": {
+      "freshness": 15,
+      "mexico_relevance": 15,
+      "mexico_utility": 15,
+      "mexico_fandom_interest": 10,
+      "winning_hook": 15,
+      "follow_score": 15,
+      "share_potential": 5,
+      "comment_potential": 5,
+      "visual_strength": 5
+    },
+    "base_total": 100,
+    "normal_publish_threshold": 88,
+    "dry_spell_threshold": 86,
+    "dry_spell_hours": 48,
+    "dry_spell_requirements": {
+      "mexico_relevance_min": 12,
+      "mexico_utility_min": 11,
+      "winning_hook_min": 13,
+      "follow_score_min": 12
+    }
+  },
+  "mexico_utility_rubric": {
+    "13-15": "Directly actionable for fans in Mexico: ticket status/sale, Mexico date/venue, local time, local stream, local availability, Mexico event logistics, prices or access information.",
+    "9-12": "Strong Mexico/LatAm usefulness but limited immediate action, such as a regional tour update or confirmed Mexico-adjacent schedule.",
+    "5-8": "Global K-pop news with a clear reason Mexican fans care, but little local utility.",
+    "0-4": "Generic global celebrity/news item with no meaningful Mexico-specific usefulness."
+  },
+  "follow_score_rubric": {
+    "13-15": "The viewer has a clear reason to follow for future updates: ongoing ticket changes, countdowns, local schedules, confirmations, follow-up results or recurring Mexico-specific information.",
+    "9-12": "Strong fandom interest and the account can plausibly provide useful follow-ups, but the story is partly one-off.",
+    "5-8": "Interesting one-off entertainment/news with a weak continuing reason to follow.",
+    "0-4": "Mostly curiosity or celebrity content that can get a view but gives almost no reason to follow this account."
+  },
+  "hook_competition": {
+    "generate_exactly": 5,
+    "types": [
+      {
+        "id": "MEXICO_UTILITY",
+        "purpose": "Lead with the Mexico-specific fact, date, place, time, ticket or availability information."
+      },
+      {
+        "id": "HARD_NUMBER",
+        "purpose": "Lead with the strongest concrete number, date, rank, quantity or record."
+      },
+      {
+        "id": "FOMO_URGENCY",
+        "purpose": "Lead with genuine time sensitivity or scarcity only when verified; never invent urgency."
+      },
+      {
+        "id": "FAN_IDENTITY",
+        "purpose": "Address the relevant Mexican fandom directly with a concrete fact, not a generic greeting."
+      },
+      {
+        "id": "CURIOSITY_CONTRAST",
+        "purpose": "Create a fact-based surprise, contrast or unresolved question without clickbait."
+      }
+    ],
+    "score_weights": {
+      "instant_comprehension": 25,
+      "mexico_relevance": 25,
+      "specificity_and_truth": 20,
+      "curiosity_or_emotion": 15,
+      "mobile_readability": 15
+    },
+    "rules": {
+      "preferred_words_max": 8,
+      "first_cut_seconds_min": 0.5,
+      "first_cut_seconds_max": 0.9,
+      "no_unsupported_claims": true,
+      "no_generic_intro_as_primary_hook": true,
+      "winner_min_score_for_full_hook_points": 80
+    }
+  },
+  "diversity_penalty": {
+    "max_penalty": 10,
+    "same_artist_as_previous_reel": 4,
+    "artist_appears_at_least_twice_in_last_four": 3,
+    "same_topic_type_as_previous_two": 2,
+    "same_winning_hook_type_as_previous_two": 1,
+    "important_mexico_news_penalty_cap": 4,
+    "important_mexico_news_condition": "mexico_relevance >= 13 and mexico_utility >= 13"
+  },
+  "performance_learning": {
+    "minimum_reels_for_pattern_change": 3,
+    "lookback_reels": 5,
+    "rules": [
+      {
+        "condition": "average skip_rate of last 3 >= 70%",
+        "action": "prefer 0.5-0.6 second first cut and put the strongest number/Mexico fact immediately"
+      },
+      {
+        "condition": "average avg_watch_seconds / reel_duration < 0.65",
+        "action": "target total duration 6.0-6.5 seconds"
+      },
+      {
+        "condition": "comments weak relative to reach",
+        "action": "use a one-tap/one-word CTA: date A/B, YES/NO, city, bias or prediction"
+      },
+      {
+        "condition": "views/reach exist but profile_visits and follows are weak",
+        "action": "increase FOLLOW SCORE penalty for one-off stories and add one concise follow reason in caption"
+      },
+      {
+        "condition": "a fandom/topic/hook type repeatedly produces shares or follows",
+        "action": "add performance adjustment up to +3 points before diversity penalty, never override truth or Mexico relevance"
+      }
+    ],
+    "performance_adjustment_range": [-3, 3]
+  },
+  "topic_types": [
+    "MEXICO_CONCERT",
+    "TICKET_SALE_OR_STATUS",
+    "MEXICO_FAN_EVENT",
+    "LATAM_TOUR",
+    "RELEASE",
+    "CHART_OR_RECORD",
+    "AWARD_OR_WIN",
+    "OFFICIAL_ANNOUNCEMENT",
+    "MEMBER_UPDATE",
+    "OTHER"
+  ],
+  "final_score_formula": "min(100, base_score + performance_adjustment) - diversity_penalty",
+  "notes": [
+    "A high-view story can still lose if FOLLOW SCORE and Mexico Utility are weak.",
+    "Breaking Mexico-direct official news can bypass normal timing but not fact verification.",
+    "Do not use diversity penalty to bury a genuinely important Mexico-specific update."
+  ]
+}
