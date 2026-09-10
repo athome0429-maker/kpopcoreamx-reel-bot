@@ -1,90 +1,208 @@
 {
   "schema_version": "3.0",
-  "mexico_date": "2026-09-09",
-  "last_updated_at": "2026-09-10T10:01:19+09:00",
-  "daily_render_limit_reached": true,
-  "daily_render_news_id": "STRAYKIDS-CDMX-LOWAVAIL-20260909",
+  "mexico_date": "2026-09-10",
+  "last_updated_at": "2026-09-10T16:00:00+09:00",
+  "daily_render_limit_reached": false,
+  "daily_render_news_id": null,
   "candidates": [
     {
-      "news_id": "STRAYKIDS-CDMX-LOWAVAIL-20260909",
-      "artist": "Stray Kids",
-      "headline_ko": "STRAYCITY CDMX 9월 25·26일 두 공연 모두 Ticketmaster México에서 'Poca disponibilidad' 표시",
-      "topic_type": "TICKET_SALE_OR_STATUS",
-      "base_score": 100,
+      "news_id": "AESPA-CDMX-20260911-D1",
+      "artist": "aespa",
+      "headline_ko": "aespa 멕시코시티 공연 D-1: 9월 11일 20:00 Palacio de los Deportes, Hi-Bye·교통·라운지·주차 옵션 확인",
+      "topic_type": "MEXICO_CONCERT",
+      "base_score": 96,
       "performance_adjustment": 0,
       "diversity_penalty": 0,
-      "final_score": 100,
+      "final_score": 96,
       "score_breakdown_v3": {
-        "freshness": 15,
+        "freshness": 14,
         "mexico_relevance": 15,
         "mexico_utility": 15,
-        "mexico_fandom_interest": 10,
-        "winning_hook": 15,
-        "follow_score": 15,
-        "share_potential": 5,
-        "comment_potential": 5,
-        "visual_strength": 5
-      },
-      "hook_trials": [
-        {"type":"MEXICO_UTILITY","text":"POCA DISPONIBILIDAD EN CDMX","score":98,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}},
-        {"type":"HARD_NUMBER","text":"2 FECHAS: 25 Y 26 SEP","score":95,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":23,"specificity_and_truth":20,"curiosity_or_emotion":12,"mobile_readability":15}},
-        {"type":"FOMO_URGENCY","text":"¡POCA DISPONIBILIDAD EN AMBAS FECHAS!","score":99,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":15,"mobile_readability":14}},
-        {"type":"FAN_IDENTITY","text":"STAY MÉXICO: ¿25 O 26?","score":91,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":25,"specificity_and_truth":18,"curiosity_or_emotion":12,"mobile_readability":12}},
-        {"type":"CURIOSITY_CONTRAST","text":"¿TODAVÍA HAY BOLETOS PARA STRAYCITY?","score":92,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":22,"specificity_and_truth":18,"curiosity_or_emotion":15,"mobile_readability":13}}
-      ],
-      "winning_hook": "¡POCA DISPONIBILIDAD EN AMBAS FECHAS!",
-      "winning_hook_type": "FOMO_URGENCY",
-      "discovered_at": "2026-09-10T04:00:00+09:00",
-      "event_time": "2026-09-25T18:30:00-06:00",
-      "source_urls": [
-        "https://www.ticketmaster.com.mx/stray-kids-boletos/artist/2593788",
-        "https://www.ocesa.com.mx/todos-los-eventos/stray-kids-boletos-ae1182958",
-        "https://www.livenation.lat/en/event/straycity-latin-america-mexico-city-tickets-edp1678267"
-      ],
-      "mexico_relevance_reason": "Ticketmaster México가 9월 25일과 26일 Estadio GNP Seguros의 STRAYCITY MEXICO CITY 두 날짜 모두를 현재 'Poca disponibilidad'로 표시한다. 멕시코 팬이 즉시 확인·구매 행동을 할 수 있는 시간 민감 정보다.",
-      "follow_reason": "티켓 상태가 다시 바뀔 수 있고 공연일까지 추가 운영·입장·현장 정보가 이어질 수 있어 후속 업데이트를 팔로우할 이유가 강하다.",
-      "verified_at": "2026-09-10T10:01:19+09:00",
-      "v3_status": "GENERATED_MEXICO_DAY_LIMIT_REACHED"
-    },
-    {
-      "news_id": "AESPA-CDMX-20260911-D2",
-      "artist": "aespa",
-      "headline_ko": "aespa 멕시코시티 공연 D-2",
-      "topic_type": "MEXICO_CONCERT",
-      "base_score": 91,
-      "performance_adjustment": 0,
-      "diversity_penalty": 0,
-      "final_score": 91,
-      "score_breakdown_v3": {
-        "freshness": 12,
-        "mexico_relevance": 15,
-        "mexico_utility": 14,
         "mexico_fandom_interest": 9,
-        "winning_hook": 14,
-        "follow_score": 13,
+        "winning_hook": 15,
+        "follow_score": 14,
         "share_potential": 4,
         "comment_potential": 5,
         "visual_strength": 5
       },
       "hook_trials": [
-        {"type":"MEXICO_UTILITY","text":"AESPA EN CDMX ESTE VIERNES","score":96},
-        {"type":"HARD_NUMBER","text":"11 SEP · 8 PM · CDMX","score":95},
-        {"type":"FOMO_URGENCY","text":"FALTAN 2 DÍAS PARA AESPA","score":97},
-        {"type":"FAN_IDENTITY","text":"MY MÉXICO: AESPA YA CASI LLEGA","score":90},
-        {"type":"CURIOSITY_CONTRAST","text":"¿LISTA PARA SYNK EN CDMX?","score":88}
+        {"type":"MEXICO_UTILITY","text":"AESPA EN CDMX: MAÑANA, 8 PM","score":98,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}},
+        {"type":"HARD_NUMBER","text":"11 SEP · 8 PM · PALACIO","score":96,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":24,"specificity_and_truth":20,"curiosity_or_emotion":12,"mobile_readability":15}},
+        {"type":"FOMO_URGENCY","text":"FALTA 1 DÍA PARA AESPA","score":97,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":14,"mobile_readability":13}},
+        {"type":"FAN_IDENTITY","text":"MY MÉXICO: MAÑANA ES EL DÍA","score":92,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":25,"specificity_and_truth":18,"curiosity_or_emotion":13,"mobile_readability":12}},
+        {"type":"CURIOSITY_CONTRAST","text":"¿YA TIENES TODO PARA AESPA?","score":91,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":23,"specificity_and_truth":17,"curiosity_or_emotion":14,"mobile_readability":13}}
       ],
-      "winning_hook": "FALTAN 2 DÍAS PARA AESPA",
-      "winning_hook_type": "FOMO_URGENCY",
+      "winning_hook": "AESPA EN CDMX: MAÑANA, 8 PM",
+      "winning_hook_type": "MEXICO_UTILITY",
       "discovered_at": "2026-09-09T16:00:28+09:00",
       "event_time": "2026-09-11T20:00:00-06:00",
       "source_urls": [
         "https://www.ticketmaster.com.mx/aespa-boletos/artist/2887549",
-        "https://www.ocesa.com.mx/todos-los-eventos/aespa-boletos-ae1422768"
+        "https://www.ocesa.com.mx/todos-los-eventos/aespa-boletos-ae1422768",
+        "https://www.ticketmaster.com.mx/section/especiales"
       ],
-      "mexico_relevance_reason": "Ticketmaster México에서 9월 11일 오후 8시 Palacio de los Deportes 공연과 Hi-Bye 업그레이드가 현재 확인된다.",
-      "follow_reason": "공연 직전 추가 공지와 당일 현장 정보로 이어질 수 있어 후속 업데이트 가치가 있다.",
-      "verified_at": "2026-09-10T10:01:19+09:00",
-      "v3_status": "ELIGIBLE_BUT_BLOCKED_BY_DAILY_LIMIT"
+      "mexico_relevance_reason": "멕시코시티 공연이 바로 다음 날이며 Ticketmaster México에서 본 공연과 Hi-Bye 업그레이드, Ticket2ride, Beat Lounge, 주차 옵션이 현재 확인되어 현지 팬에게 직접 행동 가능한 정보다.",
+      "follow_reason": "공연 전날·당일에는 입장, VIP, 이동, 현장 공지 등 후속 정보가 이어질 가능성이 높아 멕시코 팬이 계정을 계속 팔로우할 이유가 강하다.",
+      "verified_at": "2026-09-10T16:00:00+09:00",
+      "v3_status": "TOP_CANDIDATE_NOT_BREAKING"
+    },
+    {
+      "news_id": "ROSE-NEWTRICK-ANNOUNCED-20260910",
+      "artist": "ROSÉ",
+      "headline_ko": "ROSÉ 새 싱글 'new trick' 9월 18일 08:00 KST 공개, MV는 iPhone 18 Pro로 전편 촬영",
+      "topic_type": "RELEASE",
+      "base_score": 78,
+      "performance_adjustment": 0,
+      "diversity_penalty": 0,
+      "final_score": 78,
+      "score_breakdown_v3": {
+        "freshness": 15,
+        "mexico_relevance": 6,
+        "mexico_utility": 8,
+        "mexico_fandom_interest": 10,
+        "winning_hook": 14,
+        "follow_score": 12,
+        "share_potential": 4,
+        "comment_potential": 4,
+        "visual_strength": 5
+      },
+      "hook_trials": [
+        {"type":"MEXICO_UTILITY","text":"ROSÉ: 17 SEP, 5 PM EN CDMX","score":94,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":22,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}},
+        {"type":"HARD_NUMBER","text":"18 SEP · 8 AM KST","score":85,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":13,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}},
+        {"type":"FOMO_URGENCY","text":"FALTA 1 SEMANA PARA NEW TRICK","score":88,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":17,"specificity_and_truth":19,"curiosity_or_emotion":15,"mobile_readability":13}},
+        {"type":"FAN_IDENTITY","text":"BLINK MÉXICO: ROSÉ YA TIENE FECHA","score":90,"score_breakdown":{"instant_comprehension":23,"mexico_relevance":24,"specificity_and_truth":18,"curiosity_or_emotion":13,"mobile_readability":12}},
+        {"type":"CURIOSITY_CONTRAST","text":"¿UN MV ENTERO GRABADO EN IPHONE?","score":92,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":16,"specificity_and_truth":20,"curiosity_or_emotion":17,"mobile_readability":15}}
+      ],
+      "winning_hook": "ROSÉ: 17 SEP, 5 PM EN CDMX",
+      "winning_hook_type": "MEXICO_UTILITY",
+      "discovered_at": "2026-09-10T16:00:00+09:00",
+      "event_time": "2026-09-17T17:00:00-06:00",
+      "source_urls": [
+        "https://www.vogue.com/article/rose-shares-the-story-behind-new-trick",
+        "https://www.mk.co.kr/en/culture/12149001"
+      ],
+      "mexico_relevance_reason": "글로벌 발매 뉴스지만 공개 시각을 CDMX 현지 9월 17일 17:00로 변환해 멕시코 팬이 바로 활용할 수 있다.",
+      "follow_reason": "공개 전 티저와 발매 당일 MV·스트리밍 후속 콘텐츠로 이어질 여지가 있어 일회성 뉴스보다 팔로우 이유가 크다.",
+      "verified_at": "2026-09-10T16:00:00+09:00",
+      "v3_status": "CANDIDATE"
+    },
+    {
+      "news_id": "LISA-FALLON-20260916-ANNOUNCED",
+      "artist": "LISA",
+      "headline_ko": "LISA 9월 16일 The Tonight Show 출연 예정",
+      "topic_type": "OFFICIAL_ANNOUNCEMENT",
+      "base_score": 70,
+      "performance_adjustment": 0,
+      "diversity_penalty": 0,
+      "final_score": 70,
+      "score_breakdown_v3": {
+        "freshness": 14,
+        "mexico_relevance": 5,
+        "mexico_utility": 6,
+        "mexico_fandom_interest": 9,
+        "winning_hook": 13,
+        "follow_score": 10,
+        "share_potential": 4,
+        "comment_potential": 4,
+        "visual_strength": 5
+      },
+      "hook_trials": [
+        {"type":"MEXICO_UTILITY","text":"LISA EN TV: 9:35 PM CDMX","score":87},
+        {"type":"HARD_NUMBER","text":"16 SEP · 11:35 PM ET","score":82},
+        {"type":"FOMO_URGENCY","text":"LISA LLEGA A FALLON EL 16","score":85},
+        {"type":"FAN_IDENTITY","text":"LILIES MÉXICO: LISA VA A FALLON","score":88},
+        {"type":"CURIOSITY_CONTRAST","text":"¿QUÉ CONTARÁ LISA EN FALLON?","score":86}
+      ],
+      "winning_hook": "LILIES MÉXICO: LISA VA A FALLON",
+      "winning_hook_type": "FAN_IDENTITY",
+      "discovered_at": "2026-09-10T16:00:00+09:00",
+      "event_time": "2026-09-16T21:35:00-06:00",
+      "source_urls": [
+        "https://www.musicmundial.com/en/blackpinks-lisa-set-to-guest-on-the-tonight-show-next-week/"
+      ],
+      "mexico_relevance_reason": "멕시코 직접 뉴스는 아니지만 현지 시청 시간을 제공할 수 있어 제한적인 실용성이 있다.",
+      "follow_reason": "방송 직후 발언·신곡·EP·다큐 관련 후속 업데이트 가능성이 있다.",
+      "verified_at": "2026-09-10T16:00:00+09:00",
+      "v3_status": "CANDIDATE"
+    },
+    {
+      "news_id": "BTS-SWIM-SUMMER-CHART-20260910",
+      "artist": "BTS",
+      "headline_ko": "BTS 'SWIM' Billboard 글로벌 여름 결산 상위권 보도",
+      "topic_type": "CHART_OR_RECORD",
+      "base_score": 63,
+      "performance_adjustment": 0,
+      "diversity_penalty": 0,
+      "final_score": 63,
+      "score_breakdown_v3": {
+        "freshness": 15,
+        "mexico_relevance": 5,
+        "mexico_utility": 3,
+        "mexico_fandom_interest": 10,
+        "winning_hook": 12,
+        "follow_score": 7,
+        "share_potential": 4,
+        "comment_potential": 3,
+        "visual_strength": 4
+      },
+      "hook_trials": [
+        {"type":"MEXICO_UTILITY","text":"ARMY MÉXICO: SWIM SIGUE ENTRE GIGANTES","score":79},
+        {"type":"HARD_NUMBER","text":"SWIM: 23 SEMANAS EN GLOBAL","score":84},
+        {"type":"FOMO_URGENCY","text":"SWIM CIERRA EL VERANO EN BILLBOARD","score":78},
+        {"type":"FAN_IDENTITY","text":"ARMY MÉXICO, SWIM NO SE VA","score":82},
+        {"type":"CURIOSITY_CONTRAST","text":"¿CUÁNTO DURÓ SWIM ENTRE LOS GRANDES?","score":80}
+      ],
+      "winning_hook": "SWIM: 23 SEMANAS EN GLOBAL",
+      "winning_hook_type": "HARD_NUMBER",
+      "discovered_at": "2026-09-10T16:00:00+09:00",
+      "event_time": null,
+      "source_urls": [
+        "https://ca.billboard.com/charts/billboard-global-excl-us",
+        "https://ca.billboard.com/charts/billboard-global-200"
+      ],
+      "mexico_relevance_reason": "멕시코 직접 정보는 아니며 BTS 멕시코 팬덤 관심도가 높은 글로벌 차트 뉴스다.",
+      "follow_reason": "차트 후속은 가능하지만 멕시코 현지 행동 정보가 없어 팔로우 전환 이유는 중간 이하로 평가한다.",
+      "verified_at": "2026-09-10T16:00:00+09:00",
+      "v3_status": "CANDIDATE"
+    },
+    {
+      "news_id": "ENHYPEN-BLOODY-PARADISE-6WINS-20260910",
+      "artist": "ENHYPEN",
+      "headline_ko": "ENHYPEN 'Bloody Paradise' 음악방송 6관왕과 'Highlight' 첫 무대 보도",
+      "topic_type": "AWARD_OR_WIN",
+      "base_score": 57,
+      "performance_adjustment": 0,
+      "diversity_penalty": 0,
+      "final_score": 57,
+      "score_breakdown_v3": {
+        "freshness": 15,
+        "mexico_relevance": 3,
+        "mexico_utility": 2,
+        "mexico_fandom_interest": 8,
+        "winning_hook": 11,
+        "follow_score": 7,
+        "share_potential": 3,
+        "comment_potential": 3,
+        "visual_strength": 5
+      },
+      "hook_trials": [
+        {"type":"MEXICO_UTILITY","text":"ENGENE MÉXICO: 6 VICTORIAS PARA ENHYPEN","score":77},
+        {"type":"HARD_NUMBER","text":"6 VICTORIAS PARA BLOODY PARADISE","score":82},
+        {"type":"FOMO_URGENCY","text":"BLOODY PARADISE CIERRA CON 6 TROFEOS","score":79},
+        {"type":"FAN_IDENTITY","text":"ENGENE: ¿TU ERA FAVORITA YA GANÓ?","score":78},
+        {"type":"CURIOSITY_CONTRAST","text":"¿6 TROFEOS Y UNA NUEVA PRIMERA VEZ?","score":80}
+      ],
+      "winning_hook": "6 VICTORIAS PARA BLOODY PARADISE",
+      "winning_hook_type": "HARD_NUMBER",
+      "discovered_at": "2026-09-10T16:00:00+09:00",
+      "event_time": "2026-09-09T18:00:00+09:00",
+      "source_urls": [
+        "https://ktrenz.com/article/2026/09/enhypen-6-win-bloody-paradise-highlight-show-champion"
+      ],
+      "mexico_relevance_reason": "멕시코 직접 정보는 없고 ENGENE의 글로벌 관심에 의존하는 뉴스다.",
+      "follow_reason": "성과 후속은 가능하지만 현지 일정·티켓처럼 지속적으로 확인할 이유가 약하다.",
+      "verified_at": "2026-09-10T16:00:00+09:00",
+      "v3_status": "CANDIDATE"
     }
   ]
 }
