@@ -1,7 +1,9 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-09",
-  "last_updated_at": "2026-09-10T04:00:00+09:00",
+  "last_updated_at": "2026-09-10T10:01:19+09:00",
+  "daily_render_limit_reached": true,
+  "daily_render_news_id": "STRAYKIDS-CDMX-LOWAVAIL-20260909",
   "candidates": [
     {
       "news_id": "STRAYKIDS-CDMX-LOWAVAIL-20260909",
@@ -24,36 +26,11 @@
         "visual_strength": 5
       },
       "hook_trials": [
-        {
-          "type": "MEXICO_UTILITY",
-          "text": "POCA DISPONIBILIDAD EN CDMX",
-          "score": 98,
-          "score_breakdown": {"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}
-        },
-        {
-          "type": "HARD_NUMBER",
-          "text": "2 FECHAS: 25 Y 26 SEP",
-          "score": 95,
-          "score_breakdown": {"instant_comprehension":25,"mexico_relevance":23,"specificity_and_truth":20,"curiosity_or_emotion":12,"mobile_readability":15}
-        },
-        {
-          "type": "FOMO_URGENCY",
-          "text": "¡POCA DISPONIBILIDAD EN AMBAS FECHAS!",
-          "score": 99,
-          "score_breakdown": {"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":15,"mobile_readability":14}
-        },
-        {
-          "type": "FAN_IDENTITY",
-          "text": "STAY MÉXICO: ¿25 O 26?",
-          "score": 91,
-          "score_breakdown": {"instant_comprehension":24,"mexico_relevance":25,"specificity_and_truth":18,"curiosity_or_emotion":12,"mobile_readability":12}
-        },
-        {
-          "type": "CURIOSITY_CONTRAST",
-          "text": "¿TODAVÍA HAY BOLETOS PARA STRAYCITY?",
-          "score": 92,
-          "score_breakdown": {"instant_comprehension":24,"mexico_relevance":22,"specificity_and_truth":18,"curiosity_or_emotion":15,"mobile_readability":13}
-        }
+        {"type":"MEXICO_UTILITY","text":"POCA DISPONIBILIDAD EN CDMX","score":98,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}},
+        {"type":"HARD_NUMBER","text":"2 FECHAS: 25 Y 26 SEP","score":95,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":23,"specificity_and_truth":20,"curiosity_or_emotion":12,"mobile_readability":15}},
+        {"type":"FOMO_URGENCY","text":"¡POCA DISPONIBILIDAD EN AMBAS FECHAS!","score":99,"score_breakdown":{"instant_comprehension":25,"mexico_relevance":25,"specificity_and_truth":20,"curiosity_or_emotion":15,"mobile_readability":14}},
+        {"type":"FAN_IDENTITY","text":"STAY MÉXICO: ¿25 O 26?","score":91,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":25,"specificity_and_truth":18,"curiosity_or_emotion":12,"mobile_readability":12}},
+        {"type":"CURIOSITY_CONTRAST","text":"¿TODAVÍA HAY BOLETOS PARA STRAYCITY?","score":92,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":22,"specificity_and_truth":18,"curiosity_or_emotion":15,"mobile_readability":13}}
       ],
       "winning_hook": "¡POCA DISPONIBILIDAD EN AMBAS FECHAS!",
       "winning_hook_type": "FOMO_URGENCY",
@@ -66,7 +43,8 @@
       ],
       "mexico_relevance_reason": "Ticketmaster México가 9월 25일과 26일 Estadio GNP Seguros의 STRAYCITY MEXICO CITY 두 날짜 모두를 현재 'Poca disponibilidad'로 표시한다. 멕시코 팬이 즉시 확인·구매 행동을 할 수 있는 시간 민감 정보다.",
       "follow_reason": "티켓 상태가 다시 바뀔 수 있고 공연일까지 추가 운영·입장·현장 정보가 이어질 수 있어 후속 업데이트를 팔로우할 이유가 강하다.",
-      "v3_status": "READY_BREAKING_EXCEPTION"
+      "verified_at": "2026-09-10T10:01:19+09:00",
+      "v3_status": "GENERATED_MEXICO_DAY_LIMIT_REACHED"
     },
     {
       "news_id": "AESPA-CDMX-20260911-D2",
@@ -103,9 +81,10 @@
         "https://www.ticketmaster.com.mx/aespa-boletos/artist/2887549",
         "https://www.ocesa.com.mx/todos-los-eventos/aespa-boletos-ae1422768"
       ],
-      "mexico_relevance_reason": "Ticketmaster México와 OCESA에서 9월 11일 오후 8시 Palacio de los Deportes 공연 및 Hi-Bye 업그레이드가 확인된다.",
+      "mexico_relevance_reason": "Ticketmaster México에서 9월 11일 오후 8시 Palacio de los Deportes 공연과 Hi-Bye 업그레이드가 현재 확인된다.",
       "follow_reason": "공연 직전 추가 공지와 당일 현장 정보로 이어질 수 있어 후속 업데이트 가치가 있다.",
-      "v3_status": "RESCORED"
+      "verified_at": "2026-09-10T10:01:19+09:00",
+      "v3_status": "ELIGIBLE_BUT_BLOCKED_BY_DAILY_LIMIT"
     }
   ]
 }
