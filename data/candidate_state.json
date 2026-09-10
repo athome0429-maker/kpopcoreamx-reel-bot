@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-10",
-  "last_updated_at": "2026-09-10T16:00:00+09:00",
+  "last_updated_at": "2026-09-10T22:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "candidates": [
@@ -39,11 +39,13 @@
       "source_urls": [
         "https://www.ticketmaster.com.mx/aespa-boletos/artist/2887549",
         "https://www.ocesa.com.mx/todos-los-eventos/aespa-boletos-ae1422768",
-        "https://www.ticketmaster.com.mx/section/especiales"
+        "https://www.ticketmaster.com.mx/beat-lounge-boletos/artist/3439604",
+        "https://www.ticketmaster.com.mx/guias/paquetes-vip/aespa/",
+        "https://www.livenation.lat/en/event/aespa-live-tour-synk-compl%C3%A6xity-in-mexico-city-mexico-city-tickets-edp1669917"
       ],
       "mexico_relevance_reason": "멕시코시티 공연이 바로 다음 날이며 Ticketmaster México에서 본 공연과 Hi-Bye 업그레이드, Ticket2ride, Beat Lounge, 주차 옵션이 현재 확인되어 현지 팬에게 직접 행동 가능한 정보다.",
       "follow_reason": "공연 전날·당일에는 입장, VIP, 이동, 현장 공지 등 후속 정보가 이어질 가능성이 높아 멕시코 팬이 계정을 계속 팔로우할 이유가 강하다.",
-      "verified_at": "2026-09-10T16:00:00+09:00",
+      "verified_at": "2026-09-10T22:00:00+09:00",
       "v3_status": "TOP_CANDIDATE_NOT_BREAKING"
     },
     {
