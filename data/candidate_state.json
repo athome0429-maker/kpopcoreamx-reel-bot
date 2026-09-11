@@ -1,9 +1,9 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-10",
-  "last_updated_at": "2026-09-11T04:02:19+09:00",
-  "daily_render_limit_reached": false,
-  "daily_render_news_id": null,
+  "last_updated_at": "2026-09-11T10:07:00+09:00",
+  "daily_render_limit_reached": true,
+  "daily_render_news_id": "AESPA-CDMX-20260911-D1",
   "candidates": [
     {
       "news_id": "AESPA-CDMX-20260911-D1",
@@ -29,8 +29,8 @@
       "source_urls": ["https://www.ticketmaster.com.mx/aespa-boletos/artist/2887549","https://www.ocesa.com.mx/todos-los-eventos/aespa-boletos-ae1422768","https://www.ticketmaster.com.mx/beat-lounge-boletos/artist/3439604","https://www.ticketmaster.com.mx/guias/paquetes-vip/aespa/","https://www.livenation.lat/en/event/aespa-live-tour-synk-compl%C3%A6xity-in-mexico-city-mexico-city-tickets-edp1669917"],
       "mexico_relevance_reason": "멕시코시티 공연이 바로 다음 날이며 Ticketmaster México에서 본 공연과 Hi-Bye 업그레이드, Ticket2ride, Beat Lounge, 주차 옵션이 현재 확인되어 현지 팬에게 직접 행동 가능한 정보다.",
       "follow_reason": "공연 전날·당일에는 입장, VIP, 이동, 현장 공지 등 후속 정보가 이어질 가능성이 높아 멕시코 팬이 계정을 계속 팔로우할 이유가 강하다.",
-      "verified_at": "2026-09-11T04:02:19+09:00",
-      "v3_status": "TOP_CANDIDATE_NOT_BREAKING"
+      "verified_at": "2026-09-11T10:01:10+09:00",
+      "v3_status": "RENDERED"
     },
     {
       "news_id": "ROSE-NEWTRICK-ANNOUNCED-20260910",
@@ -40,11 +40,11 @@
       "base_score": 78,"performance_adjustment":0,"diversity_penalty":0,"final_score":78,
       "score_breakdown_v3":{"freshness":15,"mexico_relevance":6,"mexico_utility":8,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":12,"share_potential":4,"comment_potential":4,"visual_strength":5},
       "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"ROSÉ: 17 SEP, 5 PM EN CDMX","score":94,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":22,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}},
-        {"type":"HARD_NUMBER","text":"18 SEP · 8 AM KST","score":85,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":13,"specificity_and_truth":20,"curiosity_or_emotion":13,"mobile_readability":15}},
-        {"type":"FOMO_URGENCY","text":"FALTA 1 SEMANA PARA NEW TRICK","score":88,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":17,"specificity_and_truth":19,"curiosity_or_emotion":15,"mobile_readability":13}},
-        {"type":"FAN_IDENTITY","text":"BLINK MÉXICO: ROSÉ YA TIENE FECHA","score":90,"score_breakdown":{"instant_comprehension":23,"mexico_relevance":24,"specificity_and_truth":18,"curiosity_or_emotion":13,"mobile_readability":12}},
-        {"type":"CURIOSITY_CONTRAST","text":"¿UN MV ENTERO GRABADO EN IPHONE?","score":92,"score_breakdown":{"instant_comprehension":24,"mexico_relevance":16,"specificity_and_truth":20,"curiosity_or_emotion":17,"mobile_readability":15}}
+        {"type":"MEXICO_UTILITY","text":"ROSÉ: 17 SEP, 5 PM EN CDMX","score":94},
+        {"type":"HARD_NUMBER","text":"18 SEP · 8 AM KST","score":85},
+        {"type":"FOMO_URGENCY","text":"FALTA 1 SEMANA PARA NEW TRICK","score":88},
+        {"type":"FAN_IDENTITY","text":"BLINK MÉXICO: ROSÉ YA TIENE FECHA","score":90},
+        {"type":"CURIOSITY_CONTRAST","text":"¿UN MV ENTERO GRABADO EN IPHONE?","score":92}
       ],
       "winning_hook":"ROSÉ: 17 SEP, 5 PM EN CDMX","winning_hook_type":"MEXICO_UTILITY","discovered_at":"2026-09-10T16:00:00+09:00","event_time":"2026-09-17T17:00:00-06:00","source_urls":["https://www.vogue.com/article/rose-shares-the-story-behind-new-trick","https://www.mk.co.kr/en/culture/12149001"],"mexico_relevance_reason":"글로벌 발매 뉴스지만 공개 시각을 CDMX 현지 9월 17일 17:00로 변환해 멕시코 팬이 바로 활용할 수 있다.","follow_reason":"공개 전 티저와 발매 당일 MV·스트리밍 후속 콘텐츠로 이어질 여지가 있어 일회성 뉴스보다 팔로우 이유가 크다.","verified_at":"2026-09-10T16:00:00+09:00","v3_status":"CANDIDATE"
     },
