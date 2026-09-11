@@ -32,6 +32,33 @@
         "non_follower_reach_pct": 100.0
       },
       "learning_note": "Useful baseline only. Do not change strategy from one reel alone; wait for at least 3 comparable reels. The main warning is a high skip rate and zero follow conversion."
+    },
+    {
+      "slug": "straykids_straycity_cdmx_low_availability_20260909",
+      "artist": "Stray Kids",
+      "topic_type": "TICKET_SALE_OR_STATUS",
+      "winning_hook_type": "FOMO_URGENCY",
+      "posted_at": "2026-09-10T12:30:00+09:00",
+      "data_source": "user_screenshot_instagram_insights_2026-09-11",
+      "reel_duration": 6.5,
+      "metrics": {
+        "views": 151,
+        "reach": 106,
+        "avg_watch_seconds": 6.0,
+        "skip_rate": 57.5,
+        "likes": 3,
+        "comments": 1,
+        "shares": 0,
+        "saves": 1,
+        "reposts": 0,
+        "profile_visits": null,
+        "follows": 1,
+        "non_follower_reach_pct": 100.0,
+        "mexico_viewers_pct": 44.2,
+        "reels_tab_pct": 91.2,
+        "explore_tab_pct": 8.2
+      },
+      "learning_note": "Second valid v3-era data point. Retention improved sharply versus baseline (skip 57.5% vs 74%) and produced 1 follow, but shares remain zero. Do not activate pattern adjustment until at least 3 valid reels."
     }
   ]
 }
