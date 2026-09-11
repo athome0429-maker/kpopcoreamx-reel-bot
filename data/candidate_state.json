@@ -1,10 +1,41 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-11",
-  "last_updated_at": "2026-09-11T16:00:00+09:00",
+  "last_updated_at": "2026-09-11T22:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "candidates": [
+    {
+      "news_id": "KOREASPOTLIGHT-CDMX-ONSALE-20260911",
+      "artist": "Korea Spotlight / WINNER / DAYOUNG / SOYOU / TOUCHED / ALPHA DRIVE ONE",
+      "headline_ko": "Korea Spotlight Mexico City 2026 티켓이 9월 11일 19:00 CDMX에 Ticketmaster에서 오픈 예정",
+      "topic_type": "TICKET_SALE_OR_STATUS",
+      "base_score": 96,
+      "performance_adjustment": 0,
+      "diversity_penalty": 0,
+      "final_score": 96,
+      "score_breakdown_v3": {"freshness":15,"mexico_relevance":15,"mexico_utility":15,"mexico_fandom_interest":8,"winning_hook":15,"follow_score":15,"share_potential":5,"comment_potential":4,"visual_strength":4},
+      "hook_trials": [
+        {"type":"MEXICO_UTILITY","text":"KOREA SPOTLIGHT: BOLETOS HOY 7 PM","score":99},
+        {"type":"HARD_NUMBER","text":"5 ARTISTAS · 26 SEP · CDMX","score":96},
+        {"type":"FOMO_URGENCY","text":"HOY 7 PM ABREN BOLETOS","score":98},
+        {"type":"FAN_IDENTITY","text":"K-POP MÉXICO: HOY ABREN BOLETOS","score":97},
+        {"type":"CURIOSITY_CONTRAST","text":"¿WINNER + ALD1 EN UN SOLO SHOW?","score":94}
+      ],
+      "winning_hook":"KOREA SPOTLIGHT: BOLETOS HOY 7 PM",
+      "winning_hook_type":"MEXICO_UTILITY",
+      "discovered_at":"2026-09-11T22:00:00+09:00",
+      "event_time":"2026-09-11T19:00:00-06:00",
+      "source_urls":[
+        "https://www.ticketmaster.com.mx/browse/all-special-events-catid-10005/special-rid-10005/mexico-city-and-metropolitan-area-dma-802?language=en-mx&page=4",
+        "https://www.linkedin.com/in/misterwoogie",
+        "https://www.infobae.com/mexico/2026/09/09/k-expo-mexico-2026-en-la-cdmx-revelan-el-cartel-oficial-del-festival-en-el-wtc-y-la-fecha-para-conseguir-boletos/"
+      ],
+      "mexico_relevance_reason":"CDMX 현지 공연의 실제 티켓 오픈 시각과 판매처가 당일 확정되어 멕시코 팬이 즉시 행동할 수 있는 정보다.",
+      "follow_reason":"티켓 오픈 후 가격·구역·매진 여부·추가 공지 등 후속 업데이트 가치가 높아 계정을 팔로우할 이유가 강하다.",
+      "verified_at":"2026-09-11T22:00:00+09:00",
+      "v3_status":"SELECTED_BREAKING"
+    },
     {
       "news_id": "ROSE-NEWTRICK-ANNOUNCED-20260910",
       "artist": "ROSÉ",
@@ -91,30 +122,15 @@
       "final_score":61,
       "score_breakdown_v3":{"freshness":13,"mexico_relevance":5,"mexico_utility":3,"mexico_fandom_interest":10,"winning_hook":12,"follow_score":7,"share_potential":4,"comment_potential":3,"visual_strength":4},
       "hook_trials":[{"type":"MEXICO_UTILITY","text":"ARMY MÉXICO: SWIM SIGUE ENTRE GIGANTES","score":79},{"type":"HARD_NUMBER","text":"SWIM: 23 SEMANAS EN GLOBAL","score":84},{"type":"FOMO_URGENCY","text":"SWIM CIERRA EL VERANO EN BILLBOARD","score":78},{"type":"FAN_IDENTITY","text":"ARMY MÉXICO, SWIM NO SE VA","score":82},{"type":"CURIOSITY_CONTRAST","text":"¿CUÁNTO DURÓ SWIM ENTRE LOS GRANDES?","score":80}],
-      "winning_hook":"SWIM: 23 SEMANAS EN GLOBAL","winning_hook_type":"HARD_NUMBER",
-      "discovered_at":"2026-09-10T16:00:00+09:00","event_time":null,
+      "winning_hook":"SWIM: 23 SEMANAS EN GLOBAL",
+      "winning_hook_type":"HARD_NUMBER",
+      "discovered_at":"2026-09-10T16:00:00+09:00",
+      "event_time":null,
       "source_urls":["https://ca.billboard.com/charts/billboard-global-excl-us","https://ca.billboard.com/charts/billboard-global-200"],
       "mexico_relevance_reason":"멕시코 직접 정보는 아니며 멕시코 ARMY의 글로벌 팬덤 관심에 의존한다.",
       "follow_reason":"차트 후속은 가능하지만 현지 행동 정보가 없어 팔로우 전환 이유는 낮다.",
-      "verified_at":"2026-09-11T16:00:00+09:00","v3_status":"CANDIDATE"
-    },
-    {
-      "news_id":"ENHYPEN-BLOODY-PARADISE-6WINS-20260910",
-      "artist":"ENHYPEN",
-      "headline_ko":"ENHYPEN 'Bloody Paradise' 음악방송 6관왕 관련 후속 보도",
-      "topic_type":"AWARD_OR_WIN",
-      "base_score":55,
-      "performance_adjustment":0,
-      "diversity_penalty":0,
-      "final_score":55,
-      "score_breakdown_v3":{"freshness":13,"mexico_relevance":3,"mexico_utility":2,"mexico_fandom_interest":8,"winning_hook":11,"follow_score":7,"share_potential":3,"comment_potential":3,"visual_strength":5},
-      "hook_trials":[{"type":"MEXICO_UTILITY","text":"ENGENE MÉXICO: 6 VICTORIAS PARA ENHYPEN","score":77},{"type":"HARD_NUMBER","text":"6 VICTORIAS PARA BLOODY PARADISE","score":82},{"type":"FOMO_URGENCY","text":"BLOODY PARADISE CIERRA CON 6 TROFEOS","score":79},{"type":"FAN_IDENTITY","text":"ENGENE: ¿TU ERA FAVORITA YA GANÓ?","score":78},{"type":"CURIOSITY_CONTRAST","text":"¿6 TROFEOS Y UNA NUEVA PRIMERA VEZ?","score":80}],
-      "winning_hook":"6 VICTORIAS PARA BLOODY PARADISE","winning_hook_type":"HARD_NUMBER",
-      "discovered_at":"2026-09-10T16:00:00+09:00","event_time":"2026-09-09T18:00:00+09:00",
-      "source_urls":["https://ktrenz.com/article/2026/09/enhypen-6-win-bloody-paradise-highlight-show-champion"],
-      "mexico_relevance_reason":"멕시코 직접 정보가 없다.",
-      "follow_reason":"현지 일정·티켓처럼 지속적으로 확인할 이유가 약하다.",
-      "verified_at":"2026-09-11T16:00:00+09:00","v3_status":"CANDIDATE"
+      "verified_at":"2026-09-11T16:00:00+09:00",
+      "v3_status":"CANDIDATE"
     }
   ]
 }
