@@ -30,6 +30,21 @@
       "generated_at": "2026-09-11T10:07:00+09:00",
       "workflow_run_id": 34549276995,
       "artifact_id": 10180190133
+    },
+    {
+      "mexico_date": "2026-09-11",
+      "news_id": "KOREASPOTLIGHT-CDMX-ONSALE-20260911",
+      "artist": "Korea Spotlight",
+      "topic_type": "TICKET_SALE_OR_STATUS",
+      "slug": "korea_spotlight_cdmx_onsale_20260911",
+      "final_score": 96,
+      "mexico_utility_score": 15,
+      "follow_score": 15,
+      "winning_hook_type": "MEXICO_UTILITY",
+      "winning_hook": "KOREA SPOTLIGHT: BOLETOS HOY 7 PM",
+      "generated_at": "2026-09-11T22:05:48+09:00",
+      "workflow_run_id": 34602319570,
+      "artifact_id": 10264319521
     }
   ]
 }
