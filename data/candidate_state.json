@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-12",
-  "last_updated_at": "2026-09-12T22:00:00+09:00",
+  "last_updated_at": "2026-09-13T04:02:57+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Recent 3 valid insight snapshots average skip_rate 77.2%; prefer 0.5-0.6s first cut with artist + Mexico/CDMX + strongest concrete fact immediately. aespa sample is very small, so no fandom/hook-type overfitting.",
@@ -9,32 +9,32 @@
     {
       "news_id": "ANIMOLE4-HAJIN-MINCHUL-CDMX-20260912",
       "artist": "HA JIN / Shin Min Chul",
-      "headline_ko": "AniMole 4가 9월 12~13일 WTC CDMX에서 열리며 HA JIN과 Shin Min Chul이 현지 팬과 만남",
+      "headline_ko": "AniMole 4 공식 일정에서 9월 12일 Ha Jin 14:00, Min Chul 15:00, 9월 13일 합동 무대 16:00가 확인됨",
       "topic_type": "MEXICO_FAN_EVENT",
-      "base_score": 93,
+      "base_score": 96,
       "performance_adjustment": 0,
       "diversity_penalty": 1,
-      "final_score": 92,
-      "score_breakdown_v3": {"freshness":15,"mexico_relevance":15,"mexico_utility":15,"mexico_fandom_interest":7,"winning_hook":15,"follow_score":13,"share_potential":5,"comment_potential":4,"visual_strength":4},
+      "final_score": 95,
+      "score_breakdown_v3": {"freshness":15,"mexico_relevance":15,"mexico_utility":15,"mexico_fandom_interest":8,"winning_hook":15,"follow_score":14,"share_potential":5,"comment_potential":5,"visual_strength":4},
       "hook_trials": [
-        {"type":"MEXICO_UTILITY","text":"HOY EN CDMX: HA JIN + MIN CHUL","score":97},
-        {"type":"HARD_NUMBER","text":"2 DÍAS · $700 · WTC CDMX","score":96},
-        {"type":"FOMO_URGENCY","text":"HOY EMPIEZA ANIMOLE 4 EN CDMX","score":95},
-        {"type":"FAN_IDENTITY","text":"K-DRAMA MÉXICO: ESCÚCHALOS EN VIVO","score":93},
-        {"type":"CURIOSITY_CONTRAST","text":"¿WE ALL LIE Y PARADISE EN CDMX?","score":94}
+        {"type":"MEXICO_UTILITY","text":"HOY 2 PM: HA JIN EN CDMX","score":99},
+        {"type":"HARD_NUMBER","text":"2 PM HA JIN · 3 PM MIN CHUL","score":98},
+        {"type":"FOMO_URGENCY","text":"EN 1 HORA: HA JIN EN CDMX","score":99},
+        {"type":"FAN_IDENTITY","text":"FANS K-DRAMA CDMX: HOY CANTAN EN VIVO","score":95},
+        {"type":"CURIOSITY_CONTRAST","text":"¿WE ALL LIE Y PARADISE HOY EN CDMX?","score":96}
       ],
-      "winning_hook":"HOY EN CDMX: HA JIN + MIN CHUL",
+      "winning_hook":"HOY 2 PM: HA JIN EN CDMX",
       "winning_hook_type":"MEXICO_UTILITY",
       "discovered_at":"2026-09-12T16:00:00+09:00",
-      "event_time":"2026-09-12/2026-09-13",
+      "event_time":"2026-09-12T14:00:00-06:00 / 2026-09-12T15:00:00-06:00 / 2026-09-13T16:00:00-06:00",
       "source_urls":[
+        "https://lamole.com.mx/animole-4/actividades/",
         "https://lamole.com.mx/",
-        "https://www.posta.com.mx/cdmx/eres-fan-de-los-k-dramas-dos-reconocidos-cantantes-visitaran-la-cdmx-/vl2247379",
-        "https://www.radioformula.com.mx/tecnologia/animole-4-en-el-wtc-de-la-cdmx-fechas-precios-de-boletos-e-invitados-confirmados-20260911-0028.html"
+        "https://www.tvazteca.com/azteca7/geek-otaku/fecha-y-hora-para-ver-a-shin-min-chul-en-la-animole-2026/"
       ],
-      "mexico_relevance_reason":"9월 12~13일 WTC CDMX에서 실제로 열리는 현지 행사이며, HA JIN과 Shin Min Chul 관련 공연·팬 활동 정보가 멕시코 팬에게 즉시 유용하다.",
-      "follow_reason":"행사가 이틀간 이어지고 공연·사인·사진 일정과 현장 업데이트가 이어질 수 있어 현지 K-content 팬에게 후속 가치가 있다.",
-      "verified_at":"2026-09-12T22:00:00+09:00",
+      "mexico_relevance_reason":"공식 AniMole 일정에서 오늘 CDMX 공연의 정확한 시간이 확인되어 멕시코 현지 팬이 즉시 행동할 수 있는 정보가 됐다.",
+      "follow_reason":"오늘 개별 공연 뒤 내일 16:00 Ha Jin + Min Chul 합동 무대가 공식 일정에 있어 후속 업데이트 가치가 높다.",
+      "verified_at":"2026-09-13T04:02:57+09:00",
       "v3_status":"CANDIDATE"
     },
     {
