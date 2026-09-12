@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-12",
-  "last_updated_at": "2026-09-12T16:00:00+09:00",
+  "last_updated_at": "2026-09-12T22:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Recent 3 valid insight snapshots average skip_rate 77.2%; prefer 0.5-0.6s first cut with artist + Mexico/CDMX + strongest concrete fact immediately. aespa sample is very small, so no fandom/hook-type overfitting.",
@@ -9,7 +9,7 @@
     {
       "news_id": "ANIMOLE4-HAJIN-MINCHUL-CDMX-20260912",
       "artist": "HA JIN / Shin Min Chul",
-      "headline_ko": "AniMole 4가 9월 12~13일 WTC CDMX에서 열리며 HA JIN과 Shin Min Chul의 콘서트가 일반 입장권에 포함",
+      "headline_ko": "AniMole 4가 9월 12~13일 WTC CDMX에서 열리며 HA JIN과 Shin Min Chul이 현지 팬과 만남",
       "topic_type": "MEXICO_FAN_EVENT",
       "base_score": 93,
       "performance_adjustment": 0,
@@ -29,18 +29,48 @@
       "event_time":"2026-09-12/2026-09-13",
       "source_urls":[
         "https://lamole.com.mx/",
-        "https://lamole.4hyp.com/",
+        "https://www.posta.com.mx/cdmx/eres-fan-de-los-k-dramas-dos-reconocidos-cantantes-visitaran-la-cdmx-/vl2247379",
         "https://www.radioformula.com.mx/tecnologia/animole-4-en-el-wtc-de-la-cdmx-fechas-precios-de-boletos-e-invitados-confirmados-20260911-0028.html"
       ],
-      "mexico_relevance_reason":"오늘과 내일 WTC CDMX에서 실제로 열리는 현지 행사이며, HA JIN과 Shin Min Chul 공연이 일반 입장권에 포함되어 멕시코 팬이 즉시 행동할 수 있다.",
+      "mexico_relevance_reason":"9월 12~13일 WTC CDMX에서 실제로 열리는 현지 행사이며, HA JIN과 Shin Min Chul 관련 공연·팬 활동 정보가 멕시코 팬에게 즉시 유용하다.",
       "follow_reason":"행사가 이틀간 이어지고 공연·사인·사진 일정과 현장 업데이트가 이어질 수 있어 현지 K-content 팬에게 후속 가치가 있다.",
-      "verified_at":"2026-09-12T16:00:00+09:00",
+      "verified_at":"2026-09-12T22:00:00+09:00",
+      "v3_status":"CANDIDATE"
+    },
+    {
+      "news_id":"CANDLELIGHT-KPOP-CDMX-20260912",
+      "artist":"Candlelight / K-pop tribute",
+      "headline_ko":"Candlelight: Lo Mejor de K-Pop이 9월 12일 19:00 CDMX Capilla Gótica del Instituto Cultural Helénico에서 개최",
+      "topic_type":"MEXICO_FAN_EVENT",
+      "base_score":86,
+      "performance_adjustment":0,
+      "diversity_penalty":0,
+      "final_score":86,
+      "score_breakdown_v3":{"freshness":15,"mexico_relevance":15,"mexico_utility":14,"mexico_fandom_interest":7,"winning_hook":15,"follow_score":10,"share_potential":4,"comment_potential":3,"visual_strength":3},
+      "hook_trials":[
+        {"type":"MEXICO_UTILITY","text":"HOY 7 PM: K-POP EN CDMX","score":95},
+        {"type":"HARD_NUMBER","text":"12 SEP · 7 PM · CDMX","score":93},
+        {"type":"FOMO_URGENCY","text":"HOY: K-POP A LA LUZ DE VELAS","score":94},
+        {"type":"FAN_IDENTITY","text":"FANS K-POP CDMX: PLAN PARA HOY","score":90},
+        {"type":"CURIOSITY_CONTRAST","text":"¿K-POP CON CUARTETO DE CUERDAS?","score":96}
+      ],
+      "winning_hook":"¿K-POP CON CUARTETO DE CUERDAS?",
+      "winning_hook_type":"CURIOSITY_CONTRAST",
+      "discovered_at":"2026-09-12T22:00:00+09:00",
+      "event_time":"2026-09-12T19:00:00-06:00",
+      "source_urls":[
+        "https://cdmxsecreta.com/en/reasons-candlelight-cdmx-en/",
+        "https://festscanner.com/en/event/candlelight-lo-mejor-de-k-pop-mexico-city-2026-09-12"
+      ],
+      "mexico_relevance_reason":"오늘 저녁 CDMX에서 열리는 K-pop 현지 이벤트로 시간·장소·가격/티켓 확인이 실제 행동으로 이어질 수 있다.",
+      "follow_reason":"현지 K-pop 이벤트 큐레이션이라는 계정 가치와 연결되지만 아이돌 직접 출연이 아닌 트리뷰트 공연이라 장기 후속성은 중간 수준이다.",
+      "verified_at":"2026-09-12T22:00:00+09:00",
       "v3_status":"CANDIDATE"
     },
     {
       "news_id":"STRAYKIDS-ROCKINRIO-RESULT-20260912",
       "artist":"Stray Kids",
-      "headline_ko":"Stray Kids가 Rock in Rio 첫 K-pop 전용일의 메인 무대를 마무리했고 대규모 관객과 라이브 밴드 무대로 보도됨",
+      "headline_ko":"Stray Kids가 Rock in Rio 첫 K-pop 중심일 메인 무대를 마무리했고 대규모 관객과 라이브 밴드 무대로 보도됨",
       "topic_type":"LATAM_TOUR",
       "base_score":75,
       "performance_adjustment":0,
@@ -64,7 +94,7 @@
       ],
       "mexico_relevance_reason":"LATAM 대형 K-pop 무대라 멕시코 STAY 관심은 높지만 멕시코에서 바로 행동할 정보는 아니다.",
       "follow_reason":"공연 사진·클립·세트리스트 후속은 가능하지만 멕시코 직접 일정이 아니어서 팔로우 이유는 중간 수준이다.",
-      "verified_at":"2026-09-12T16:00:00+09:00",
+      "verified_at":"2026-09-12T22:00:00+09:00",
       "v3_status":"CANDIDATE"
     },
     {
@@ -91,7 +121,7 @@
       "source_urls":["https://www.vogue.com/article/rose-shares-the-story-behind-new-trick"],
       "mexico_relevance_reason":"글로벌 발매 뉴스지만 CDMX 현지 공개 시각을 제공할 수 있어 제한적 실용성이 있다.",
       "follow_reason":"공개 전 티저와 발매 당일 MV·스트리밍 후속 콘텐츠가 이어질 수 있다.",
-      "verified_at":"2026-09-12T16:00:00+09:00",
+      "verified_at":"2026-09-12T22:00:00+09:00",
       "v3_status":"CANDIDATE"
     },
     {
@@ -118,33 +148,6 @@
       "source_urls":["https://www.musicmundial.com/en/blackpinks-lisa-set-to-guest-on-the-tonight-show-next-week/"],
       "mexico_relevance_reason":"멕시코 직접 뉴스는 아니지만 현지 시청 시간을 제공할 수 있다.",
       "follow_reason":"방송 직후 발언과 음악 관련 후속 업데이트 가능성이 있다.",
-      "verified_at":"2026-09-12T16:00:00+09:00",
-      "v3_status":"CANDIDATE"
-    },
-    {
-      "news_id":"TXT-LA-BMO-20260912",
-      "artist":"TOMORROW X TOGETHER",
-      "headline_ko":"TXT가 9월 12일 로스앤젤레스 BMO Stadium에서 ACT : TOMORROW 투어 공연",
-      "topic_type":"LATAM_TOUR",
-      "base_score":66,
-      "performance_adjustment":0,
-      "diversity_penalty":0,
-      "final_score":66,
-      "score_breakdown_v3":{"freshness":15,"mexico_relevance":5,"mexico_utility":5,"mexico_fandom_interest":8,"winning_hook":13,"follow_score":8,"share_potential":3,"comment_potential":4,"visual_strength":5},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"TXT HOY EN LOS ÁNGELES","score":81},
-        {"type":"HARD_NUMBER","text":"12 SEP · BMO STADIUM · TXT","score":85},
-        {"type":"FOMO_URGENCY","text":"HOY: TXT TOMA BMO STADIUM","score":86},
-        {"type":"FAN_IDENTITY","text":"MOA LATAM: TXT LLEGA A LA","score":84},
-        {"type":"CURIOSITY_CONTRAST","text":"¿QUÉ PREPARÓ TXT PARA LOS ÁNGELES?","score":82}
-      ],
-      "winning_hook":"HOY: TXT TOMA BMO STADIUM",
-      "winning_hook_type":"FOMO_URGENCY",
-      "discovered_at":"2026-09-12T16:00:00+09:00",
-      "event_time":"2026-09-12",
-      "source_urls":["https://www.kpopcal.com/weekly/2026-w37"],
-      "mexico_relevance_reason":"미국 공연이라 멕시코 직접 행동 정보가 없고 MOA LATAM 관심에 의존한다.",
-      "follow_reason":"공연 후속 콘텐츠는 가능하지만 멕시코 현지 업데이트와 연결이 약하다.",
       "verified_at":"2026-09-12T16:00:00+09:00",
       "v3_status":"CANDIDATE"
     }
