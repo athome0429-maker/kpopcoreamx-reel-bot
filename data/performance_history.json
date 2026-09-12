@@ -31,7 +31,7 @@
         "follows": 0,
         "non_follower_reach_pct": 100.0
       },
-      "learning_note": "Useful baseline only. Do not change strategy from one reel alone; wait for at least 3 comparable reels. The main warning is a high skip rate and zero follow conversion."
+      "learning_note": "Baseline valid datapoint. High skip rate and zero follow conversion."
     },
     {
       "slug": "straykids_straycity_cdmx_low_availability_20260909",
@@ -58,7 +58,33 @@
         "reels_tab_pct": 91.2,
         "explore_tab_pct": 8.2
       },
-      "learning_note": "Second valid v3-era data point. Retention improved sharply versus baseline (skip 57.5% vs 74%) and produced 1 follow, but shares remain zero. Do not activate pattern adjustment until at least 3 valid reels."
+      "learning_note": "Retention improved sharply versus baseline and produced 1 follow, but shares remained zero."
+    },
+    {
+      "slug": "aespa_cdmx_tomorrow_20260910",
+      "artist": "aespa",
+      "topic_type": "MEXICO_CONCERT",
+      "winning_hook_type": "MEXICO_UTILITY",
+      "posted_at": "2026-09-11T11:00:00+09:00",
+      "data_source": "user_screenshot_instagram_insights_2026-09-12",
+      "reel_duration": 6.5,
+      "metrics": {
+        "views": 6,
+        "reach": 6,
+        "avg_watch_seconds": 9.0,
+        "skip_rate": 100.0,
+        "likes": 0,
+        "comments": 1,
+        "shares": 0,
+        "saves": 0,
+        "reposts": 0,
+        "profile_visits": null,
+        "follows": 0,
+        "non_follower_reach_pct": 100.0,
+        "reels_tab_pct": 83.3,
+        "explore_tab_pct": 16.7
+      },
+      "learning_note": "Third valid insight snapshot, but sample is extremely small (reach 6), so treat it as low-confidence. The 3-reel average skip rate now exceeds 70%, which activates the v3.0 first-cut rule: prefer 0.5-0.6s and show the strongest artist + Mexico/CDMX + concrete fact immediately. Do not infer fandom or hook winners from this tiny sample."
     }
   ]
 }
