@@ -1,22 +1,22 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-13",
-  "last_updated_at": "2026-09-13T22:00:58+09:00",
+  "last_updated_at": "2026-09-14T04:02:11+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Recent valid insight snapshots still support a 0.5-0.6s first cut with artist + CDMX/Mexico + strongest concrete fact immediately. aespa and Korea Spotlight samples remain low-confidence; do not overfit fandom/hook performance.",
-  "selection_note": "22:00 KST scout round. No new officially confirmed direct-Mexico breaking item reached the >=96 scout-render threshold. BTS ARIRANG Mexico cinema live viewing remains the strongest candidate at 95. Important re-verification: Cinemex specifically confirmed presale for 17 Sep at 07:00 Mexico central time; Cinépolis participation is reported/confirmed but its sale date is still pending according to the latest Mexican coverage. Do not state that both chains open sales at 07:00 unless Cinépolis officially confirms it before rendering.",
+  "selection_note": "04:00 KST scout round. Fresh 24-48h review found no new officially confirmed direct-Mexico K-pop breaking item at the >=96 scout-render threshold. BTS ARIRANG Mexico cinema live viewing remains the strongest carry-forward candidate, now 94 after freshness decay. Trafalgar continues to confirm international live viewing from Buenos Aires on Oct 24 and Sao Paulo on Oct 30. Mexican coverage still reports Cinépolis and Cinemex participation; Cinemex specifically confirmed presale on Sep 17 at 07:00 Mexico central time, while Cinépolis sale timing remains pending. Do not state that both chains open sales at 07:00 unless Cinépolis officially confirms it before rendering.",
   "candidates": [
     {
       "news_id": "BTS-ARIRANG-LIVEVIEWING-MEXICO-ONSALE-20260917",
       "artist": "BTS",
-      "headline_ko": "BTS WORLD TOUR ARIRANG 부에노스아이레스·상파울루 공연의 멕시코 극장 라이브뷰잉 확정; Cinemex는 9월 17일 오전 7시(멕시코 중부시간) 예매 시작, Cinépolis 판매 일정은 최신 보도 기준 추후 공지",
+      "headline_ko": "BTS WORLD TOUR ARIRANG 부에노스아이레스·상파울루 공연의 멕시코 극장 라이브뷰잉 확정; Cinemex는 9월 17일 오전 7시(멕시코 중부시간) 예매 시작, Cinépolis 판매 일정은 최신 확인 기준 추후 공지",
       "topic_type": "TICKET_SALE_OR_STATUS",
-      "base_score": 96,
+      "base_score": 95,
       "performance_adjustment": 0,
       "diversity_penalty": 1,
-      "final_score": 95,
-      "score_breakdown_v3": {"freshness":12,"mexico_relevance":15,"mexico_utility":15,"mexico_fandom_interest":10,"winning_hook":15,"follow_score":15,"share_potential":5,"comment_potential":4,"visual_strength":5},
+      "final_score": 94,
+      "score_breakdown_v3": {"freshness":11,"mexico_relevance":15,"mexico_utility":15,"mexico_fandom_interest":10,"winning_hook":15,"follow_score":15,"share_potential":5,"comment_potential":4,"visual_strength":5},
       "hook_trials": [
         {"type":"MEXICO_UTILITY","text":"BTS EN CINES MX: VENTA 17 SEP","score":99},
         {"type":"HARD_NUMBER","text":"17 SEP · 7 AM · CINEMEX","score":99},
@@ -35,7 +35,7 @@
       ],
       "mexico_relevance_reason":"Trafalgar confirms international live viewing from Buenos Aires and São Paulo. Mexican coverage reports both Cinépolis and Cinemex participation; Cinemex specifically confirmed presale for 17 Sep at 07:00 Mexico central time, while Cinépolis sale timing remains pending in the latest detailed coverage.",
       "follow_reason":"판매 전 알림, 참여 극장·가격·좌석·Cinépolis 판매일·판매 상태 후속 업데이트 가능성이 높아 지속 팔로우 이유가 강하다.",
-      "verified_at":"2026-09-13T22:00:58+09:00",
+      "verified_at":"2026-09-14T04:02:11+09:00",
       "v3_status":"TOP_CANDIDATE_CARRY_FORWARD"
     },
     {
@@ -62,7 +62,7 @@
       "source_urls":["https://www.uol.com.br/toca/noticias/2026/09/12/stray-kids-fecha-dia-de-k-pop-no-rock-in-rio-com-show-lotado-e-ensurdecedor.ghtm","https://www1.folha.uol.com.br/ilustrada/2026/09/stray-kids-faz-show-mais-contido-no-dia-de-k-pop-no-rock-in-rio-marcado-por-aglomeracoes.shtml"],
       "mexico_relevance_reason":"LATAM 관심은 높지만 멕시코 직접 행동 정보가 아니다.",
       "follow_reason":"멕시코 STRAYCITY가 이어져 팬덤 연계는 가능하지만 이 뉴스 자체의 후속 팔로우 이유는 제한적이다.",
-      "verified_at":"2026-09-13T22:00:58+09:00",
+      "verified_at":"2026-09-14T04:02:11+09:00",
       "v3_status":"CANDIDATE"
     },
     {
