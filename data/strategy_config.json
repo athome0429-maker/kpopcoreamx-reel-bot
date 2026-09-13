@@ -31,6 +31,12 @@
       "mexico_utility_min": 11,
       "winning_hook_min": 13,
       "follow_score_min": 12
+    },
+    "high_score_gate": {
+      "applies_at_or_above_final_score": 90,
+      "rule": "A candidate may receive a final_score of 90 or higher only if mexico_fandom_interest >= 8 OR follow_score >= 13.",
+      "if_gate_fails": "Cap final_score at 89 even when the arithmetic score would otherwise be 90 or higher.",
+      "purpose": "Prevent small-fandom, one-off local events from being overvalued solely because Mexico Utility and immediacy are high."
     }
   },
   "mexico_utility_rubric": {
@@ -133,10 +139,11 @@
     "MEMBER_UPDATE",
     "OTHER"
   ],
-  "final_score_formula": "min(100, base_score + performance_adjustment) - diversity_penalty",
+  "final_score_formula": "min(100, base_score + performance_adjustment) - diversity_penalty, then apply high_score_gate: if final_score >= 90 and neither mexico_fandom_interest >= 8 nor follow_score >= 13, cap final_score at 89",
   "notes": [
     "A high-view story can still lose if FOLLOW SCORE and Mexico Utility are weak.",
     "Breaking Mexico-direct official news can bypass normal timing but not fact verification.",
-    "Do not use diversity penalty to bury a genuinely important Mexico-specific update."
+    "Do not use diversity penalty to bury a genuinely important Mexico-specific update.",
+    "High local utility alone is not enough for a 90+ score; strong Mexico fandom interest or a strong continuing follow reason is required."
   ]
 }
