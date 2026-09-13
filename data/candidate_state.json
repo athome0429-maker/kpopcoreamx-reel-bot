@@ -1,41 +1,41 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-12",
-  "last_updated_at": "2026-09-13T04:02:57+09:00",
+  "last_updated_at": "2026-09-13T10:02:04+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
-  "performance_rule_active": "Recent 3 valid insight snapshots average skip_rate 77.2%; prefer 0.5-0.6s first cut with artist + Mexico/CDMX + strongest concrete fact immediately. aespa sample is very small, so no fandom/hook-type overfitting.",
+  "performance_rule_active": "Recent 3 valid insight snapshots average skip_rate 77.2%; use 0.5-0.6s first cut with artist + CDMX + strongest concrete fact immediately. aespa sample remains low-confidence, so no fandom/hook-type overfitting.",
   "candidates": [
     {
-      "news_id": "ANIMOLE4-HAJIN-MINCHUL-CDMX-20260912",
+      "news_id": "ANIMOLE4-HAJIN-MINCHUL-JOINT-CDMX-20260913",
       "artist": "HA JIN / Shin Min Chul",
-      "headline_ko": "AniMole 4 공식 일정에서 9월 12일 Ha Jin 14:00, Min Chul 15:00, 9월 13일 합동 무대 16:00가 확인됨",
+      "headline_ko": "AniMole 4 공식 일정에서 9월 13일 16:00 Mugen Stage의 Ha Jin + Min Chul 합동 음악 무대가 확인됨",
       "topic_type": "MEXICO_FAN_EVENT",
-      "base_score": 96,
+      "base_score": 95,
       "performance_adjustment": 0,
       "diversity_penalty": 1,
-      "final_score": 95,
-      "score_breakdown_v3": {"freshness":15,"mexico_relevance":15,"mexico_utility":15,"mexico_fandom_interest":8,"winning_hook":15,"follow_score":14,"share_potential":5,"comment_potential":5,"visual_strength":4},
+      "final_score": 94,
+      "score_breakdown_v3": {"freshness":15,"mexico_relevance":15,"mexico_utility":15,"mexico_fandom_interest":8,"winning_hook":15,"follow_score":12,"share_potential":5,"comment_potential":5,"visual_strength":5},
       "hook_trials": [
-        {"type":"MEXICO_UTILITY","text":"HOY 2 PM: HA JIN EN CDMX","score":99},
-        {"type":"HARD_NUMBER","text":"2 PM HA JIN · 3 PM MIN CHUL","score":98},
-        {"type":"FOMO_URGENCY","text":"EN 1 HORA: HA JIN EN CDMX","score":99},
-        {"type":"FAN_IDENTITY","text":"FANS K-DRAMA CDMX: HOY CANTAN EN VIVO","score":95},
-        {"type":"CURIOSITY_CONTRAST","text":"¿WE ALL LIE Y PARADISE HOY EN CDMX?","score":96}
+        {"type":"MEXICO_UTILITY","text":"MAÑANA 4 PM: HA JIN + MIN CHUL","score":99},
+        {"type":"HARD_NUMBER","text":"13 SEP · 4 PM · CDMX","score":98},
+        {"type":"FOMO_URGENCY","text":"ÚLTIMO DÍA: HA JIN + MIN CHUL","score":98},
+        {"type":"FAN_IDENTITY","text":"FANS K-DRAMA CDMX: MAÑANA CANTAN JUNTOS","score":96},
+        {"type":"CURIOSITY_CONTRAST","text":"¿WE ALL LIE + PARADISE EN UN SHOW?","score":97}
       ],
-      "winning_hook":"HOY 2 PM: HA JIN EN CDMX",
+      "winning_hook":"MAÑANA 4 PM: HA JIN + MIN CHUL",
       "winning_hook_type":"MEXICO_UTILITY",
       "discovered_at":"2026-09-12T16:00:00+09:00",
-      "event_time":"2026-09-12T14:00:00-06:00 / 2026-09-12T15:00:00-06:00 / 2026-09-13T16:00:00-06:00",
+      "event_time":"2026-09-13T16:00:00-06:00",
       "source_urls":[
         "https://lamole.com.mx/animole-4/actividades/",
         "https://lamole.com.mx/",
         "https://www.tvazteca.com/azteca7/geek-otaku/fecha-y-hora-para-ver-a-shin-min-chul-en-la-animole-2026/"
       ],
-      "mexico_relevance_reason":"공식 AniMole 일정에서 오늘 CDMX 공연의 정확한 시간이 확인되어 멕시코 현지 팬이 즉시 행동할 수 있는 정보가 됐다.",
-      "follow_reason":"오늘 개별 공연 뒤 내일 16:00 Ha Jin + Min Chul 합동 무대가 공식 일정에 있어 후속 업데이트 가치가 높다.",
-      "verified_at":"2026-09-13T04:02:57+09:00",
-      "v3_status":"CANDIDATE"
+      "mexico_relevance_reason":"공식 AniMole 프로그램이 CDMX WTC에서 9월 13일 16:00 Ha Jin + Min Chul 합동 음악 무대를 명시해 현지 팬이 내일 바로 행동할 수 있다.",
+      "follow_reason":"공연 직전 일정 확인과 당일 현장/후속 업데이트 가치가 있으나 행사 마지막 날이므로 장기 후속성은 티켓 지속형 뉴스보다 낮다.",
+      "verified_at":"2026-09-13T10:02:04+09:00",
+      "v3_status":"SELECTED_FOR_RENDER"
     },
     {
       "news_id":"CANDLELIGHT-KPOP-CDMX-20260912",
@@ -47,109 +47,17 @@
       "diversity_penalty":0,
       "final_score":86,
       "score_breakdown_v3":{"freshness":15,"mexico_relevance":15,"mexico_utility":14,"mexico_fandom_interest":7,"winning_hook":15,"follow_score":10,"share_potential":4,"comment_potential":3,"visual_strength":3},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"HOY 7 PM: K-POP EN CDMX","score":95},
-        {"type":"HARD_NUMBER","text":"12 SEP · 7 PM · CDMX","score":93},
-        {"type":"FOMO_URGENCY","text":"HOY: K-POP A LA LUZ DE VELAS","score":94},
-        {"type":"FAN_IDENTITY","text":"FANS K-POP CDMX: PLAN PARA HOY","score":90},
-        {"type":"CURIOSITY_CONTRAST","text":"¿K-POP CON CUARTETO DE CUERDAS?","score":96}
-      ],
-      "winning_hook":"¿K-POP CON CUARTETO DE CUERDAS?",
-      "winning_hook_type":"CURIOSITY_CONTRAST",
-      "discovered_at":"2026-09-12T22:00:00+09:00",
-      "event_time":"2026-09-12T19:00:00-06:00",
-      "source_urls":[
-        "https://cdmxsecreta.com/en/reasons-candlelight-cdmx-en/",
-        "https://festscanner.com/en/event/candlelight-lo-mejor-de-k-pop-mexico-city-2026-09-12"
-      ],
-      "mexico_relevance_reason":"오늘 저녁 CDMX에서 열리는 K-pop 현지 이벤트로 시간·장소·가격/티켓 확인이 실제 행동으로 이어질 수 있다.",
-      "follow_reason":"현지 K-pop 이벤트 큐레이션이라는 계정 가치와 연결되지만 아이돌 직접 출연이 아닌 트리뷰트 공연이라 장기 후속성은 중간 수준이다.",
-      "verified_at":"2026-09-12T22:00:00+09:00",
-      "v3_status":"CANDIDATE"
+      "hook_trials":[{"type":"MEXICO_UTILITY","text":"HOY 7 PM: K-POP EN CDMX","score":95},{"type":"HARD_NUMBER","text":"12 SEP · 7 PM · CDMX","score":93},{"type":"FOMO_URGENCY","text":"HOY: K-POP A LA LUZ DE VELAS","score":94},{"type":"FAN_IDENTITY","text":"FANS K-POP CDMX: PLAN PARA HOY","score":90},{"type":"CURIOSITY_CONTRAST","text":"¿K-POP CON CUARTETO DE CUERDAS?","score":96}],
+      "winning_hook":"¿K-POP CON CUARTETO DE CUERDAS?","winning_hook_type":"CURIOSITY_CONTRAST","discovered_at":"2026-09-12T22:00:00+09:00","event_time":"2026-09-12T19:00:00-06:00","source_urls":["https://cdmxsecreta.com/en/reasons-candlelight-cdmx-en/"],"mexico_relevance_reason":"오늘 저녁 CDMX 현지 K-pop 이벤트.","follow_reason":"현지 이벤트 큐레이션 가치가 있으나 후속성은 중간.","verified_at":"2026-09-12T22:00:00+09:00","v3_status":"CANDIDATE"
     },
     {
-      "news_id":"STRAYKIDS-ROCKINRIO-RESULT-20260912",
-      "artist":"Stray Kids",
-      "headline_ko":"Stray Kids가 Rock in Rio 첫 K-pop 중심일 메인 무대를 마무리했고 대규모 관객과 라이브 밴드 무대로 보도됨",
-      "topic_type":"LATAM_TOUR",
-      "base_score":75,
-      "performance_adjustment":0,
-      "diversity_penalty":0,
-      "final_score":75,
-      "score_breakdown_v3":{"freshness":15,"mexico_relevance":8,"mexico_utility":6,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":9,"share_potential":4,"comment_potential":4,"visual_strength":5},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"STAY LATAM: ASÍ CERRÓ ROCK IN RIO","score":85},
-        {"type":"HARD_NUMBER","text":"90 MINUTOS DE STRAY KIDS EN RIO","score":90},
-        {"type":"FOMO_URGENCY","text":"STRAY KIDS ACABA DE TOMAR RIO","score":88},
-        {"type":"FAN_IDENTITY","text":"STAY LATAM: RIO GRITÓ STRAY KIDS","score":89},
-        {"type":"CURIOSITY_CONTRAST","text":"¿K-POP CON BANDA EN ROCK IN RIO?","score":92}
-      ],
-      "winning_hook":"¿K-POP CON BANDA EN ROCK IN RIO?",
-      "winning_hook_type":"CURIOSITY_CONTRAST",
-      "discovered_at":"2026-09-12T16:00:00+09:00",
-      "event_time":"2026-09-11T00:05:00-03:00",
-      "source_urls":[
-        "https://www.uol.com.br/toca/noticias/2026/09/12/stray-kids-fecha-dia-de-k-pop-no-rock-in-rio-com-show-lotado-e-ensurdecedor.ghtm",
-        "https://www1.folha.uol.com.br/ilustrada/2026/09/stray-kids-faz-show-mais-contido-no-dia-de-k-pop-no-rock-in-rio-marcado-por-aglomeracoes.shtml"
-      ],
-      "mexico_relevance_reason":"LATAM 대형 K-pop 무대라 멕시코 STAY 관심은 높지만 멕시코에서 바로 행동할 정보는 아니다.",
-      "follow_reason":"공연 사진·클립·세트리스트 후속은 가능하지만 멕시코 직접 일정이 아니어서 팔로우 이유는 중간 수준이다.",
-      "verified_at":"2026-09-12T22:00:00+09:00",
-      "v3_status":"CANDIDATE"
+      "news_id":"STRAYKIDS-ROCKINRIO-RESULT-20260912","artist":"Stray Kids","headline_ko":"Stray Kids Rock in Rio 공연 결과","topic_type":"LATAM_TOUR","base_score":75,"performance_adjustment":0,"diversity_penalty":0,"final_score":75,"score_breakdown_v3":{"freshness":15,"mexico_relevance":8,"mexico_utility":6,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":9,"share_potential":4,"comment_potential":4,"visual_strength":5},"hook_trials":[{"type":"MEXICO_UTILITY","text":"STAY LATAM: ASÍ CERRÓ ROCK IN RIO","score":85},{"type":"HARD_NUMBER","text":"90 MINUTOS DE STRAY KIDS EN RIO","score":90},{"type":"FOMO_URGENCY","text":"STRAY KIDS ACABA DE TOMAR RIO","score":88},{"type":"FAN_IDENTITY","text":"STAY LATAM: RIO GRITÓ STRAY KIDS","score":89},{"type":"CURIOSITY_CONTRAST","text":"¿K-POP CON BANDA EN ROCK IN RIO?","score":92}],"winning_hook":"¿K-POP CON BANDA EN ROCK IN RIO?","winning_hook_type":"CURIOSITY_CONTRAST","discovered_at":"2026-09-12T16:00:00+09:00","event_time":"2026-09-11T00:05:00-03:00","source_urls":["https://www.uol.com.br/toca/noticias/2026/09/12/stray-kids-fecha-dia-de-k-pop-no-rock-in-rio-com-show-lotado-e-ensurdecedor.ghtm"],"mexico_relevance_reason":"LATAM 관심은 높지만 멕시코 직접 정보 아님.","follow_reason":"후속은 가능하나 멕시코 직접성 낮음.","verified_at":"2026-09-12T22:00:00+09:00","v3_status":"CANDIDATE"
     },
     {
-      "news_id":"ROSE-NEWTRICK-ANNOUNCED-20260910",
-      "artist":"ROSÉ",
-      "headline_ko":"ROSÉ 새 싱글 'new trick' 9월 17일 공개 예정",
-      "topic_type":"RELEASE",
-      "base_score":76,
-      "performance_adjustment":0,
-      "diversity_penalty":1,
-      "final_score":75,
-      "score_breakdown_v3":{"freshness":13,"mexico_relevance":6,"mexico_utility":8,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":12,"share_potential":4,"comment_potential":4,"visual_strength":5},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"ROSÉ: 17 SEP, 5 PM EN CDMX","score":94},
-        {"type":"HARD_NUMBER","text":"17 SEP · 5 PM CDMX","score":91},
-        {"type":"FOMO_URGENCY","text":"FALTAN 5 DÍAS PARA NEW TRICK","score":88},
-        {"type":"FAN_IDENTITY","text":"BLINK MÉXICO: ROSÉ YA TIENE FECHA","score":90},
-        {"type":"CURIOSITY_CONTRAST","text":"¿UN MV ENTERO GRABADO EN IPHONE?","score":92}
-      ],
-      "winning_hook":"ROSÉ: 17 SEP, 5 PM EN CDMX",
-      "winning_hook_type":"MEXICO_UTILITY",
-      "discovered_at":"2026-09-10T16:00:00+09:00",
-      "event_time":"2026-09-17T17:00:00-06:00",
-      "source_urls":["https://www.vogue.com/article/rose-shares-the-story-behind-new-trick"],
-      "mexico_relevance_reason":"글로벌 발매 뉴스지만 CDMX 현지 공개 시각을 제공할 수 있어 제한적 실용성이 있다.",
-      "follow_reason":"공개 전 티저와 발매 당일 MV·스트리밍 후속 콘텐츠가 이어질 수 있다.",
-      "verified_at":"2026-09-12T22:00:00+09:00",
-      "v3_status":"CANDIDATE"
+      "news_id":"ROSE-NEWTRICK-ANNOUNCED-20260910","artist":"ROSÉ","headline_ko":"ROSÉ 새 싱글 'new trick' 9월 17일 공개 예정","topic_type":"RELEASE","base_score":76,"performance_adjustment":0,"diversity_penalty":1,"final_score":75,"score_breakdown_v3":{"freshness":13,"mexico_relevance":6,"mexico_utility":8,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":12,"share_potential":4,"comment_potential":4,"visual_strength":5},"hook_trials":[{"type":"MEXICO_UTILITY","text":"ROSÉ: 17 SEP, 5 PM EN CDMX","score":94},{"type":"HARD_NUMBER","text":"17 SEP · 5 PM CDMX","score":91},{"type":"FOMO_URGENCY","text":"FALTAN 5 DÍAS PARA NEW TRICK","score":88},{"type":"FAN_IDENTITY","text":"BLINK MÉXICO: ROSÉ YA TIENE FECHA","score":90},{"type":"CURIOSITY_CONTRAST","text":"¿UN MV ENTERO GRABADO EN IPHONE?","score":92}],"winning_hook":"ROSÉ: 17 SEP, 5 PM EN CDMX","winning_hook_type":"MEXICO_UTILITY","discovered_at":"2026-09-10T16:00:00+09:00","event_time":"2026-09-17T17:00:00-06:00","source_urls":["https://www.vogue.com/article/rose-shares-the-story-behind-new-trick"],"mexico_relevance_reason":"글로벌 발매에 CDMX 현지 시각 제공 가능.","follow_reason":"티저와 발매 당일 후속 가능.","verified_at":"2026-09-12T22:00:00+09:00","v3_status":"CANDIDATE"
     },
     {
-      "news_id":"LISA-FALLON-20260916-ANNOUNCED",
-      "artist":"LISA",
-      "headline_ko":"LISA 9월 16일 The Tonight Show 출연 예정",
-      "topic_type":"OFFICIAL_ANNOUNCEMENT",
-      "base_score":68,
-      "performance_adjustment":0,
-      "diversity_penalty":0,
-      "final_score":68,
-      "score_breakdown_v3":{"freshness":11,"mexico_relevance":5,"mexico_utility":6,"mexico_fandom_interest":9,"winning_hook":13,"follow_score":10,"share_potential":4,"comment_potential":4,"visual_strength":6},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"LISA EN TV: 9:35 PM CDMX","score":87},
-        {"type":"HARD_NUMBER","text":"16 SEP · 9:35 PM CDMX","score":84},
-        {"type":"FOMO_URGENCY","text":"LISA LLEGA A FALLON EL 16","score":85},
-        {"type":"FAN_IDENTITY","text":"LILIES MÉXICO: LISA VA A FALLON","score":88},
-        {"type":"CURIOSITY_CONTRAST","text":"¿QUÉ CONTARÁ LISA EN FALLON?","score":86}
-      ],
-      "winning_hook":"LILIES MÉXICO: LISA VA A FALLON",
-      "winning_hook_type":"FAN_IDENTITY",
-      "discovered_at":"2026-09-10T16:00:00+09:00",
-      "event_time":"2026-09-16T21:35:00-06:00",
-      "source_urls":["https://www.musicmundial.com/en/blackpinks-lisa-set-to-guest-on-the-tonight-show-next-week/"],
-      "mexico_relevance_reason":"멕시코 직접 뉴스는 아니지만 현지 시청 시간을 제공할 수 있다.",
-      "follow_reason":"방송 직후 발언과 음악 관련 후속 업데이트 가능성이 있다.",
-      "verified_at":"2026-09-12T16:00:00+09:00",
-      "v3_status":"CANDIDATE"
+      "news_id":"LISA-FALLON-20260916-ANNOUNCED","artist":"LISA","headline_ko":"LISA 9월 16일 The Tonight Show 출연 예정","topic_type":"OFFICIAL_ANNOUNCEMENT","base_score":68,"performance_adjustment":0,"diversity_penalty":0,"final_score":68,"score_breakdown_v3":{"freshness":11,"mexico_relevance":5,"mexico_utility":6,"mexico_fandom_interest":9,"winning_hook":13,"follow_score":10,"share_potential":4,"comment_potential":4,"visual_strength":6},"hook_trials":[{"type":"MEXICO_UTILITY","text":"LISA EN TV: 9:35 PM CDMX","score":87},{"type":"HARD_NUMBER","text":"16 SEP · 9:35 PM CDMX","score":84},{"type":"FOMO_URGENCY","text":"LISA LLEGA A FALLON EL 16","score":85},{"type":"FAN_IDENTITY","text":"LILIES MÉXICO: LISA VA A FALLON","score":88},{"type":"CURIOSITY_CONTRAST","text":"¿QUÉ CONTARÁ LISA EN FALLON?","score":86}],"winning_hook":"LILIES MÉXICO: LISA VA A FALLON","winning_hook_type":"FAN_IDENTITY","discovered_at":"2026-09-10T16:00:00+09:00","event_time":"2026-09-16T21:35:00-06:00","source_urls":["https://www.musicmundial.com/en/blackpinks-lisa-set-to-guest-on-the-tonight-show-next-week/"],"mexico_relevance_reason":"현지 시청 시간 제공 가능.","follow_reason":"방송 직후 후속 가능.","verified_at":"2026-09-12T16:00:00+09:00","v3_status":"CANDIDATE"
     }
   ]
 }
