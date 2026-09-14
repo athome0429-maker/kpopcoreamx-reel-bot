@@ -1,11 +1,11 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-14",
-  "last_updated_at": "2026-09-14T22:04:00+09:00",
+  "last_updated_at": "2026-09-15T04:08:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Recent valid insight snapshots still support a 0.5-0.6s first cut with artist/fandom + Mexico/CDMX + strongest concrete fact immediately. aespa performance data remains low-confidence; do not overfit.",
-  "selection_note": "22:00 KST scout only. No verified Mexico-direct breaking candidate reached the >=96 breaking threshold. New follow-up: aespa's four concert solo tracks were actually released at 18:00 KST on Sep 14, but Mexico utility/follow intent remain too weak for production. A fresh Stray Kids Billboard World Albums No.1 update was also found, but it is global chart news without direct Mexico utility. BTS ARIRANG cinema live-viewing was not re-added because no materially new official Mexico ticket-price, venue-list, Cinepolis sale-time or availability update was verified. STRAYCITY remains low availability on Ticketmaster Mexico, unchanged from the already-rendered Sep 9 event, so it is excluded as a duplicate status rather than treated as a new ticket update.",
+  "selection_note": "04:00 KST scout only. No verified Mexico-direct breaking candidate reached the >=96 threshold. Fresh searches found new coverage of Stray Kids' Rock in Rio crowd and the Buenos Aires STRAYCITY stop, but these are LATAM/global follow-ups without new Mexico-actionable information and duplicate the existing Stray Kids event thread. Ticketmaster Mexico still shows Sep 25 STRAYCITY as Poca disponibilidad, unchanged from the already-rendered ticket-status event. BTS ARIRANG cinema coverage still confirms Cinemex sale Sep 17 at 07:00 central Mexico time and Cinepolis participation, but no materially new official Cinepolis sale time, price, or complete theater list was verified; duplicate event remains excluded.",
   "candidates": [
     {
       "news_id": "ROSE-NEWTRICK-ANNOUNCED-20260910",
