@@ -1,11 +1,11 @@
 {
   "schema_version": "3.0",
   "mexico_date": "2026-09-13",
-  "last_updated_at": "2026-09-14T04:02:11+09:00",
-  "daily_render_limit_reached": false,
-  "daily_render_news_id": null,
+  "last_updated_at": "2026-09-14T10:08:15+09:00",
+  "daily_render_limit_reached": true,
+  "daily_render_news_id": "BTS-ARIRANG-LIVEVIEWING-MEXICO-ONSALE-20260917",
   "performance_rule_active": "Recent valid insight snapshots still support a 0.5-0.6s first cut with artist + CDMX/Mexico + strongest concrete fact immediately. aespa and Korea Spotlight samples remain low-confidence; do not overfit fandom/hook performance.",
-  "selection_note": "04:00 KST scout round. Fresh 24-48h review found no new officially confirmed direct-Mexico K-pop breaking item at the >=96 scout-render threshold. BTS ARIRANG Mexico cinema live viewing remains the strongest carry-forward candidate, now 94 after freshness decay. Trafalgar continues to confirm international live viewing from Buenos Aires on Oct 24 and Sao Paulo on Oct 30. Mexican coverage still reports Cinépolis and Cinemex participation; Cinemex specifically confirmed presale on Sep 17 at 07:00 Mexico central time, while Cinépolis sale timing remains pending. Do not state that both chains open sales at 07:00 unless Cinépolis officially confirms it before rendering.",
+  "selection_note": "10:00 KST final selection: BTS ARIRANG Mexico cinema live viewing selected and rendered. Final truth-safe framing: Cinemex presale Sep 17 at 07:00 Mexico central time; Cinépolis participates but its exact presale timing remains pending. Prices, precise showtimes and participating complexes are not yet fully confirmed. Render succeeded on retry after replacing low-resolution source images.",
   "candidates": [
     {
       "news_id": "BTS-ARIRANG-LIVEVIEWING-MEXICO-ONSALE-20260917",
@@ -18,133 +18,35 @@
       "final_score": 94,
       "score_breakdown_v3": {"freshness":11,"mexico_relevance":15,"mexico_utility":15,"mexico_fandom_interest":10,"winning_hook":15,"follow_score":15,"share_potential":5,"comment_potential":4,"visual_strength":5},
       "hook_trials": [
-        {"type":"MEXICO_UTILITY","text":"BTS EN CINES MX: VENTA 17 SEP","score":99},
+        {"type":"MEXICO_UTILITY","text":"BTS + CINEMEX: 17 SEP · 7 AM","score":99},
         {"type":"HARD_NUMBER","text":"17 SEP · 7 AM · CINEMEX","score":99},
         {"type":"FOMO_URGENCY","text":"CINEMEX BTS: VENTA 17 SEP","score":97},
         {"type":"FAN_IDENTITY","text":"ARMY MÉXICO: BTS VUELVE AL CINE","score":97},
         {"type":"CURIOSITY_CONTRAST","text":"¿BTS EN VIVO DESDE SUDAMÉRICA?","score":95}
       ],
-      "winning_hook":"BTS EN CINES MX: VENTA 17 SEP",
+      "winning_hook":"BTS + CINEMEX: 17 SEP · 7 AM",
       "winning_hook_type":"MEXICO_UTILITY",
       "discovered_at":"2026-09-13T10:53:00+09:00",
       "event_time":"2026-09-17T07:00:00-06:00",
       "source_urls":[
         "https://trafalgar-releasing.com/events/bts-world-tour-arirang-live-viewing-from-buenos-aires-sao-paulo/",
         "https://la-lista.com/entretenimiento/bts-y-su-gira-arirang-world-tour-llegara-a-cines-de-mexico-fechas-horarios-preventa-y-venta-de-boletos",
-        "https://www.e-consulta.com/nota/2026-09-10/entretenimiento/bts-llega-cines-de-puebla-con-dos-conciertos-de-su-gira-mundial"
+        "https://www.infobae.com/mexico/2026/09/13/bts-llega-a-los-cines-de-mexico-con-transmisiones-en-vivo-de-sus-conciertos-en-sudamerica-fechas-y-como-conseguir-boletos/"
       ],
-      "mexico_relevance_reason":"Trafalgar confirms international live viewing from Buenos Aires and São Paulo. Mexican coverage reports both Cinépolis and Cinemex participation; Cinemex specifically confirmed presale for 17 Sep at 07:00 Mexico central time, while Cinépolis sale timing remains pending in the latest detailed coverage.",
+      "mexico_relevance_reason":"멕시코에서 Cinépolis와 Cinemex 상영이 확인됐고, Cinemex는 9월 17일 07:00 멕시코 중부시간 예매 시작을 확인했다. Cinépolis 정확한 판매 시각은 아직 미정이다.",
       "follow_reason":"판매 전 알림, 참여 극장·가격·좌석·Cinépolis 판매일·판매 상태 후속 업데이트 가능성이 높아 지속 팔로우 이유가 강하다.",
-      "verified_at":"2026-09-14T04:02:11+09:00",
-      "v3_status":"TOP_CANDIDATE_CARRY_FORWARD"
+      "verified_at":"2026-09-14T10:08:30+09:00",
+      "v3_status":"RENDERED",
+      "workflow_run_id":34794872938,
+      "artifact_id":10329940465
     },
     {
-      "news_id":"STRAYKIDS-ROCKINRIO-RESULT-20260912",
-      "artist":"Stray Kids",
-      "headline_ko":"Stray Kids가 Rock in Rio의 첫 K-pop 헤드라이너로 공연을 마침",
-      "topic_type":"LATAM_TOUR",
-      "base_score":75,
-      "performance_adjustment":0,
-      "diversity_penalty":0,
-      "final_score":75,
-      "score_breakdown_v3":{"freshness":14,"mexico_relevance":8,"mexico_utility":6,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":9,"share_potential":5,"comment_potential":4,"visual_strength":5},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"STAY LATAM: ASÍ CERRÓ ROCK IN RIO","score":85},
-        {"type":"HARD_NUMBER","text":"1ER K-POP HEADLINER DE ROCK IN RIO","score":92},
-        {"type":"FOMO_URGENCY","text":"STRAY KIDS YA HIZO HISTORIA EN RIO","score":89},
-        {"type":"FAN_IDENTITY","text":"STAY LATAM: RIO GRITÓ STRAY KIDS","score":89},
-        {"type":"CURIOSITY_CONTRAST","text":"¿K-POP ENCABEZANDO ROCK IN RIO?","score":93}
-      ],
-      "winning_hook":"¿K-POP ENCABEZANDO ROCK IN RIO?",
-      "winning_hook_type":"CURIOSITY_CONTRAST",
-      "discovered_at":"2026-09-12T16:00:00+09:00",
-      "event_time":"2026-09-11T00:05:00-03:00",
-      "source_urls":["https://www.uol.com.br/toca/noticias/2026/09/12/stray-kids-fecha-dia-de-k-pop-no-rock-in-rio-com-show-lotado-e-ensurdecedor.ghtm","https://www1.folha.uol.com.br/ilustrada/2026/09/stray-kids-faz-show-mais-contido-no-dia-de-k-pop-no-rock-in-rio-marcado-por-aglomeracoes.shtml"],
-      "mexico_relevance_reason":"LATAM 관심은 높지만 멕시코 직접 행동 정보가 아니다.",
-      "follow_reason":"멕시코 STRAYCITY가 이어져 팬덤 연계는 가능하지만 이 뉴스 자체의 후속 팔로우 이유는 제한적이다.",
-      "verified_at":"2026-09-14T04:02:11+09:00",
-      "v3_status":"CANDIDATE"
-    },
+      "news_id":"STRAYKIDS-ROCKINRIO-RESULT-20260912","artist":"Stray Kids","headline_ko":"Stray Kids가 Rock in Rio의 첫 K-pop 헤드라이너로 공연을 마침","topic_type":"LATAM_TOUR","base_score":75,"performance_adjustment":0,"diversity_penalty":0,"final_score":75,"score_breakdown_v3":{"freshness":14,"mexico_relevance":8,"mexico_utility":6,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":9,"share_potential":5,"comment_potential":4,"visual_strength":5},"hook_trials":[{"type":"MEXICO_UTILITY","text":"STAY LATAM: ASÍ CERRÓ ROCK IN RIO","score":85},{"type":"HARD_NUMBER","text":"1ER K-POP HEADLINER DE ROCK IN RIO","score":92},{"type":"FOMO_URGENCY","text":"STRAY KIDS YA HIZO HISTORIA EN RIO","score":89},{"type":"FAN_IDENTITY","text":"STAY LATAM: RIO GRITÓ STRAY KIDS","score":89},{"type":"CURIOSITY_CONTRAST","text":"¿K-POP ENCABEZANDO ROCK IN RIO?","score":93}],"winning_hook":"¿K-POP ENCABEZANDO ROCK IN RIO?","winning_hook_type":"CURIOSITY_CONTRAST","discovered_at":"2026-09-12T16:00:00+09:00","event_time":"2026-09-11T00:05:00-03:00","source_urls":["https://www.uol.com.br/toca/noticias/2026/09/12/stray-kids-fecha-dia-de-k-pop-no-rock-in-rio-com-show-lotado-e-ensurdecedor.ghtm"],"mexico_relevance_reason":"LATAM 관심은 높지만 멕시코 직접 행동 정보가 아니다.","follow_reason":"팬덤 연계는 가능하지만 이 뉴스 자체의 후속 팔로우 이유는 제한적이다.","verified_at":"2026-09-14T04:02:11+09:00","v3_status":"CANDIDATE"},
     {
-      "news_id":"ROSE-NEWTRICK-ANNOUNCED-20260910",
-      "artist":"ROSÉ",
-      "headline_ko":"ROSÉ 새 싱글 'new trick' 9월 17일 공개 예정",
-      "topic_type":"RELEASE",
-      "base_score":76,
-      "performance_adjustment":0,
-      "diversity_penalty":1,
-      "final_score":75,
-      "score_breakdown_v3":{"freshness":12,"mexico_relevance":6,"mexico_utility":8,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":12,"share_potential":5,"comment_potential":4,"visual_strength":5},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"ROSÉ: 17 SEP, 5 PM EN CDMX","score":94},
-        {"type":"HARD_NUMBER","text":"17 SEP · 5 PM CDMX","score":91},
-        {"type":"FOMO_URGENCY","text":"FALTAN 4 DÍAS PARA NEW TRICK","score":89},
-        {"type":"FAN_IDENTITY","text":"BLINK MÉXICO: ROSÉ YA TIENE FECHA","score":90},
-        {"type":"CURIOSITY_CONTRAST","text":"¿UN MV ENTERO GRABADO EN IPHONE?","score":92}
-      ],
-      "winning_hook":"ROSÉ: 17 SEP, 5 PM EN CDMX",
-      "winning_hook_type":"MEXICO_UTILITY",
-      "discovered_at":"2026-09-10T16:00:00+09:00",
-      "event_time":"2026-09-17T17:00:00-06:00",
-      "source_urls":["https://www.vogue.com/article/rose-shares-the-story-behind-new-trick"],
-      "mexico_relevance_reason":"글로벌 발매에 CDMX 현지 시각을 제공할 수 있으나 멕시코 전용 정보는 아니다.",
-      "follow_reason":"티저와 발매 당일 후속 가능성이 있어 중간 수준의 팔로우 이유가 있다.",
-      "verified_at":"2026-09-13T16:00:00+09:00",
-      "v3_status":"CANDIDATE"
-    },
+      "news_id":"ROSE-NEWTRICK-ANNOUNCED-20260910","artist":"ROSÉ","headline_ko":"ROSÉ 새 싱글 'new trick' 9월 17일 공개 예정","topic_type":"RELEASE","base_score":76,"performance_adjustment":0,"diversity_penalty":1,"final_score":75,"score_breakdown_v3":{"freshness":12,"mexico_relevance":6,"mexico_utility":8,"mexico_fandom_interest":10,"winning_hook":14,"follow_score":12,"share_potential":5,"comment_potential":4,"visual_strength":5},"hook_trials":[{"type":"MEXICO_UTILITY","text":"ROSÉ: 17 SEP, 5 PM EN CDMX","score":94},{"type":"HARD_NUMBER","text":"17 SEP · 5 PM CDMX","score":91},{"type":"FOMO_URGENCY","text":"FALTAN 4 DÍAS PARA NEW TRICK","score":89},{"type":"FAN_IDENTITY","text":"BLINK MÉXICO: ROSÉ YA TIENE FECHA","score":90},{"type":"CURIOSITY_CONTRAST","text":"¿UN MV ENTERO GRABADO EN IPHONE?","score":92}],"winning_hook":"ROSÉ: 17 SEP, 5 PM EN CDMX","winning_hook_type":"MEXICO_UTILITY","discovered_at":"2026-09-10T16:00:00+09:00","event_time":"2026-09-17T17:00:00-06:00","source_urls":["https://www.vogue.com/article/rose-shares-the-story-behind-new-trick"],"mexico_relevance_reason":"글로벌 발매에 CDMX 현지 시각을 제공할 수 있으나 멕시코 전용 정보는 아니다.","follow_reason":"티저와 발매 당일 후속 가능성이 있어 중간 수준이다.","verified_at":"2026-09-13T16:00:00+09:00","v3_status":"CANDIDATE"},
     {
-      "news_id":"AESPA-SOLO-DIGITAL-SINGLE-20260912",
-      "artist":"aespa",
-      "headline_ko":"aespa 멤버 4인의 솔로곡을 담은 디지털 싱글 공개 예고",
-      "topic_type":"RELEASE",
-      "base_score":72,
-      "performance_adjustment":0,
-      "diversity_penalty":0,
-      "final_score":72,
-      "score_breakdown_v3":{"freshness":14,"mexico_relevance":5,"mexico_utility":5,"mexico_fandom_interest":9,"winning_hook":13,"follow_score":10,"share_potential":5,"comment_potential":5,"visual_strength":6},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"MY MÉXICO: 4 SOLOS DE AESPA","score":84},
-        {"type":"HARD_NUMBER","text":"4 MIEMBROS · 4 SOLOS","score":91},
-        {"type":"FOMO_URGENCY","text":"AESPA PREPARA 4 SOLOS OFICIALES","score":86},
-        {"type":"FAN_IDENTITY","text":"MY: ¿QUÉ SOLO ESPERAS MÁS?","score":89},
-        {"type":"CURIOSITY_CONTRAST","text":"¿AESPA SIN CANCIÓN GRUPAL?","score":88}
-      ],
-      "winning_hook":"4 MIEMBROS · 4 SOLOS",
-      "winning_hook_type":"HARD_NUMBER",
-      "discovered_at":"2026-09-13T16:00:00+09:00",
-      "event_time":null,
-      "source_urls":["https://en.yna.co.kr/view/AEN20260911002300315"],
-      "mexico_relevance_reason":"멕시코 전용 정보는 아니지만 aespa 멕시코 팬덤 관심은 높다.",
-      "follow_reason":"발매 후 반응·차트 후속은 가능하나 현지 실용 정보가 약하다.",
-      "verified_at":"2026-09-13T16:00:00+09:00",
-      "v3_status":"CANDIDATE"
-    },
+      "news_id":"AESPA-SOLO-DIGITAL-SINGLE-20260912","artist":"aespa","headline_ko":"aespa 멤버 4인의 솔로곡을 담은 디지털 싱글 공개 예고","topic_type":"RELEASE","base_score":72,"performance_adjustment":0,"diversity_penalty":0,"final_score":72,"score_breakdown_v3":{"freshness":14,"mexico_relevance":5,"mexico_utility":5,"mexico_fandom_interest":9,"winning_hook":13,"follow_score":10,"share_potential":5,"comment_potential":5,"visual_strength":6},"hook_trials":[{"type":"MEXICO_UTILITY","text":"MY MÉXICO: 4 SOLOS DE AESPA","score":84},{"type":"HARD_NUMBER","text":"4 MIEMBROS · 4 SOLOS","score":91},{"type":"FOMO_URGENCY","text":"AESPA PREPARA 4 SOLOS OFICIALES","score":86},{"type":"FAN_IDENTITY","text":"MY: ¿QUÉ SOLO ESPERAS MÁS?","score":89},{"type":"CURIOSITY_CONTRAST","text":"¿AESPA SIN CANCIÓN GRUPAL?","score":88}],"winning_hook":"4 MIEMBROS · 4 SOLOS","winning_hook_type":"HARD_NUMBER","discovered_at":"2026-09-13T16:00:00+09:00","event_time":null,"source_urls":["https://en.yna.co.kr/view/AEN20260911002300315"],"mexico_relevance_reason":"멕시코 전용 정보는 아니지만 aespa 멕시코 팬덤 관심은 높다.","follow_reason":"발매 후 반응·차트 후속은 가능하나 현지 실용 정보가 약하다.","verified_at":"2026-09-13T16:00:00+09:00","v3_status":"CANDIDATE"},
     {
-      "news_id":"JISOO-CLICK-GENIUS-ACAPELLA-20260913",
-      "artist":"JISOO",
-      "headline_ko":"JISOO가 Genius 콘텐츠에서 'Click'을 아카펠라로 선보인 영상이 화제",
-      "topic_type":"MEMBER_UPDATE",
-      "base_score":61,
-      "performance_adjustment":0,
-      "diversity_penalty":0,
-      "final_score":61,
-      "score_breakdown_v3":{"freshness":15,"mexico_relevance":4,"mexico_utility":2,"mexico_fandom_interest":9,"winning_hook":12,"follow_score":6,"share_potential":5,"comment_potential":4,"visual_strength":4},
-      "hook_trials":[
-        {"type":"MEXICO_UTILITY","text":"JISOO: CLICK A CAPELA","score":76},
-        {"type":"HARD_NUMBER","text":"1 VOZ · CERO INSTRUMENTAL","score":82},
-        {"type":"FOMO_URGENCY","text":"JISOO CANTA CLICK SIN PISTA","score":80},
-        {"type":"FAN_IDENTITY","text":"BLINK: ¿YA OÍSTE A JISOO?","score":83},
-        {"type":"CURIOSITY_CONTRAST","text":"¿CLICK SIN MÚSICA? JISOO LO HIZO","score":86}
-      ],
-      "winning_hook":"¿CLICK SIN MÚSICA? JISOO LO HIZO",
-      "winning_hook_type":"CURIOSITY_CONTRAST",
-      "discovered_at":"2026-09-13T16:00:00+09:00",
-      "event_time":null,
-      "source_urls":["https://www.koreaboo.com/news/blackpink-jisoo-raw-vocals-heated-reactions/"],
-      "mexico_relevance_reason":"BLACKPINK 팬덤 관심은 있으나 멕시코 직접 관련성이 없다.",
-      "follow_reason":"일회성 바이럴 콘텐츠라 지속 팔로우 이유가 약하다.",
-      "verified_at":"2026-09-13T16:00:00+09:00",
-      "v3_status":"CANDIDATE"
-    }
+      "news_id":"JISOO-CLICK-GENIUS-ACAPELLA-20260913","artist":"JISOO","headline_ko":"JISOO가 Genius 콘텐츠에서 'Click'을 아카펠라로 선보인 영상이 화제","topic_type":"MEMBER_UPDATE","base_score":61,"performance_adjustment":0,"diversity_penalty":0,"final_score":61,"score_breakdown_v3":{"freshness":15,"mexico_relevance":4,"mexico_utility":2,"mexico_fandom_interest":9,"winning_hook":12,"follow_score":6,"share_potential":5,"comment_potential":4,"visual_strength":4},"hook_trials":[{"type":"MEXICO_UTILITY","text":"JISOO: CLICK A CAPELA","score":76},{"type":"HARD_NUMBER","text":"1 VOZ · CERO INSTRUMENTAL","score":82},{"type":"FOMO_URGENCY","text":"JISOO CANTA CLICK SIN PISTA","score":80},{"type":"FAN_IDENTITY","text":"BLINK: ¿YA OÍSTE A JISOO?","score":83},{"type":"CURIOSITY_CONTRAST","text":"¿CLICK SIN MÚSICA? JISOO LO HIZO","score":86}],"winning_hook":"¿CLICK SIN MÚSICA? JISOO LO HIZO","winning_hook_type":"CURIOSITY_CONTRAST","discovered_at":"2026-09-13T16:00:00+09:00","event_time":null,"source_urls":["https://www.koreaboo.com/news/blackpink-jisoo-raw-vocals-heated-reactions/"],"mexico_relevance_reason":"BLACKPINK 팬덤 관심은 있으나 멕시코 직접 관련성이 없다.","follow_reason":"일회성 바이럴 콘텐츠라 지속 팔로우 이유가 약하다.","verified_at":"2026-09-13T16:00:00+09:00","v3_status":"CANDIDATE"}
   ]
 }
