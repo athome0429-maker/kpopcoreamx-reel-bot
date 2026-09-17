@@ -1,26 +1,26 @@
 {
   "schema_version": "3.1-testing",
-  "last_updated_at": "2026-09-17T22:00:00+09:00",
+  "last_updated_at": "2026-09-18T04:00:00+09:00",
   "run_type": "research_accumulation",
   "news_best": {
     "id": "ROSE-NEWTRICK-RELEASE-20260918",
     "artist": "ROSÉ",
-    "headline_ko": "ROSÉ 'new trick'이 9월 18일 08:00 KST 공개 예정; 멕시코시티 기준 9월 17일 17:00",
+    "headline_ko": "ROSÉ 'new trick'은 9월 18일 08:00 KST 공개 예정; 멕시코시티 기준 9월 17일 17:00. MV는 Dave Meyers 연출, iPhone 18 Pro 촬영.",
     "estimated_score": 84,
-    "status": "BELOW_NEWS_THRESHOLD",
+    "status": "BELOW_NEWS_THRESHOLD_PRE_RELEASE",
     "hook": "BLINK MÉXICO: NEW TRICK HOY 5 PM",
-    "mexico_reason": "멕시코 현지 공개 시각이라는 실용 정보가 추가됐지만 글로벌 싱글 발매이며 멕시코 전용 이벤트/티켓/접근 정보는 아님.",
-    "follow_reason": "공개 직후 MV 반응·차트 후속 추적은 가능하지만 현재 공지는 일회성 릴리스 성격이 강함.",
+    "mexico_reason": "멕시코 현지 공개 시각은 실용적이지만 글로벌 싱글 발매이며 멕시코 전용 이벤트·티켓·접근 정보는 확인되지 않음.",
+    "follow_reason": "공개 직후 MV 반응·차트 후속 추적은 가능하지만 현재 단계는 일회성 릴리스 성격이 강함.",
     "sources": [
-      "https://en.sedaily.com/news/2026/09/10/rose-teams-with-apple-for-new-single-shot-entirely-on-iphone",
       "https://billboardphilippines.com/music/news/rose-announces-new-single-new-trick/",
-      "https://www.vogue.com/article/rose-shares-the-story-behind-new-trick"
+      "https://www.vogue.com/article/rose-shares-the-story-behind-new-trick",
+      "https://www.melodicmag.com/news/rose-to-release-new-single-new-trick-in-partnership-with-apple/"
     ]
   },
   "viral_best": {
     "id": "JUNGKOOK-CK-FEELTHEFIT-20260916",
     "artist": "BTS / Jung Kook",
-    "moment_ko": "Calvin Klein이 9월 16일 Jung Kook의 Fall 2026 Feel The Fit 캠페인을 공개. 지퍼 소리가 비트로 전환되고 Jung Kook이 춤추는 공식 영상이며, 9월 17일 복수 매체가 공개 직후 글로벌 소셜 반응과 확산을 보도함.",
+    "moment_ko": "Calvin Klein이 9월 16일 Jung Kook의 Fall 2026 Feel The Fit 캠페인을 공개했고 9월 17일 새 보도들이 글로벌 소셜 확산을 확인. 공식 캠페인 기반의 신선한 바이럴 신호는 유지되지만 새 Mexico/LatAm 직접 연결은 확인되지 않음.",
     "estimated_score": 88,
     "score_breakdown": {
       "viral_velocity": 18,
@@ -33,21 +33,20 @@
     },
     "status": "STRONG_FRESH_VIRAL_BUT_BELOW_90_TESTING_THRESHOLD",
     "hook": "ARMY MÉXICO: ¿LO RECONOCISTE SIN VER SU CARA?",
-    "mexico_reason": "멕시코 ARMY 팬덤 관심은 매우 높지만 현재 캠페인 자체에 멕시코 전용 일정·장소·행동 정보가 확인되지 않아 Mexico Bridge가 제한됨.",
-    "follow_reason": "강한 팬 감정과 공유성은 있으나 @kpopcoreamx를 계속 팔로우해야 할 멕시코 후속 정보 약속은 약함.",
-    "dm_share_test": "PASS — 얼굴 공개 전 ARMY 타투만으로 Jung Kook을 알아보는 장치와 춤/음악이 팬끼리 보내기 쉬운 순간을 만듦.",
+    "mexico_reason": "멕시코 ARMY 관심은 높지만 캠페인 자체에 멕시코 전용 일정·장소·행동 정보가 없어 Mexico Bridge를 추가 상향할 근거가 없음.",
+    "follow_reason": "팬 감정·공유성은 강하지만 @kpopcoreamx를 계속 팔로우해야 할 멕시코 후속 정보 약속은 약함.",
+    "dm_share_test": "PASS — 얼굴 공개 전 ARMY 타투로 알아보는 장치와 움직임 중심 영상이 팬 간 공유에 적합.",
     "sources": [
-      "https://www.pvh.com/news/calvin-klein-fall-2026-jung-kook",
-      "https://www.starnewskorea.com/en/music/2026/09/17/2026091717425345838",
+      "https://www.tribuneindia.com/news/business/calvin-klein-launches-third-chapter-of-fall-2026-feel-the-fit-denim-campaign-with-jung-kook-of-bts-2-2/",
       "https://kz.kursiv.media/en/2026-09-17/engk-tank-btss-jungkook-goes-viral-with-new-calvin-klein-campaign/"
     ]
   },
   "decision": "NO_RENDER",
-  "decision_reason": "Research accumulation run. No verified Mexico-direct breaking candidate passed the exception. ROSÉ improves to about 84 with a verified Mexico City release time but remains below the NEWS threshold. Jung Kook is a genuinely fresh official-source viral candidate and a better second-fandom test prospect than recycling Felix, but the natural Mexico bridge and follow-conversion reason are not strong enough to clear the VIRAL testing threshold of 90. Preserve both for the next final-selection/research cycle and re-evaluate only if fresh Mexico relevance or stronger current velocity appears.",
+  "decision_reason": "04:00 KST research accumulation. Fresh 24-48h search found no verified Mexico-direct breaking candidate that clears the active exception. ROSÉ remains about 84 before release, below NEWS 88. Jung Kook remains the strongest fresh Viral Test #2 prospect at about 88, below VIRAL 90 because no new natural Mexico bridge or follow-conversion reason was verified. Do not inflate scores or fill a second-post slot. Re-evaluate ROSÉ after the scheduled release and continue searching other fandoms.",
   "next_research_priority": [
-    "After ROSÉ releases, measure whether the official MV itself shows fresh viral velocity and whether a Mexico-specific reaction/utility angle emerges.",
-    "Recheck Jung Kook only if a fresh Mexico/LatAm signal or substantially stronger velocity signal appears; do not inflate Mexico Bridge merely because BTS has a large Mexican fandom.",
+    "After ROSÉ releases at 08:00 KST, check the official MV for actual fresh velocity rather than assuming virality from pre-release attention.",
+    "Recheck Jung Kook only if a fresh Mexico/LatAm signal or substantially stronger velocity signal appears.",
     "Continue searching ENHYPEN, SEVENTEEN, TXT, TWICE and aespa for Viral Test #2 candidates with stronger natural Mexico bridges.",
-    "Do not reuse Felix/Jamal as another Reel during the validation window."
+    "Do not reuse Felix/Jamal during the validation window."
   ]
 }
