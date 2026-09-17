@@ -9,46 +9,19 @@
       "source_priority": "official first-party sources, ticketing, promoters, charts, broadcasters and reliable media",
       "candidate_scoring": "use the existing v3.0 scoring and hook competition unchanged",
       "production_style": "utility-first news Reel",
-      "default_mix": {
-        "mexico_utility": 60,
-        "fan_emotion": 25,
-        "cta": 15
-      }
+      "default_mix": {"mexico_utility": 60, "fan_emotion": 25, "cta": 15}
     },
     "VIRAL": {
       "research_window_hours": 24,
       "expand_to_hours": 48,
       "priority_artists": ["BTS", "Stray Kids", "BLACKPINK", "ENHYPEN", "SEVENTEEN", "TXT", "TWICE", "aespa"],
-      "candidate_scoring": {
-        "viral_velocity": 20,
-        "fan_emotion": 15,
-        "mexico_bridge": 15,
-        "fandom_interest": 15,
-        "share_potential": 15,
-        "follow_potential": 10,
-        "source_and_remix_quality": 10,
-        "total": 100,
-        "testing_threshold": 90
-      },
-      "minimum_conditions": [
-        "The clip has a real current viral signal, not only a high historical view count.",
-        "There is a natural reason Mexican K-pop fans would care now.",
-        "There is enough verified context to add original Spanish/Mexico value instead of merely reposting.",
-        "The clip can plausibly produce stronger retention, shares or follows than a static card Reel."
-      ],
+      "candidate_scoring": {"viral_velocity": 20, "fan_emotion": 15, "mexico_bridge": 15, "fandom_interest": 15, "share_potential": 15, "follow_potential": 10, "source_and_remix_quality": 10, "total": 100, "testing_threshold": 90},
+      "minimum_conditions": ["The clip has a real current viral signal, not only a high historical view count.", "There is a natural reason Mexican K-pop fans would care now.", "There is enough verified context to add original Spanish/Mexico value instead of merely reposting.", "The clip can plausibly produce stronger retention, shares or follows than a static card Reel."],
       "dm_share_test": "Would a Mexican fan send this moment to another fan because it is funny, emotional, impressive, surprising, useful or directly connected to Mexico?",
       "production_style": {
         "principle": "Emotion-first hybrid: let the moment breathe, then add Mexico utility, then a short follow/comment CTA.",
-        "default_mix": {
-          "fan_emotion": 60,
-          "mexico_utility": 25,
-          "cta": 15
-        },
-        "duration_seconds": {
-          "short_one-hit_moment": "6-9",
-          "default_viral_moment": "8-15",
-          "emotional_or_on-site_moment": "10-20"
-        },
+        "default_mix": {"fan_emotion": 60, "mexico_utility": 25, "cta": 15},
+        "duration_seconds": {"short_one-hit_moment": "6-9", "default_viral_moment": "8-15", "emotional_or_on-site_moment": "10-20"},
         "do_not_force_news_5_cut_rule": true,
         "keep_source_audio_when_it_is_material_to_the_moment": true,
         "overlay_rule": "Use the minimum text needed. Do not cover the subject or turn the clip back into a moving card-news post.",
@@ -62,36 +35,40 @@
     "final_selection_kst": "10:00",
     "default_post_time_kst": "12:30",
     "default_post_time_cdmx": "21:30",
-    "max_reels_per_mexico_day": 1,
-    "rule": "At final selection, compare the strongest NEWS candidate and strongest VIRAL candidate. Produce only the stronger candidate when it passes its engine threshold and the shared quality gate. Do not force a post when both are weak.",
-    "shared_quality_gate": [
-      "truth and source verification pass",
-      "clear Mexican-fan relevance",
-      "clear reason to stop watching",
-      "clear DM/share or practical value",
-      "plausible reason to follow @kpopcoreamx"
-    ]
+    "publishing_model": "1_plus_1_conditional",
+    "base_reels_per_mexico_day": 1,
+    "absolute_max_reels_per_mexico_day": 2,
+    "minimum_gap_between_reels_hours": 8,
+    "rule": "At final selection, compare the strongest NEWS and VIRAL candidates and produce at most one base Reel when the winner passes its engine threshold and the shared quality gate. Do not force a post when both are weak. A second Exceptional Reel is allowed later in the same Mexico day only when it independently clears the exceptional gate; never produce it merely to fill a second slot.",
+    "exceptional_second_reel_gate": {
+      "must_pass_all": true,
+      "requirements": [
+        "The second candidate independently passes its engine's normal publishing/testing threshold and the shared quality gate.",
+        "It is materially distinct from the first Reel in engine, story, artist/fandom or viewer value; prefer a different engine and avoid same-fandom duplication during validation.",
+        "There is a fresh velocity, breaking-news, Mexico-direct, or short-lived relevance signal such that waiting until the next Mexico day would materially reduce value.",
+        "At least 8 hours have elapsed since the first Reel unless a verified Mexico-direct breaking case satisfies the active breaking exception.",
+        "It has a strong DM/share rationale and a plausible follow-conversion reason, not merely expected views.",
+        "Publishing it will not interfere with collecting a clean validation sample from an immediately preceding Viral test."
+      ],
+      "never_use_as_reason": "We have posted only one Reel today, so we should fill the second slot."
+    },
+    "shared_quality_gate": ["truth and source verification pass", "clear Mexican-fan relevance", "clear reason to stop watching", "clear DM/share or practical value", "plausible reason to follow @kpopcoreamx"]
   },
   "validation_phase": {
     "duration_days": 7,
     "target_viral_tests": 3,
     "avoid_single_fandom_overfit": true,
-    "test_1": {
-      "artist": "Stray Kids / Felix",
-      "format": "emotion-first hybrid with Mexico bridge and source audio retained",
-      "status": "posted_or_ready_for_posting_2026-09-17"
+    "test_1": {"artist": "Stray Kids / Felix", "format": "emotion-first hybrid with Mexico bridge and source audio retained", "status": "posted_or_ready_for_posting_2026-09-17"},
+    "conditional_1_plus_1_test": {
+      "status": "active_during_validation",
+      "purpose": "Increase high-quality testing opportunities without turning volume into a quota.",
+      "expected_average_reels_per_day": "approximately 1.2-1.5 when candidate quality supports it; zero-post weak days remain allowed",
+      "do_not_change_long_term_weights_before": "at least 3 valid Viral Reel results",
+      "compare_single_vs_double_post_days_using": ["follows_per_1000_reach", "shares_per_1000_reach", "skip_rate", "avg_watch_seconds_over_duration", "profile_visits_per_1000_reach", "saves_per_1000_reach"]
     },
-    "decision_rule": "Do not permanently favor VIRAL or NEWS from one result. Require at least 3 valid Viral Reel samples before changing portfolio weights or thresholds.",
-    "comparison_kpis_in_order": [
-      "skip_rate",
-      "avg_watch_seconds_over_duration",
-      "shares",
-      "follows",
-      "profile_visits",
-      "saves",
-      "views"
-    ],
-    "success_signal": "Viral format should materially improve retention and/or shares/follows relative to recent news-card Reels, not merely raw views."
+    "decision_rule": "Do not permanently favor VIRAL or NEWS or permanently adopt two Reels per day from one result. Require at least 3 valid Viral Reel samples and enough clean single-vs-double-post observations before changing portfolio weights, thresholds or permanent posting frequency.",
+    "comparison_kpis_in_order": ["skip_rate", "avg_watch_seconds_over_duration", "shares", "follows", "profile_visits", "saves", "views"],
+    "success_signal": "Viral format and/or conditional second posts should materially improve retention and/or shares/follows relative to recent news-card or single-post days, not merely raw views."
   },
   "safety_and_originality": {
     "rule": "Do not build the strategy around downloading and blindly reuploading other creators' clips. Benchmark the viral mechanism and add meaningful Mexico-specific editorial value, attribution and source context. Prefer official/remix-permitted/authorized sources when available.",
