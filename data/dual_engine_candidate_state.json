@@ -1,0 +1,49 @@
+{
+  "schema_version": "3.1-testing",
+  "last_updated_at": "2026-09-17T16:00:00+09:00",
+  "run_type": "research_accumulation",
+  "news_best": {
+    "id": "ROSE-NEWTRICK-RELEASE-20260917",
+    "artist": "ROSÉ",
+    "headline_ko": "ROSÉ 'new trick' 9월 17일 공개 일정",
+    "estimated_score": 78,
+    "status": "BELOW_NEWS_THRESHOLD",
+    "hook": "BLINK MÉXICO: ROSÉ TRAE NEW TRICK",
+    "mexico_reason": "멕시코 BLINK 관심은 높지만 현재 확인된 멕시코 전용 시간·티켓·행동 정보가 없어 Mexico Utility가 약함.",
+    "follow_reason": "공개 직후 MV/차트 후속 추적은 가능하지만 현재 단계는 일회성 글로벌 릴리스에 가까움.",
+    "sources": [
+      "https://www.forbes.com/sites/jeffbenjamin/2026/07/08/2026-q3-release-calendar-of-new-kpop-albums-singles-and-comebacks/"
+    ]
+  },
+  "viral_best": {
+    "id": "FELIX-JAMAL-PASSINHO-RIR-20260916",
+    "artist": "Stray Kids / Felix",
+    "moment_ko": "Felix가 Rock in Rio에서 'Passinho do Jamal' 안무에 참여한 장면이 9월 16일 브라질 매체에서 바이럴 현상으로 보도됨.",
+    "estimated_score": 94,
+    "score_breakdown": {
+      "viral_velocity": 19,
+      "fan_emotion": 15,
+      "mexico_bridge": 15,
+      "fandom_interest": 15,
+      "share_potential": 14,
+      "follow_potential": 8,
+      "source_and_remix_quality": 8
+    },
+    "status": "VALID_BUT_ALREADY_USED_AS_VIRAL_TEST_1",
+    "hook": "¿FELIX LO HARÁ EN CDMX?",
+    "mexico_reason": "Stray Kids의 9월 25~26일 CDMX 공연 직전이라 STAY México가 'CDMX에서도 할까?'라는 자연스러운 연결을 가짐.",
+    "follow_reason": "CDMX 공연까지 후속 순간/현장 업데이트 추적 이유는 있으나 이 장면 자체는 일회성이라 follow score는 중간 수준.",
+    "dm_share_test": "PASS — 재미있는 춤 순간 + 곧 있을 CDMX 공연 상상 포인트가 있어 친구에게 보내기 쉬움.",
+    "sources": [
+      "https://www.planooesteedc.com.br/nb2/pop-arte/musica/rock-in-rio/noticia/2026/09/16/video-passinho-do-jamal-invade-o-rock-in-rio-e-conquista-felix-do-stray-kids-zara-larsson-e-mais.ghtml",
+      "https://www.uol.com.br/toca/noticias/2026/09/12/stray-kids-fecha-dia-de-k-pop-no-rock-in-rio-com-show-lotado-e-ensurdecedor.ghtm"
+    ]
+  },
+  "decision": "NO_RENDER",
+  "decision_reason": "This is a research run, not final selection. No new Mexico-direct breaking NEWS candidate passed the exception. The strongest VIRAL candidate is the Felix/Jamal moment, but it is already Viral Test #1 posted/ready on 2026-09-17, so duplicating it would violate validation quality and diversity goals. Accumulate candidates and continue searching for a second fandom for Viral Test #2.",
+  "next_research_priority": [
+    "Find a genuinely fresh 24h viral moment from BTS, BLACKPINK, ENHYPEN, SEVENTEEN, TXT, TWICE or aespa with a natural Mexico bridge.",
+    "Recheck ROSÉ 'new trick' after official release for a fresh velocity signal rather than treating release announcement alone as viral.",
+    "Do not reuse Felix/Jamal as another Reel during the validation window."
+  ]
+}
