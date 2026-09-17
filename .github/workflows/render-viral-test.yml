@@ -37,8 +37,8 @@ jobs:
       - name: Install downloader dependencies
         run: pip install requests yt-dlp
 
-      - name: Render viral test
-        run: python scripts/render_viral_x_test.py --payload data/viral_test_request.json
+      - name: Render viral hybrid audio test
+        run: python scripts/render_viral_hybrid_audio_test.py --payload data/viral_test_request.json
 
       - name: Upload viral test package
         uses: actions/upload-artifact@v4
