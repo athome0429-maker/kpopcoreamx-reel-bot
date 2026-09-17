@@ -1,0 +1,48 @@
+{
+  "slug": "viral_test_felix_passinho_cdmx_20260917",
+  "brand": "@kpopcoreamx",
+  "source_page": "https://x.com/multishow/status/2098634806661685628/video/1",
+  "source_credit": "FUENTE: @multishow · X · Rock in Rio 2026",
+  "trim_start": 0.0,
+  "duration": 9.4,
+  "overlays": [
+    {
+      "text": "FELIX + CDMX: ¿LO REPETIRÁ?",
+      "start": 0.0,
+      "end": 1.35,
+      "position": "top",
+      "fontsize": 66,
+      "color": "white"
+    },
+    {
+      "text": "PASSINHO DO JAMAL EN RÍO",
+      "start": 1.35,
+      "end": 3.15,
+      "position": "top",
+      "fontsize": 62,
+      "color": "white"
+    },
+    {
+      "text": "25–26 SEP · ESTADIO GNP",
+      "start": 5.65,
+      "end": 7.55,
+      "position": "bottom",
+      "fontsize": 58,
+      "color": "white"
+    },
+    {
+      "text": "¿SÍ O NO?",
+      "start": 7.55,
+      "end": 9.4,
+      "position": "top",
+      "fontsize": 82,
+      "color": "white"
+    }
+  ],
+  "context": {
+    "artist": "Stray Kids / Felix",
+    "viral_signal": "Felix performing Passinho do Jamal at Rock in Rio circulated rapidly across Brazilian social accounts; public mirrors showed tens to hundreds of thousands of views across multiple posts, while the dance itself had already produced a 1M+ view Felix-related TikTok in one day.",
+    "mexico_fact": "STRAYCITY MEXICO CITY is scheduled for Sep 25 and Sep 26, 2026 at Estadio GNP Seguros.",
+    "test_goal": "Compare motion-based viral-source Reel retention/share/follow behavior against static news-card Reels."
+  }
+}
