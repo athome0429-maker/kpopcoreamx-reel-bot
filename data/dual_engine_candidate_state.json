@@ -1,49 +1,53 @@
 {
   "schema_version": "3.1-testing",
-  "last_updated_at": "2026-09-17T16:00:00+09:00",
+  "last_updated_at": "2026-09-17T22:00:00+09:00",
   "run_type": "research_accumulation",
   "news_best": {
-    "id": "ROSE-NEWTRICK-RELEASE-20260917",
+    "id": "ROSE-NEWTRICK-RELEASE-20260918",
     "artist": "ROSÉ",
-    "headline_ko": "ROSÉ 'new trick' 9월 17일 공개 일정",
-    "estimated_score": 78,
+    "headline_ko": "ROSÉ 'new trick'이 9월 18일 08:00 KST 공개 예정; 멕시코시티 기준 9월 17일 17:00",
+    "estimated_score": 84,
     "status": "BELOW_NEWS_THRESHOLD",
-    "hook": "BLINK MÉXICO: ROSÉ TRAE NEW TRICK",
-    "mexico_reason": "멕시코 BLINK 관심은 높지만 현재 확인된 멕시코 전용 시간·티켓·행동 정보가 없어 Mexico Utility가 약함.",
-    "follow_reason": "공개 직후 MV/차트 후속 추적은 가능하지만 현재 단계는 일회성 글로벌 릴리스에 가까움.",
+    "hook": "BLINK MÉXICO: NEW TRICK HOY 5 PM",
+    "mexico_reason": "멕시코 현지 공개 시각이라는 실용 정보가 추가됐지만 글로벌 싱글 발매이며 멕시코 전용 이벤트/티켓/접근 정보는 아님.",
+    "follow_reason": "공개 직후 MV 반응·차트 후속 추적은 가능하지만 현재 공지는 일회성 릴리스 성격이 강함.",
     "sources": [
-      "https://www.forbes.com/sites/jeffbenjamin/2026/07/08/2026-q3-release-calendar-of-new-kpop-albums-singles-and-comebacks/"
+      "https://en.sedaily.com/news/2026/09/10/rose-teams-with-apple-for-new-single-shot-entirely-on-iphone",
+      "https://billboardphilippines.com/music/news/rose-announces-new-single-new-trick/",
+      "https://www.vogue.com/article/rose-shares-the-story-behind-new-trick"
     ]
   },
   "viral_best": {
-    "id": "FELIX-JAMAL-PASSINHO-RIR-20260916",
-    "artist": "Stray Kids / Felix",
-    "moment_ko": "Felix가 Rock in Rio에서 'Passinho do Jamal' 안무에 참여한 장면이 9월 16일 브라질 매체에서 바이럴 현상으로 보도됨.",
-    "estimated_score": 94,
+    "id": "JUNGKOOK-CK-FEELTHEFIT-20260916",
+    "artist": "BTS / Jung Kook",
+    "moment_ko": "Calvin Klein이 9월 16일 Jung Kook의 Fall 2026 Feel The Fit 캠페인을 공개. 지퍼 소리가 비트로 전환되고 Jung Kook이 춤추는 공식 영상이며, 9월 17일 복수 매체가 공개 직후 글로벌 소셜 반응과 확산을 보도함.",
+    "estimated_score": 88,
     "score_breakdown": {
-      "viral_velocity": 19,
+      "viral_velocity": 18,
       "fan_emotion": 15,
-      "mexico_bridge": 15,
+      "mexico_bridge": 8,
       "fandom_interest": 15,
       "share_potential": 14,
       "follow_potential": 8,
-      "source_and_remix_quality": 8
+      "source_and_remix_quality": 10
     },
-    "status": "VALID_BUT_ALREADY_USED_AS_VIRAL_TEST_1",
-    "hook": "¿FELIX LO HARÁ EN CDMX?",
-    "mexico_reason": "Stray Kids의 9월 25~26일 CDMX 공연 직전이라 STAY México가 'CDMX에서도 할까?'라는 자연스러운 연결을 가짐.",
-    "follow_reason": "CDMX 공연까지 후속 순간/현장 업데이트 추적 이유는 있으나 이 장면 자체는 일회성이라 follow score는 중간 수준.",
-    "dm_share_test": "PASS — 재미있는 춤 순간 + 곧 있을 CDMX 공연 상상 포인트가 있어 친구에게 보내기 쉬움.",
+    "status": "STRONG_FRESH_VIRAL_BUT_BELOW_90_TESTING_THRESHOLD",
+    "hook": "ARMY MÉXICO: ¿LO RECONOCISTE SIN VER SU CARA?",
+    "mexico_reason": "멕시코 ARMY 팬덤 관심은 매우 높지만 현재 캠페인 자체에 멕시코 전용 일정·장소·행동 정보가 확인되지 않아 Mexico Bridge가 제한됨.",
+    "follow_reason": "강한 팬 감정과 공유성은 있으나 @kpopcoreamx를 계속 팔로우해야 할 멕시코 후속 정보 약속은 약함.",
+    "dm_share_test": "PASS — 얼굴 공개 전 ARMY 타투만으로 Jung Kook을 알아보는 장치와 춤/음악이 팬끼리 보내기 쉬운 순간을 만듦.",
     "sources": [
-      "https://www.planooesteedc.com.br/nb2/pop-arte/musica/rock-in-rio/noticia/2026/09/16/video-passinho-do-jamal-invade-o-rock-in-rio-e-conquista-felix-do-stray-kids-zara-larsson-e-mais.ghtml",
-      "https://www.uol.com.br/toca/noticias/2026/09/12/stray-kids-fecha-dia-de-k-pop-no-rock-in-rio-com-show-lotado-e-ensurdecedor.ghtm"
+      "https://www.pvh.com/news/calvin-klein-fall-2026-jung-kook",
+      "https://www.starnewskorea.com/en/music/2026/09/17/2026091717425345838",
+      "https://kz.kursiv.media/en/2026-09-17/engk-tank-btss-jungkook-goes-viral-with-new-calvin-klein-campaign/"
     ]
   },
   "decision": "NO_RENDER",
-  "decision_reason": "This is a research run, not final selection. No new Mexico-direct breaking NEWS candidate passed the exception. The strongest VIRAL candidate is the Felix/Jamal moment, but it is already Viral Test #1 posted/ready on 2026-09-17, so duplicating it would violate validation quality and diversity goals. Accumulate candidates and continue searching for a second fandom for Viral Test #2.",
+  "decision_reason": "Research accumulation run. No verified Mexico-direct breaking candidate passed the exception. ROSÉ improves to about 84 with a verified Mexico City release time but remains below the NEWS threshold. Jung Kook is a genuinely fresh official-source viral candidate and a better second-fandom test prospect than recycling Felix, but the natural Mexico bridge and follow-conversion reason are not strong enough to clear the VIRAL testing threshold of 90. Preserve both for the next final-selection/research cycle and re-evaluate only if fresh Mexico relevance or stronger current velocity appears.",
   "next_research_priority": [
-    "Find a genuinely fresh 24h viral moment from BTS, BLACKPINK, ENHYPEN, SEVENTEEN, TXT, TWICE or aespa with a natural Mexico bridge.",
-    "Recheck ROSÉ 'new trick' after official release for a fresh velocity signal rather than treating release announcement alone as viral.",
+    "After ROSÉ releases, measure whether the official MV itself shows fresh viral velocity and whether a Mexico-specific reaction/utility angle emerges.",
+    "Recheck Jung Kook only if a fresh Mexico/LatAm signal or substantially stronger velocity signal appears; do not inflate Mexico Bridge merely because BTS has a large Mexican fandom.",
+    "Continue searching ENHYPEN, SEVENTEEN, TXT, TWICE and aespa for Viral Test #2 candidates with stronger natural Mexico bridges.",
     "Do not reuse Felix/Jamal as another Reel during the validation window."
   ]
 }
