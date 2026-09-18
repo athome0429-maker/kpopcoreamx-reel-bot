@@ -16,12 +16,12 @@
       "winning_hook_type": "FAN_IDENTITY",
       "posted_at": null,
       "data_source": "user_reported_prior_insights",
-      "reel_duration": 8.0,
+      "reel_duration": 8,
       "metrics": {
         "views": 90,
         "reach": 73,
-        "avg_watch_seconds": 5.0,
-        "skip_rate": 74.0,
+        "avg_watch_seconds": 5,
+        "skip_rate": 74,
         "likes": 6,
         "comments": 1,
         "shares": 0,
@@ -29,7 +29,7 @@
         "reposts": 0,
         "profile_visits": 1,
         "follows": 0,
-        "non_follower_reach_pct": 100.0
+        "non_follower_reach_pct": 100
       },
       "learning_note": "Baseline valid datapoint. High skip rate and zero follow conversion."
     },
@@ -44,7 +44,7 @@
       "metrics": {
         "views": 151,
         "reach": 106,
-        "avg_watch_seconds": 6.0,
+        "avg_watch_seconds": 6,
         "skip_rate": 57.5,
         "likes": 3,
         "comments": 1,
@@ -53,7 +53,7 @@
         "reposts": 0,
         "profile_visits": null,
         "follows": 1,
-        "non_follower_reach_pct": 100.0,
+        "non_follower_reach_pct": 100,
         "mexico_viewers_pct": 44.2,
         "reels_tab_pct": 91.2,
         "explore_tab_pct": 8.2
@@ -71,8 +71,8 @@
       "metrics": {
         "views": 6,
         "reach": 6,
-        "avg_watch_seconds": 9.0,
-        "skip_rate": 100.0,
+        "avg_watch_seconds": 9,
+        "skip_rate": 100,
         "likes": 0,
         "comments": 1,
         "shares": 0,
@@ -80,11 +80,48 @@
         "reposts": 0,
         "profile_visits": null,
         "follows": 0,
-        "non_follower_reach_pct": 100.0,
+        "non_follower_reach_pct": 100,
         "reels_tab_pct": 83.3,
         "explore_tab_pct": 16.7
       },
       "learning_note": "Third valid insight snapshot, but sample is extremely small (reach 6), so treat it as low-confidence. The 3-reel average skip rate now exceeds 70%, which activates the v3.0 first-cut rule: prefer 0.5-0.6s and show the strongest artist + Mexico/CDMX + concrete fact immediately. Do not infer fandom or hook winners from this tiny sample."
+    },
+    {
+      "slug": "felix_rockinrio_cdmx_viral_test1_20260917",
+      "artist": "Stray Kids / Felix",
+      "topic_type": "VIRAL_FANDOM_MOMENT",
+      "winning_hook_type": "FAN_IDENTITY_MEXICO_BRIDGE",
+      "posted_at": "2026-09-17",
+      "data_source": "user_screenshot_instagram_insights_2026-09-18_1053_KST",
+      "reel_duration": 10,
+      "metrics": {
+        "views": 1582,
+        "reach": 1085,
+        "avg_watch_seconds": 8,
+        "watch_ratio": 0.8,
+        "skip_rate": 32.2,
+        "likes": 240,
+        "comments": 2,
+        "shares": 0,
+        "saves": 16,
+        "reposts": 5,
+        "follows": 1,
+        "profile_visits": null,
+        "non_follower_viewers_pct": 99.8,
+        "mexico_viewers_pct": 29.7,
+        "argentina_viewers_pct": 27.5,
+        "chile_viewers_pct": 9,
+        "spain_viewers_pct": 5.7,
+        "colombia_viewers_pct": 4.9,
+        "reels_tab_pct": 87.6,
+        "explore_tab_pct": 12.3,
+        "like_rate_pct": 22.5,
+        "save_rate_pct": 1.5,
+        "repost_rate_pct": 0.5,
+        "comment_rate_pct": 0.2,
+        "share_rate_pct": 0
+      },
+      "learning_note": "Viral Test #1. Strong retention and engagement breakout: skip 32.2%, 8s/10s average watch (80%), 240 likes, 16 saves, 5 reposts, reach 1,085 and 99.8% non-follower viewers. Mexico is the largest country at 29.7%. However direct shares are 0 and only 1 follow, so the format clearly improved stopping/retention but has not yet demonstrated strong follower conversion. Do not permanently change NEWS/VIRAL weights until at least 3 valid Viral tests."
     }
   ]
 }
