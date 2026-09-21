@@ -1,52 +1,39 @@
 {
   "schema_version": "3.1-testing",
-  "last_updated_at": "2026-09-18T04:00:00+09:00",
+  "last_updated_at": "2026-09-21T22:00:00+09:00",
   "run_type": "research_accumulation",
   "news_best": {
-    "id": "ROSE-NEWTRICK-RELEASE-20260918",
-    "artist": "ROSÉ",
-    "headline_ko": "ROSÉ 'new trick'은 9월 18일 08:00 KST 공개 예정; 멕시코시티 기준 9월 17일 17:00. MV는 Dave Meyers 연출, iPhone 18 Pro 촬영.",
-    "estimated_score": 84,
-    "status": "BELOW_NEWS_THRESHOLD_PRE_RELEASE",
-    "hook": "BLINK MÉXICO: NEW TRICK HOY 5 PM",
-    "mexico_reason": "멕시코 현지 공개 시각은 실용적이지만 글로벌 싱글 발매이며 멕시코 전용 이벤트·티켓·접근 정보는 확인되지 않음.",
-    "follow_reason": "공개 직후 MV 반응·차트 후속 추적은 가능하지만 현재 단계는 일회성 릴리스 성격이 강함.",
+    "id": "STRAYKIDS-STRAYCITY-CONCERTSLIGHTS-FANPROJECT-20260921",
+    "artist": "Stray Kids",
+    "headline_ko": "STRAYCITY CDMX 9월 25·26일 Concerts Lights 팬 라이트 프로젝트의 양일 구성과 참여법이 공식 프로젝트 페이지에 공개됨.",
+    "estimated_score": 94,
+    "status": "VERIFIED_READY_FOR_FINAL_SELECTION",
+    "hook": "STAY MÉXICO: DESCARGA ESTO ANTES DEL SHOW",
+    "mexico_reason": "CDMX 공연 참석자가 공연 전에 앱을 설치·설정해야 하는 직접 행동 정보이며 25·26일 각각의 Stray Kids 곡과 구역별 국기 효과가 공개되어 있음.",
+    "follow_reason": "공연 직전 변경사항과 STRAYCITY CDMX 실용 업데이트를 후속 제공할 명확한 이유가 있음.",
     "sources": [
-      "https://billboardphilippines.com/music/news/rose-announces-new-single-new-trick/",
-      "https://www.vogue.com/article/rose-shares-the-story-behind-new-trick",
-      "https://www.melodicmag.com/news/rose-to-release-new-single-new-trick-in-partnership-with-apple/"
+      "https://www.concertslights.com/2026/events/straykids.html",
+      "https://www.ticketmaster.com.mx/stray-kids-boletos/artist/2593788",
+      "https://www.infobae.com/mexico/2026/09/18/stray-kids-en-mexico-2026-como-participar-en-el-fanproject-de-luces-de-straycity-en-el-estadio-gnp-seguros/"
     ]
   },
   "viral_best": {
-    "id": "JUNGKOOK-CK-FEELTHEFIT-20260916",
-    "artist": "BTS / Jung Kook",
-    "moment_ko": "Calvin Klein이 9월 16일 Jung Kook의 Fall 2026 Feel The Fit 캠페인을 공개했고 9월 17일 새 보도들이 글로벌 소셜 확산을 확인. 공식 캠페인 기반의 신선한 바이럴 신호는 유지되지만 새 Mexico/LatAm 직접 연결은 확인되지 않음.",
-    "estimated_score": 88,
-    "score_breakdown": {
-      "viral_velocity": 18,
-      "fan_emotion": 15,
-      "mexico_bridge": 8,
-      "fandom_interest": 15,
-      "share_potential": 14,
-      "follow_potential": 8,
-      "source_and_remix_quality": 10
-    },
-    "status": "STRONG_FRESH_VIRAL_BUT_BELOW_90_TESTING_THRESHOLD",
-    "hook": "ARMY MÉXICO: ¿LO RECONOCISTE SIN VER SU CARA?",
-    "mexico_reason": "멕시코 ARMY 관심은 높지만 캠페인 자체에 멕시코 전용 일정·장소·행동 정보가 없어 Mexico Bridge를 추가 상향할 근거가 없음.",
-    "follow_reason": "팬 감정·공유성은 강하지만 @kpopcoreamx를 계속 팔로우해야 할 멕시코 후속 정보 약속은 약함.",
-    "dm_share_test": "PASS — 얼굴 공개 전 ARMY 타투로 알아보는 장치와 움직임 중심 영상이 팬 간 공유에 적합.",
-    "sources": [
-      "https://www.tribuneindia.com/news/business/calvin-klein-launches-third-chapter-of-fall-2026-feel-the-fit-denim-campaign-with-jung-kook-of-bts-2-2/",
-      "https://kz.kursiv.media/en/2026-09-17/engk-tank-btss-jungkook-goes-viral-with-new-calvin-klein-campaign/"
-    ]
+    "id": "NO-VALID-90PLUS-VIRAL-20260921-2200",
+    "artist": null,
+    "moment_ko": "최근 24~48시간 검색에서 현재 속도 신호, 자연스러운 Mexico bridge, DM/share 이유, follow 이유, 소스 품질을 동시에 충족해 90점을 넘는 신규 VIRAL 후보를 확인하지 못함.",
+    "estimated_score": 0,
+    "status": "NO_VALID_TEST2_CANDIDATE"
   },
   "decision": "NO_RENDER",
-  "decision_reason": "04:00 KST research accumulation. Fresh 24-48h search found no verified Mexico-direct breaking candidate that clears the active exception. ROSÉ remains about 84 before release, below NEWS 88. Jung Kook remains the strongest fresh Viral Test #2 prospect at about 88, below VIRAL 90 because no new natural Mexico bridge or follow-conversion reason was verified. Do not inflate scores or fill a second-post slot. Re-evaluate ROSÉ after the scheduled release and continue searching other fandoms.",
+  "decision_reason": "22:00 KST research accumulation. STRAYCITY Concerts Lights NEWS is verified and strong at about 94, but it does not meet the active 96-point Mexico-direct breaking exception required for immediate production outside the 10:00 final-selection run. Accumulate for the next final selection. No valid 90+ fresh VIRAL Test #2 candidate was verified. A render workflow was inadvertently triggered while evaluating the package, but it failed at the render step and produced no verified MP4/cover/manifest; it is not counted as a render or post.",
+  "validation_progress": {
+    "viral_tests_valid": 1,
+    "viral_tests_target": 3,
+    "permanent_strategy_change_allowed": false
+  },
   "next_research_priority": [
-    "After ROSÉ releases at 08:00 KST, check the official MV for actual fresh velocity rather than assuming virality from pre-release attention.",
-    "Recheck Jung Kook only if a fresh Mexico/LatAm signal or substantially stronger velocity signal appears.",
-    "Continue searching ENHYPEN, SEVENTEEN, TXT, TWICE and aespa for Viral Test #2 candidates with stronger natural Mexico bridges.",
-    "Do not reuse Felix/Jamal during the validation window."
+    "At the next 10:00 KST final selection, re-verify the Concerts Lights page and compare this NEWS candidate against the freshest VIRAL candidate.",
+    "Check for last-minute STRAYCITY CDMX logistics, ticket-status changes, venue rules or fan-project updates that strengthen DM/share and follow conversion.",
+    "Continue searching other fandoms for Viral Test #2; do not lower the 90 testing threshold or reuse Felix merely to fill a slot."
   ]
 }
