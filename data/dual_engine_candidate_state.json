@@ -1,39 +1,28 @@
 {
   "schema_version": "3.1-testing",
-  "last_updated_at": "2026-09-21T22:00:00+09:00",
-  "run_type": "research_accumulation",
+  "last_updated_at": "2026-09-22T10:00:00+09:00",
+  "run_type": "final_selection",
   "news_best": {
     "id": "STRAYKIDS-STRAYCITY-CONCERTSLIGHTS-FANPROJECT-20260921",
     "artist": "Stray Kids",
-    "headline_ko": "STRAYCITY CDMX 9월 25·26일 Concerts Lights 팬 라이트 프로젝트의 양일 구성과 참여법이 공식 프로젝트 페이지에 공개됨.",
+    "headline_ko": "STRAYCITY CDMX 9월 25·26일 Concerts Lights 팬 라이트 프로젝트 참여법과 양일 Stray Kids 순간이 공식 프로젝트 페이지에서 재검증됨.",
     "estimated_score": 94,
-    "status": "VERIFIED_READY_FOR_FINAL_SELECTION",
+    "status": "SELECTED_BUT_RENDER_FAILED",
     "hook": "STAY MÉXICO: DESCARGA ESTO ANTES DEL SHOW",
-    "mexico_reason": "CDMX 공연 참석자가 공연 전에 앱을 설치·설정해야 하는 직접 행동 정보이며 25·26일 각각의 Stray Kids 곡과 구역별 국기 효과가 공개되어 있음.",
+    "mexico_reason": "CDMX 공연 참석자가 공연 전에 무료 앱을 설치하고 이벤트를 준비해야 하는 직접 행동 정보. 공식 페이지는 25일 CEREMONY, 26일 This & That, 구역별 국기 효과, 앱/마이크 사용법을 명시함.",
     "follow_reason": "공연 직전 변경사항과 STRAYCITY CDMX 실용 업데이트를 후속 제공할 명확한 이유가 있음.",
-    "sources": [
-      "https://www.concertslights.com/2026/events/straykids.html",
-      "https://www.ticketmaster.com.mx/stray-kids-boletos/artist/2593788",
-      "https://www.infobae.com/mexico/2026/09/18/stray-kids-en-mexico-2026-como-participar-en-el-fanproject-de-luces-de-straycity-en-el-estadio-gnp-seguros/"
-    ]
+    "sources": ["https://www.concertslights.com/2026/events/straykids.html","https://www.infobae.com/mexico/2026/09/18/stray-kids-en-mexico-2026-como-participar-en-el-fanproject-de-luces-de-straycity-en-el-estadio-gnp-seguros/"]
   },
   "viral_best": {
-    "id": "NO-VALID-90PLUS-VIRAL-20260921-2200",
+    "id": "NO-VALID-90PLUS-VIRAL-20260922-1000",
     "artist": null,
-    "moment_ko": "최근 24~48시간 검색에서 현재 속도 신호, 자연스러운 Mexico bridge, DM/share 이유, follow 이유, 소스 품질을 동시에 충족해 90점을 넘는 신규 VIRAL 후보를 확인하지 못함.",
+    "moment_ko": "최근 24~48시간 조사에서 fresh velocity, Mexico bridge, DM/share, follow potential, source/remix quality를 동시에 충족하는 신규 90+ VIRAL Test #2 후보를 검증하지 못함.",
     "estimated_score": 0,
     "status": "NO_VALID_TEST2_CANDIDATE"
   },
-  "decision": "NO_RENDER",
-  "decision_reason": "22:00 KST research accumulation. STRAYCITY Concerts Lights NEWS is verified and strong at about 94, but it does not meet the active 96-point Mexico-direct breaking exception required for immediate production outside the 10:00 final-selection run. Accumulate for the next final selection. No valid 90+ fresh VIRAL Test #2 candidate was verified. A render workflow was inadvertently triggered while evaluating the package, but it failed at the render step and produced no verified MP4/cover/manifest; it is not counted as a render or post.",
-  "validation_progress": {
-    "viral_tests_valid": 1,
-    "viral_tests_target": 3,
-    "permanent_strategy_change_allowed": false
-  },
-  "next_research_priority": [
-    "At the next 10:00 KST final selection, re-verify the Concerts Lights page and compare this NEWS candidate against the freshest VIRAL candidate.",
-    "Check for last-minute STRAYCITY CDMX logistics, ticket-status changes, venue rules or fan-project updates that strengthen DM/share and follow conversion.",
-    "Continue searching other fandoms for Viral Test #2; do not lower the 90 testing threshold or reuse Felix merely to fill a slot."
-  ]
+  "decision": "NEWS_SELECTED_RENDER_FAILED",
+  "decision_reason": "10:00 final selection: verified STRAYCITY Concerts Lights NEWS (~94) beat all verified VIRAL candidates and passed the NEWS threshold/shared quality gate. GitHub Actions run 35674020559 was triggered after re-verification, but render validation failed because the official Concerts Lights banner is only 600x300, below the renderer minimum resolution. No MP4, cover or manifest was uploaded, so this is not counted as a successful render or post.",
+  "render_attempt": {"workflow_run_id":35674020559,"job_id":106576582768,"status":"failure","failure_step":"Render and verify reel","failure_reason":"Scene 1 image resolution too low: 600x300","artifact_verified":false},
+  "validation_progress": {"viral_tests_valid":1,"viral_tests_target":3,"permanent_strategy_change_allowed":false},
+  "next_research_priority": ["Find verified high-resolution source visuals for the selected STRAYCITY fan-project package without weakening source/originality quality, then rerender only after input validation.","Continue searching other fandoms for Viral Test #2; do not lower the 90 threshold.","Watch for an official reveal of the K-pop group tied to the Sep 24 Korea-Mexico summit; do not publish speculation as confirmation."]
 }
