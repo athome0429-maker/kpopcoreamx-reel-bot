@@ -1,45 +1,37 @@
 {
   "schema_version": "3.1-testing",
-  "last_updated_at": "2026-09-23T10:00:00+09:00",
+  "last_updated_at": "2026-09-24T10:00:46+09:00",
   "run_type": "final_selection",
   "news_best": {
     "id": "HYBE-CINE-FEST-MEXICO-20260923",
     "artist": "BTS / SEVENTEEN / TXT / ENHYPEN / HYBE artists",
-    "headline_ko": "HYBE CINE FEST 2026의 멕시코시티 Special Location Plus 2곳과 Store 1곳, 9월 30일 글로벌 티켓 오픈, 10월 24·30일 BTS 남미 공연 Live Viewing이 HYBE 공식 Weverse 공지에서 확인됨.",
+    "headline_ko": "HYBE CINE FEST 2026의 멕시코시티 Special Location Plus 2곳과 Store 1곳, 9월 30일 글로벌 티켓 오픈, 10월 24·30일 BTS 남미 공연 Live Viewing이 계속 최강 NEWS 후보로 확인됨.",
     "estimated_score": 100,
     "status": "SELECTED_RENDER_BLOCKED_INPUT_VISUAL",
     "hook": "ARMY MÉXICO: BTS LLEGA AL CINE EN VIVO",
     "mexico_reason": "멕시코시티 Cinépolis Forum Buenavista·Universidad가 Special Location Plus, Oasis Coyoacán이 HYBE Cine Fest Store로 공식 지정됐고 글로벌 티켓 오픈은 9월 30일 06:00 PDT(멕시코시티 07:00)다. BTS Buenos Aires Live Viewing은 10월 24일, São Paulo는 10월 30일이다.",
     "follow_reason": "세부 상영시간·타이틀별 극장 정보가 티켓 오픈 시 공식 사이트에 공개될 예정이라 후속 업데이트 약속이 구체적이고 검증 가능하다.",
-    "sources": [
-      "https://weverse.io/seventeen/notice/39448",
-      "https://hybecinefest.com/"
-    ]
+    "sources": ["https://hybecinefest.com/", "https://www.koreatimes.co.kr/entertainment/k-pop/20260923/hybe-takes-k-pop-cinema-festival-worldwide-across-50-countries"]
+  },
+  "news_runner_up": {
+    "id": "KEXPO-MEXICO-PUBLIC-OPENING-20260924",
+    "artist": "WINNER / ALPHA DRIVE ONE / SOYOU / DAYOUNG / TOUCHED",
+    "headline_ko": "K-EXPO MEXICO가 9월 24~27일 CDMX WTC에서 열리며 일반 관람 전시는 25~27일 무료 현장 등록, 25일 ALPHA DRIVE ONE 팬미팅·사인회, 26일 Korea Spotlight 공연으로 공식 확인됨.",
+    "estimated_score": 92,
+    "status": "STRONG_RUNNER_UP",
+    "hook": "K-POP MÉXICO: ESTE FIN DE SEMANA EN CDMX",
+    "sources": ["https://www.businesswire.com/news/home/20260908212272/en/Experience-All-Things-K-Style-in-Mexico-2026-K-EXPO-MEXICO-to-Open-at-WTC-CIEC-on-September-24"]
   },
   "viral_best": {
-    "id": "NO-VALID-90PLUS-VIRAL-20260923-1000",
+    "id": "NO-VALID-90PLUS-VIRAL-20260924-1000",
     "artist": null,
-    "moment_ko": "최근 24~48시간 조사에서 fresh velocity, Mexico bridge, DM/share, follow potential, source/remix quality를 동시에 충족하는 신규 90+ VIRAL Test #2 후보를 검증하지 못함. 최근 글로벌 바이럴/화제성 후보는 멕시코 연결 또는 원본·속도 신호가 부족해 제외함.",
+    "moment_ko": "최근 24~48시간 조사에서 fresh velocity, Mexico bridge, DM/share, follow potential, source/remix quality를 동시에 충족하는 신규 90+ VIRAL Test #2 후보를 검증하지 못함.",
     "estimated_score": 0,
     "status": "NO_VALID_TEST2_CANDIDATE"
   },
   "decision": "NEWS_SELECTED_RENDER_BLOCKED_INPUT_VISUAL",
-  "decision_reason": "10:00 final selection: fresh official HYBE Cine Fest Mexico information is stronger than the older STRAYCITY candidate because it is newly announced, directly actionable in Mexico, spans multiple large fandoms, has a concrete Sep 30 ticket action and a truthful follow-up promise. It clears the NEWS threshold and shared editorial quality gate. Rendering was not triggered because this run could verify the official poster exists but could not establish a renderer-safe direct high-resolution official image URL; after the prior 600x300 failure, input visual validation is required before triggering GitHub Actions. No MP4, cover or manifest is claimed.",
-  "render_attempt": {
-    "workflow_run_id": null,
-    "status": "NOT_TRIGGERED",
-    "failure_reason": "verified high-resolution direct official image URL not established",
-    "artifact_verified": false
-  },
-  "validation_progress": {
-    "viral_tests_valid": 1,
-    "viral_tests_target": 3,
-    "permanent_strategy_change_allowed": false
-  },
-  "next_research_priority": [
-    "Acquire renderer-safe high-resolution official HYBE Cine Fest 2026 visuals and render the selected Mexico package only after validating dimensions and direct accessibility.",
-    "Track Sep 30 Mexico ticket/showtime details for a specific follow-up promise.",
-    "Continue searching other fandoms for Viral Test #2; do not lower the 90 threshold.",
-    "Watch for an official reveal of any K-pop group tied to the Korea-Mexico state visit; never publish speculation as confirmation."
-  ]
+  "decision_reason": "10:00 final selection: HYBE CINE FEST remains stronger than K-EXPO because it spans several large fandoms, has a concrete Mexico ticket action on Sep 30, direct CDMX special locations and a strong truthful follow-up promise. K-EXPO is highly timely and actionable but lower in fandom/follow conversion. No 90+ Viral candidate was verified. Rendering remains blocked because a renderer-safe direct high-resolution official HYBE 2026 image set has not been verified; do not repeat the prior low-resolution input failure. No MP4, cover or manifest is claimed.",
+  "render_attempt": {"workflow_run_id": null, "status": "NOT_TRIGGERED", "failure_reason": "verified high-resolution direct official image set not established", "artifact_verified": false},
+  "validation_progress": {"viral_tests_valid": 1, "viral_tests_target": 3, "permanent_strategy_change_allowed": false},
+  "next_research_priority": ["Track official HYBE/Cinépolis Mexico ticket and showtime details before Sep 30.", "Acquire renderer-safe high-resolution official HYBE Cine Fest 2026 visuals before triggering render.", "Track K-EXPO opening-day changes, ALPHA DRIVE ONE fanmeeting access details and Korea Spotlight ticket/status changes.", "Continue searching multiple fandoms for Viral Test #2 without lowering the 90 threshold."]
 }
