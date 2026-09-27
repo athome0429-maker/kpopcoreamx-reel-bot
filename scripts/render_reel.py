@@ -189,8 +189,8 @@ def probe_video(path):
 
 def validate_payload(payload):
     scenes = payload.get("scenes") or []
-    if len(scenes) != 5:
-        raise ValueError(f"Exactly 5 scenes required, got {len(scenes)}")
+    if not 2 <= len(scenes) <= 5:
+        raise ValueError(f"Renderer v3.2 requires 2-5 scenes, got {len(scenes)}")
     total = sum(float(s.get("duration", 0)) for s in scenes)
     if not 6.0 <= total <= 8.0:
         raise ValueError(f"Total duration {total:.2f}s outside 6.0-8.0s")
