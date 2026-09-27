@@ -1,10 +1,28 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-09-27",
-  "last_updated_at": "2026-09-27T18:24:00+09:00",
+  "last_updated_at": "2026-09-27T22:01:46+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "v3.2 Recovery active. Aim for one strong Reel per Mexico day; NEWS floor 84, VIRAL floor 85. Truth/source/Mexico relevance gates remain mandatory. Adaptive 2-5 scene rendering enabled.",
-  "selection_note": "Pipeline repair checkpoint. candidate_state had been stale since 2026-09-17. State sync restored manually on 2026-09-27. Renderer mismatch identified: strategy allowed adaptive 2-3 beat Reels but renderer required exactly 5 scenes. Renderer patched to accept 2-5 scenes. Current official K-EXPO Mexico source confirms Sep 27 public exhibition at CIEC WTC Maya 1-2, 11:00-19:00; candidate research must still be refreshed at each Scout run before selection/render.",
-  "candidates": []
+  "selection_note": "22:00 KST v3.2 Recovery research run. Fresh official verification: K-EXPO Mexico public exhibition runs Sep 25-27 at CIEC WTC Maya 1-2, 11:00-19:00, free entry/no registration; Sep 27 program includes SUPERSTAR Game Battle 11:00-12:00, K-Seafood Cooking Show 13:00-14:00, Haus Seoul skin analysis 15:00-15:30, and Monarch Haus interactive drink experience 16:30-17:30. This is the strongest NEWS candidate, estimated 92/100. However it is not produced in this 22:00 KST research run because the Mexico-local final-day window is not yet an immediate breaking exception and delaying to the 10:00 KST base-selection run does not materially reduce value. Strongest VIRAL remains Stray Kids Mexico concert aftermath, but no independently verified fresh clip-velocity/remix-quality signal clears the v3.2 VIRAL floor 85. Recovery Mode remains active. Renderer is now patched for 2-5 scenes.",
+  "candidates": [
+    {
+      "news_id": "KEXPO-MEXICO-FINALDAY-20260927",
+      "artist": "K-EXPO Mexico",
+      "headline_ko": "K-EXPO Mexico 2026 마지막 공개일: 무료 입장, WTC Maya 1·2, 11:00~19:00",
+      "topic_type": "MEXICO_FAN_EVENT",
+      "final_score": 92,
+      "winning_hook": "K-EXPO CDMX: ÚLTIMO DÍA GRATIS",
+      "winning_hook_type": "FOMO_URGENCY",
+      "source_urls": [
+        "https://2026kexpomexico.com/exhibicion-y-evento",
+        "https://2026kexpomexico.com/exhibition-event"
+      ],
+      "mexico_relevance_reason": "CDMX 현지에서 오늘 직접 참여 가능한 무료 K-culture/K-pop 연계 행사로 장소·시간·프로그램이 공식 확인됨.",
+      "follow_reason": "멕시코 현지 K-pop/K-culture 일정과 후속 행사 업데이트를 추적할 명확한 계정 포지셔닝과 연결됨.",
+      "verified_at": "2026-09-27T22:01:46+09:00",
+      "v3_status": "QUALIFIED_RECOVERY_CANDIDATE"
+    }
+  ]
 }
