@@ -1,7 +1,7 @@
 {
-  "schema_version": "3.1-testing",
-  "strategy_name": "K-pop Reel Scout v3.1 Dual Engine",
-  "status": "7-day validation phase",
+  "schema_version": "3.2-recovery",
+  "strategy_name": "K-pop Reel Scout v3.2 Recovery",
+  "status": "recovery validation phase",
   "inherits": "data/strategy_config.json v3.0.1-competitor-benchmark",
   "goal": "maximize follower conversion for @kpopcoreamx among Mexican K-pop fans while testing whether motion-based viral moments improve retention, shares and follows versus static news-card Reels",
   "engines": {
@@ -9,19 +9,57 @@
       "source_priority": "official first-party sources, ticketing, promoters, charts, broadcasters and reliable media",
       "candidate_scoring": "use the existing v3.0 scoring and hook competition unchanged",
       "production_style": "utility-first news Reel",
-      "default_mix": {"mexico_utility": 60, "fan_emotion": 25, "cta": 15}
+      "default_mix": {
+        "mexico_utility": 60,
+        "fan_emotion": 25,
+        "cta": 15
+      },
+      "recovery_publish_threshold": 84
     },
     "VIRAL": {
       "research_window_hours": 24,
       "expand_to_hours": 48,
-      "priority_artists": ["BTS", "Stray Kids", "BLACKPINK", "ENHYPEN", "SEVENTEEN", "TXT", "TWICE", "aespa"],
-      "candidate_scoring": {"viral_velocity": 20, "fan_emotion": 15, "mexico_bridge": 15, "fandom_interest": 15, "share_potential": 15, "follow_potential": 10, "source_and_remix_quality": 10, "total": 100, "testing_threshold": 90},
-      "minimum_conditions": ["The clip has a real current viral signal, not only a high historical view count.", "There is a natural reason Mexican K-pop fans would care now.", "There is enough verified context to add original Spanish/Mexico value instead of merely reposting.", "The clip can plausibly produce stronger retention, shares or follows than a static card Reel."],
+      "priority_artists": [
+        "BTS",
+        "Stray Kids",
+        "BLACKPINK",
+        "ENHYPEN",
+        "SEVENTEEN",
+        "TXT",
+        "TWICE",
+        "aespa"
+      ],
+      "candidate_scoring": {
+        "viral_velocity": 20,
+        "fan_emotion": 15,
+        "mexico_bridge": 15,
+        "fandom_interest": 15,
+        "share_potential": 15,
+        "follow_potential": 10,
+        "source_and_remix_quality": 10,
+        "total": 100,
+        "testing_threshold": 90,
+        "recovery_testing_threshold": 85
+      },
+      "minimum_conditions": [
+        "The clip has a real current viral signal, not only a high historical view count.",
+        "There is a natural reason Mexican K-pop fans would care now.",
+        "There is enough verified context to add original Spanish/Mexico value instead of merely reposting.",
+        "The clip can plausibly produce stronger retention, shares or follows than a static card Reel."
+      ],
       "dm_share_test": "Would a Mexican fan send this moment to another fan because it is funny, emotional, impressive, surprising, useful or directly connected to Mexico?",
       "production_style": {
         "principle": "Emotion-first hybrid: let the moment breathe, then add Mexico utility, then a short follow/comment CTA.",
-        "default_mix": {"fan_emotion": 60, "mexico_utility": 25, "cta": 15},
-        "duration_seconds": {"short_one-hit_moment": "6-9", "default_viral_moment": "8-15", "emotional_or_on-site_moment": "10-20"},
+        "default_mix": {
+          "fan_emotion": 60,
+          "mexico_utility": 25,
+          "cta": 15
+        },
+        "duration_seconds": {
+          "short_one-hit_moment": "6-9",
+          "default_viral_moment": "8-15",
+          "emotional_or_on-site_moment": "10-20"
+        },
         "do_not_force_news_5_cut_rule": true,
         "keep_source_audio_when_it_is_material_to_the_moment": true,
         "overlay_rule": "Use the minimum text needed. Do not cover the subject or turn the clip back into a moving card-news post.",
@@ -31,7 +69,11 @@
     }
   },
   "daily_selection": {
-    "research_runs_kst": ["04:00", "16:00", "22:00"],
+    "research_runs_kst": [
+      "04:00",
+      "16:00",
+      "22:00"
+    ],
     "final_selection_kst": "10:00",
     "default_post_time_kst": "12:30",
     "default_post_time_cdmx": "21:30",
@@ -39,7 +81,7 @@
     "base_reels_per_mexico_day": 1,
     "absolute_max_reels_per_mexico_day": 2,
     "minimum_gap_between_reels_hours": 8,
-    "rule": "At final selection, compare the strongest NEWS and VIRAL candidates and produce at most one base Reel when the winner passes its engine threshold and the shared quality gate. Do not force a post when both are weak. A second Exceptional Reel is allowed later in the same Mexico day only when it independently clears the exceptional gate; never produce it merely to fill a second slot.",
+    "rule": "Aim for one strong base Reel per Mexico day. At final selection, compare NEWS and VIRAL and produce the strongest candidate that clears its active v3.2 quality floor and shared quality gate. Zero-post weak days remain allowed. A second Exceptional Reel is allowed only under the existing exceptional gate.",
     "exceptional_second_reel_gate": {
       "must_pass_all": true,
       "requirements": [
@@ -52,27 +94,81 @@
       ],
       "never_use_as_reason": "We have posted only one Reel today, so we should fill the second slot."
     },
-    "shared_quality_gate": ["truth and source verification pass", "clear Mexican-fan relevance", "clear reason to stop watching", "clear DM/share or practical value", "plausible reason to follow @kpopcoreamx"]
+    "shared_quality_gate": [
+      "truth and source verification pass",
+      "clear Mexican-fan relevance",
+      "clear reason to stop watching",
+      "clear DM/share or practical value",
+      "plausible reason to follow @kpopcoreamx"
+    ]
   },
   "validation_phase": {
     "duration_days": 7,
     "target_viral_tests": 3,
     "avoid_single_fandom_overfit": true,
-    "test_1": {"artist": "Stray Kids / Felix", "format": "emotion-first hybrid with Mexico bridge and source audio retained", "status": "posted_or_ready_for_posting_2026-09-17"},
+    "test_1": {
+      "artist": "Stray Kids / Felix",
+      "format": "emotion-first hybrid with Mexico bridge and source audio retained",
+      "status": "posted_or_ready_for_posting_2026-09-17"
+    },
     "conditional_1_plus_1_test": {
       "status": "active_during_validation",
       "purpose": "Increase high-quality testing opportunities without turning volume into a quota.",
       "expected_average_reels_per_day": "approximately 1.2-1.5 when candidate quality supports it; zero-post weak days remain allowed",
       "do_not_change_long_term_weights_before": "at least 3 valid Viral Reel results",
-      "compare_single_vs_double_post_days_using": ["follows_per_1000_reach", "shares_per_1000_reach", "skip_rate", "avg_watch_seconds_over_duration", "profile_visits_per_1000_reach", "saves_per_1000_reach"]
+      "compare_single_vs_double_post_days_using": [
+        "follows_per_1000_reach",
+        "shares_per_1000_reach",
+        "skip_rate",
+        "avg_watch_seconds_over_duration",
+        "profile_visits_per_1000_reach",
+        "saves_per_1000_reach"
+      ]
     },
-    "decision_rule": "Do not permanently favor VIRAL or NEWS or permanently adopt two Reels per day from one result. Require at least 3 valid Viral Reel samples and enough clean single-vs-double-post observations before changing portfolio weights, thresholds or permanent posting frequency.",
-    "comparison_kpis_in_order": ["skip_rate", "avg_watch_seconds_over_duration", "shares", "follows", "profile_visits", "saves", "views"],
+    "decision_rule": "Do not permanently favor VIRAL or NEWS from fewer than 3 valid Viral Reel results. During v3.2 Recovery, lower only experimental publishing floors (NEWS 84, VIRAL 85); truth, source verification, Mexico relevance and shared quality gates remain mandatory.",
+    "comparison_kpis_in_order": [
+      "skip_rate",
+      "avg_watch_seconds_over_duration",
+      "shares",
+      "follows",
+      "profile_visits",
+      "saves",
+      "views"
+    ],
     "success_signal": "Viral format and/or conditional second posts should materially improve retention and/or shares/follows relative to recent news-card or single-post days, not merely raw views."
   },
   "safety_and_originality": {
     "rule": "Do not build the strategy around downloading and blindly reuploading other creators' clips. Benchmark the viral mechanism and add meaningful Mexico-specific editorial value, attribution and source context. Prefer official/remix-permitted/authorized sources when available.",
     "never_remove_creator_identity_to_disguise_source": true,
     "instagram_auto_post": false
+  },
+  "recovery_patch": {
+    "objective": "Restore consistent experimentation without lowering truth or Mexico-relevance standards.",
+    "posting_target": "Aim for 1 strong Reel per Mexico day; zero-post days remain allowed when no candidate clears the quality floor.",
+    "quality_floors": {
+      "NEWS": 84,
+      "VIRAL": 85,
+      "breaking_exception": 96
+    },
+    "truth_and_source_verification": "unchanged and mandatory",
+    "mexico_relevance": "unchanged and mandatory",
+    "recovery_mode": {
+      "activate_after_no_post_hours": 48,
+      "rule": "After 48 hours without a post, prioritize the strongest verified candidate that clears its recovery quality floor and shared quality gate. Do not manufacture urgency or publish weak/unverified material."
+    },
+    "adaptive_format": {
+      "rule": "Source availability determines production format; do not kill a strong verified candidate solely because five high-resolution stills are unavailable.",
+      "formats": [
+        "4-5 suitable verified stills: standard NEWS utility Reel",
+        "1-2 suitable verified stills: 2-3 beat motion Reel using crop/zoom/pan",
+        "official or authorized usable video: VIRAL emotion-first hybrid",
+        "single official poster/key visual: poster motion + concise utility text"
+      ],
+      "minimum_asset_rule": "Assets must still meet renderer technical requirements; change format rather than reuse a known failing asset."
+    },
+    "execution_rule": "At 10:00 KST choose and produce the strongest candidate clearing its floor and shared quality gate. At 04:00/16:00/22:00 accumulate candidates; a time-sensitive candidate may be produced in that run when delaying materially reduces value and active daily/exception rules allow it.",
+    "state_sync_rule": "Every Scout run should refresh candidate_state with current research/selection status. Every successful render must update render_history only after MP4 + cover + manifest are verified.",
+    "viral_validation_priority": "Complete Viral Tests #2 and #3 across more than one fandom when qualified candidates clear the recovery floor; do not permanently change NEWS/VIRAL weights before 3 valid Viral results.",
+    "rationale": "v3.1 repeatedly found publishable candidates but production stalled because thresholds, asset rigidity and stale state prevented experiments from reaching render/post."
   }
 }
