@@ -1,23 +1,54 @@
 {
-  "news_id": "STRAYKIDS-STRAYCITY-CONCERTSLIGHTS-FANPROJECT-20260921",
-  "verified_at": "2026-09-22T10:00:00+09:00",
-  "slug": "straykids_straycity_concertslights_fanproject_20260921",
+  "news_id": "HYBE-CINE-FEST-MEXICO-TICKETS-20260930",
+  "verified_at": "2026-09-28T10:01:47+09:00",
+  "slug": "hybe_cine_fest_mexico_tickets_20260928",
   "brand": "@kpopcoreamx",
-  "strategy_version": "3.1-testing/NEWS-v3.0.1",
-  "topic_type": "MEXICO_FAN_EVENT",
-  "final_score": 94,
+  "strategy_version": "3.2-recovery/NEWS-v3.0.1",
+  "topic_type": "TICKET_SALE_OR_STATUS",
+  "final_score": 96,
   "mexico_utility_score": 15,
-  "follow_score": 14,
-  "winning_hook_type": "FOMO_URGENCY",
-  "winning_hook": "STAY MÉXICO: DESCARGA ESTO ANTES DEL SHOW",
+  "follow_score": 15,
+  "winning_hook_type": "MEXICO_UTILITY",
+  "winning_hook": "HYBE CINE FEST MX: 30 SEP · 7 AM",
   "width": 1080,
   "height": 1920,
   "fps": 30,
   "scenes": [
-    {"image_url":"https://www.concertslights.com/src/images/app/event/straycity25_ban.jpg","source_url":"https://www.concertslights.com/2026/events/straykids.html","image_credit":"Concerts Lights · Fan Project 2026","duration":0.6,"headline":"STAY MÉXICO","subheadline":"DESCARGA ESTO ANTES DEL SHOW","fit_mode":"contain","focus_x":0.5,"focus_y":0.5,"zoom":1.04},
-    {"image_url":"https://www.concertslights.com/src/images/app/event/straycity26_ban.jpg","source_url":"https://www.concertslights.com/2026/events/straykids.html","image_credit":"Concerts Lights · Fan Project 2026","duration":1.25,"headline":"25 + 26 SEP · CDMX","subheadline":"FAN PROJECT CON TU CELULAR","fit_mode":"contain","focus_x":0.5,"focus_y":0.5,"zoom":1.05},
-    {"image_url":"https://www.concertslights.com/src/images/app/event/straycity25_ban.jpg","source_url":"https://www.concertslights.com/2026/events/straykids.html","image_credit":"Concerts Lights · Fan Project 2026","duration":1.35,"headline":"BAJA CONCERTS LIGHTS","subheadline":"GRATIS · CONFIGÚRALA ANTES","fit_mode":"contain","focus_x":0.5,"focus_y":0.5,"zoom":1.05},
-    {"image_url":"https://www.concertslights.com/src/images/app/event/straycity26_ban.jpg","source_url":"https://www.concertslights.com/2026/events/straykids.html","image_credit":"Concerts Lights · Fan Project 2026","duration":1.35,"headline":"NO NECESITAS LIGHTSTICK","subheadline":"ABRE LA APP · ACTIVA EL MICRO","fit_mode":"contain","focus_x":0.5,"focus_y":0.5,"zoom":1.05},
-    {"image_url":"https://www.concertslights.com/src/images/app/event/straycity25_ban.jpg","source_url":"https://www.concertslights.com/2026/events/straykids.html","image_credit":"Concerts Lights · Fan Project 2026","duration":1.75,"headline":"ENVÍASELO A TU STAY","subheadline":"@kpopcoreamx · ACTUALIZAMOS CDMX","fit_mode":"contain","focus_x":0.5,"focus_y":0.5,"zoom":1.05}
+    {
+      "image_url": "https://dx35vtwkllhj9.cloudfront.net/trafalgarreleasing/hybe-cine-fest-2026/images/regions/intl/tt.png",
+      "source_url": "https://hybecinefest.com/history/",
+      "image_credit": "HYBE CINE FEST 2026 official",
+      "duration": 0.6,
+      "headline": "HYBE CINE FEST MX",
+      "subheadline": "BOLETOS · 30 SEP · 7 AM",
+      "fit_mode": "contain",
+      "focus_x": 0.5,
+      "focus_y": 0.5,
+      "zoom": 1.04
+    },
+    {
+      "image_url": "https://dx35vtwkllhj9.cloudfront.net/trafalgarreleasing/hybe-cine-fest-2026/images/regions/intl/tt.png",
+      "source_url": "https://hybecinefest.com/participating-territories/",
+      "image_credit": "HYBE CINE FEST 2026 official",
+      "duration": 2.4,
+      "headline": "3 SEDES ESPECIALES EN CDMX",
+      "subheadline": "BUENAVISTA · OASIS · UNIVERSIDAD",
+      "fit_mode": "contain",
+      "focus_x": 0.5,
+      "focus_y": 0.5,
+      "zoom": 1.07
+    },
+    {
+      "image_url": "https://dx35vtwkllhj9.cloudfront.net/trafalgarreleasing/hybe-cine-fest-2026/images/regions/intl/tt.png",
+      "source_url": "https://hybecinefest.com/history/",
+      "image_credit": "HYBE CINE FEST 2026 official",
+      "duration": 3.2,
+      "headline": "BTS + SEVENTEEN + TXT + ENHYPEN",
+      "subheadline": "GUÁRDALO Y ENVÍASELO A TU FANDOM",
+      "fit_mode": "contain",
+      "focus_x": 0.5,
+      "focus_y": 0.5,
+      "zoom": 1.1
+    }
   ]
 }
