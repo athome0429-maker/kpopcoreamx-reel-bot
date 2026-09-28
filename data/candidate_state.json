@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-09-27",
-  "last_updated_at": "2026-09-28T04:00:00+09:00",
-  "daily_render_limit_reached": false,
-  "daily_render_news_id": null,
+  "last_updated_at": "2026-09-28T11:10:00+09:00",
+  "daily_render_limit_reached": true,
+  "daily_render_news_id": "HYBE-CINE-FEST-MEXICO-TICKETS-20260928",
   "performance_rule_active": "v3.2 Recovery active. Aim for one strong Reel per Mexico day; NEWS floor 84, VIRAL floor 85. Truth/source/Mexico relevance gates remain mandatory. Adaptive 2-5 scene rendering enabled.",
-  "selection_note": "04:00 KST v3.2 Recovery research: HYBE CINE FEST 2026 Mexico is the strongest next base candidate (~96), with official global sale Sep 30 and Mexico City Special Location Plus venues verified. K-EXPO final-day alert (~92) is already in its local event-day window and is now a lead-time lesson rather than the best next post. No VIRAL candidate clears 85 with both fresh velocity and source/remix verification. Recovery Mode active; no render in this research run.",
+  "selection_note": "v3.2 Recovery render completed and artifact verified. Workflow run 36364442301, artifact 10946652028. MP4 + cover + manifest verified. Awaiting manual Instagram post; auto-post remains off.",
   "candidates": [
     {
       "news_id": "KEXPO-MEXICO-FINALDAY-20260927",
