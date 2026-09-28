@@ -76,5 +76,22 @@
       "workflow_run_id": 34794872938,
       "artifact_id": 10329940465
     }
+  ],
+  "renders": [
+    {
+      "news_id": "HYBE-CINE-FEST-MEXICO-TICKETS-20260928",
+      "slug": "hybe_cine_fest_mexico_tickets_20260928",
+      "strategy_version": "3.2-recovery",
+      "rendered_at": "2026-09-28T10:03:17+09:00",
+      "status": "RENDER_VERIFIED",
+      "workflow_run_id": 36364442301,
+      "artifact_id": 10946652028,
+      "outputs": {
+        "mp4": "hybe_cine_fest_mexico_tickets_20260928.mp4",
+        "cover": "hybe_cine_fest_mexico_tickets_20260928_cover.jpg",
+        "manifest": "hybe_cine_fest_mexico_tickets_20260928_manifest.json"
+      },
+      "note": "Adaptive 3-scene v3.2 render. MP4, cover and manifest verified in GitHub Actions artifact. Instagram auto-post off; manual post pending."
+    }
   ]
 }
