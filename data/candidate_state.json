@@ -1,46 +1,10 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-09-28",
-  "last_updated_at": "2026-09-28T16:05:00+09:00",
+  "last_updated_at": "2026-09-29T04:05:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: retention improved (skip 32.2%, watch ratio 0.80) but shares 0 and follows 1. Prioritize DM/share and concrete follow reason; do not change engine weights before Viral Tests #2/#3.",
-  "selection_note": "16:00 KST research run. HYBE Cine Fest ticket-sale Reel was already rendered and verified in the prior Mexico day and remains pending manual Instagram posting, so do not duplicate it. Fresh 24h research found TXT PERFECT STORM official comeback news but weak Mexico utility, and fresh Korea Spotlight Mexico aftermath with strong local emotion but no verified current clip-velocity/remix-quality evidence. No new candidate clears NEWS 84 or VIRAL 85 shared quality gate. Accumulate only; no render.",
-  "candidates": [
-    {
-      "news_id": "TXT-PERFECT-STORM-COMEBACK-20260928",
-      "engine": "NEWS",
-      "artist": "TOMORROW X TOGETHER",
-      "headline_ko": "TXT 미니 9집 PERFECT STORM 11월 16일 발매, 6곡 수록",
-      "topic_type": "RELEASE",
-      "final_score": 78,
-      "winning_hook": "MOA MÉXICO: TXT VUELVE EL 16 NOV",
-      "winning_hook_type": "FAN_IDENTITY",
-      "source_urls": [
-        "https://weverse.io/txt/notice/39452",
-        "https://en.yna.co.kr/view/AEN20260928002200315"
-      ],
-      "mexico_relevance_reason": "멕시코 MOA 관심은 높지만 이번 컴백 발표 자체에는 멕시코 전용 시간·판매·현지 행동 정보가 없다.",
-      "follow_reason": "추후 트랙리스트/멕시코 관련 투어 후속 가능성은 있으나 현재 게시물 단독으로는 팔로우 전환 이유가 약하다.",
-      "verified_at": "2026-09-28T16:05:00+09:00",
-      "v3_status": "BELOW_RECOVERY_FLOOR"
-    },
-    {
-      "news_id": "KOREASPOTLIGHT-MEXICO-AFTERMATH-20260927",
-      "engine": "VIRAL",
-      "artist": "WINNER / ALPHA DRIVE ONE / DAYOUNG / SOYOU / TOUCHED",
-      "headline_ko": "Korea Spotlight Mexico 2026 현장 후속: 멕시코 팬 반응과 TOUCHED의 Día de Muertos/Coco 영감 신곡 언급",
-      "topic_type": "VIRAL_FANDOM_MOMENT",
-      "final_score": 82,
-      "winning_hook": "MÉXICO LES DEJÓ ESTO",
-      "winning_hook_type": "CURIOSITY_CONTRAST",
-      "source_urls": [
-        "https://www.excelsior.com.mx/espectaculos/korea-spotlight-2026-winner-alpha-drive-one-y-mucha-musica-coreana-con-sabor-mexicano"
-      ],
-      "mexico_relevance_reason": "CDMX 현장과 멕시코 문화 연결은 강하지만 현재 가속 중인 특정 공식/사용허가 클립의 velocity가 검증되지 않았다.",
-      "follow_reason": "현장 후속과 멕시코 연결은 있으나 특정 후속 행동/업데이트 약속이 약하다.",
-      "verified_at": "2026-09-28T16:05:00+09:00",
-      "v3_status": "BELOW_VIRAL_RECOVERY_FLOOR"
-    }
-  ]
+  "selection_note": "04:00 KST research run: BTS 2026 VMA three-win news and LISA VMA Best Pop / SaWaDiKa live moment were researched. BTS NEWS approx 81 and LISA VIRAL approx 83; both remain below v3.2 Recovery floors/shared Mexico-conversion gate. Existing HYBE Cine Fest Mexico Reel is already rendered, so no duplicate render. No new Reel produced.",
+  "candidates": []
 }
