@@ -5,7 +5,7 @@
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: retention improved (skip 32.2%, watch ratio 0.80) but direct shares 0 and follows 1. Prioritize DM/share and concrete follow reason; do not change engine weights before Viral Tests #2/#3.",
-  "selection_note": "16:00 KST research run: no new distinct candidate cleared the active v3.2 Recovery floors and shared quality gate. Existing verified HYBE CINE FEST Mexico Reel remains the strongest current utility asset; no duplicate render.",
+  "selection_note": "Current v3.2 Recovery research refresh: 24h search, with 48h fallback, found no distinct new NEWS >=84 or VIRAL >=85 candidate that passes the shared quality gate. HYBE CINE FEST Mexico remains the strongest actionable utility story but its verified Reel is already rendered, so duplicate production is blocked. STRAYCITY 270K remains VIRAL 84/HOLD because no sufficiently verified fresh authorized/remix-quality clip plus follow-conversion reason was found. Ongoing SKZOO CDMX pop-up is useful but not fresh enough to outrank the already-rendered HYBE ticket asset. No render.",
   "candidates": [
     {
       "news_id": "STRAYKIDS-STRAYCITY-270K-LATAM-20260929",
