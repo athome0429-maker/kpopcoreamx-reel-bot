@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-09-30",
-  "last_updated_at": "2026-09-30T22:00:00+09:00",
+  "mexico_date": "2026-10-01",
+  "last_updated_at": "2026-10-01T16:02:05+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: retention improved (skip 32.2%, watch ratio 0.80) but direct shares 0 and follows 1. Prioritize DM/share and concrete follow reason; do not change engine weights before Viral Tests #2/#3.",
-  "selection_note": "22:00 KST v3.2 Recovery refresh. Fresh 24h research (48h fallback where needed) found no distinct new NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST Mexico remains the strongest actionable NEWS story, and official Weverse now confirms Global ticket onsale Sep 30 06:00 PDT plus Mexico City Special Location PLUS at Cinépolis Forum Buenavista and Cinépolis Universidad, Oct 19-31; however its verified Reel was already rendered (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. New KATSEYE WILDWORLD official merch is available to ship to Mexico from Sep 29, but estimated NEWS score 80 because local urgency/follow conversion is weaker than the already-rendered HYBE utility story. TWICE ONE IN A MILL10N VEEPS Oct 2 is verified upcoming, but Mexico-specific access/time/practical value is not sufficiently established for >=84. STRAYCITY 270K remains VIRAL 84/HOLD: Mexico emotion is strong, but no newly verified accelerating authorized/remix-quality clip plus concrete follow reason clears 85. No render.",
+  "selection_note": "16:00 KST v3.2 Recovery refresh. Fresh 24h research, expanded to 48h, found no distinct new NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST Mexico remains the strongest actionable story, with Mexico ticket sales now live and fresh Mexican coverage on Sep 30 confirming Cinépolis/Cinemex availability and Oct 24-31 programming, but the same verified Reel was already rendered (workflow 36364442301 / artifact 10946652028), so duplicate production is blocked. STRAYCITY 270K remains VIRAL 84/HOLD: strong Mexico fandom emotion but no newly verified accelerating official/authorized clip plus concrete follow reason. Jennie 'Dracula' Hot 100 top-10 week 18 is fresh and verified but lacks Mexico-specific utility/bridge. No render.",
   "candidates": [
     {
       "news_id": "STRAYKIDS-STRAYCITY-270K-LATAM-20260929",
@@ -38,6 +38,22 @@
         "https://weverse.io/katseye/notice/39528"
       ],
       "verified_at": "2026-09-30T22:00:00+09:00"
+    },
+    {
+      "news_id": "JENNIE-DRACULA-HOT100-W18-20260930",
+      "artist": "Jennie",
+      "headline_ko": "Jennie 'Dracula' Billboard Hot 100 Top 10 18주 연속",
+      "engine": "NEWS",
+      "estimated_score": 72,
+      "status": "HOLD_BELOW_FLOOR",
+      "winning_hook": "BLINK MÉXICO: JENNIE YA LLEVA 18 SEMANAS EN EL TOP 10",
+      "mexico_relevance_reason": "대형 BLACKPINK 팬덤 관심은 있으나 멕시코 직접 정보·행동가치가 없음.",
+      "share_reason": "기록 자부심은 있으나 멕시코 팬이 친구에게 반드시 보낼 실용/현지 이유가 약함.",
+      "follow_reason": "단발성 차트 기록으로 계정의 멕시코 업데이트 약속과 연결이 약함.",
+      "source_urls": [
+        "https://en.yna.co.kr/view/AEN20260930003200315"
+      ],
+      "verified_at": "2026-10-01T16:02:05+09:00"
     }
   ]
 }
