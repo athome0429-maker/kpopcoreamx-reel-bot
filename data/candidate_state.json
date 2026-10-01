@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-09-30",
-  "last_updated_at": "2026-09-30T16:00:00+09:00",
+  "last_updated_at": "2026-09-30T22:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: retention improved (skip 32.2%, watch ratio 0.80) but direct shares 0 and follows 1. Prioritize DM/share and concrete follow reason; do not change engine weights before Viral Tests #2/#3.",
-  "selection_note": "Current v3.2 Recovery research refresh: 24h search, with 48h fallback, found no distinct new NEWS >=84 or VIRAL >=85 candidate that passes the shared quality gate. HYBE CINE FEST Mexico remains the strongest actionable utility story but its verified Reel is already rendered, so duplicate production is blocked. STRAYCITY 270K remains VIRAL 84/HOLD because no sufficiently verified fresh authorized/remix-quality clip plus follow-conversion reason was found. Ongoing SKZOO CDMX pop-up is useful but not fresh enough to outrank the already-rendered HYBE ticket asset. No render.",
+  "selection_note": "22:00 KST v3.2 Recovery refresh. Fresh 24h research (48h fallback where needed) found no distinct new NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST Mexico remains the strongest actionable NEWS story, and official Weverse now confirms Global ticket onsale Sep 30 06:00 PDT plus Mexico City Special Location PLUS at Cinépolis Forum Buenavista and Cinépolis Universidad, Oct 19-31; however its verified Reel was already rendered (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. New KATSEYE WILDWORLD official merch is available to ship to Mexico from Sep 29, but estimated NEWS score 80 because local urgency/follow conversion is weaker than the already-rendered HYBE utility story. TWICE ONE IN A MILL10N VEEPS Oct 2 is verified upcoming, but Mexico-specific access/time/practical value is not sufficiently established for >=84. STRAYCITY 270K remains VIRAL 84/HOLD: Mexico emotion is strong, but no newly verified accelerating authorized/remix-quality clip plus concrete follow reason clears 85. No render.",
   "candidates": [
     {
       "news_id": "STRAYKIDS-STRAYCITY-270K-LATAM-20260929",
@@ -22,6 +22,22 @@
         "https://www.starnewskorea.com/en/music/2026/09/29/2026092909452818497"
       ],
       "verified_at": "2026-09-29T21:59:00+09:00"
+    },
+    {
+      "news_id": "KATSEYE-WILDWORLD-MERCH-MEXICO-20260929",
+      "artist": "KATSEYE",
+      "headline_ko": "KATSEYE WILDWORLD 투어 공식 굿즈, 멕시코 배송 대상 포함",
+      "engine": "NEWS",
+      "estimated_score": 80,
+      "status": "HOLD_BELOW_FLOOR",
+      "winning_hook": "EYEKONS MÉXICO: MERCH OFICIAL YA DISPONIBLE",
+      "mexico_relevance_reason": "Weverse US 공식 공지가 미국·캐나다·멕시코 배송 가능을 명시.",
+      "share_reason": "멕시코 팬에게 구매 가능 여부를 알려주는 실용성은 있으나 티켓/현지 이벤트보다 긴급성과 DM 이유가 약함.",
+      "follow_reason": "재고·추가 굿즈 후속 가능성은 있으나 강한 반복 업데이트 약속은 제한적.",
+      "source_urls": [
+        "https://weverse.io/katseye/notice/39528"
+      ],
+      "verified_at": "2026-09-30T22:00:00+09:00"
     }
   ]
 }
