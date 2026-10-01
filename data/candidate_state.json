@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-01",
-  "last_updated_at": "2026-10-01T16:02:05+09:00",
+  "last_updated_at": "2026-10-02T04:03:26+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: retention improved (skip 32.2%, watch ratio 0.80) but direct shares 0 and follows 1. Prioritize DM/share and concrete follow reason; do not change engine weights before Viral Tests #2/#3.",
-  "selection_note": "16:00 KST v3.2 Recovery refresh. Fresh 24h research, expanded to 48h, found no distinct new NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST Mexico remains the strongest actionable story, with Mexico ticket sales now live and fresh Mexican coverage on Sep 30 confirming Cinépolis/Cinemex availability and Oct 24-31 programming, but the same verified Reel was already rendered (workflow 36364442301 / artifact 10946652028), so duplicate production is blocked. STRAYCITY 270K remains VIRAL 84/HOLD: strong Mexico fandom emotion but no newly verified accelerating official/authorized clip plus concrete follow reason. Jennie 'Dracula' Hot 100 top-10 week 18 is fresh and verified but lacks Mexico-specific utility/bridge. No render.",
+  "selection_note": "04:00 KST v3.2 Recovery refresh. Fresh 24h research expanded to 48h found no distinct NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST Mexico remains actionable but is already rendered (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. STRAYCITY 270K remains VIRAL 84/HOLD: strong Mexico fandom emotion but no newly verified accelerating official/authorized clip plus concrete follow reason. KATSEYE merch remains NEWS 80/HOLD. No render.",
   "candidates": [
     {
       "news_id": "STRAYKIDS-STRAYCITY-270K-LATAM-20260929",
@@ -21,7 +21,7 @@
       "source_urls": [
         "https://www.starnewskorea.com/en/music/2026/09/29/2026092909452818497"
       ],
-      "verified_at": "2026-09-29T21:59:00+09:00"
+      "verified_at": "2026-10-02T04:03:26+09:00"
     },
     {
       "news_id": "KATSEYE-WILDWORLD-MERCH-MEXICO-20260929",
