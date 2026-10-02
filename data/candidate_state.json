@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-01",
-  "last_updated_at": "2026-10-02T04:03:26+09:00",
+  "last_updated_at": "2026-10-02T10:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: retention improved (skip 32.2%, watch ratio 0.80) but direct shares 0 and follows 1. Prioritize DM/share and concrete follow reason; do not change engine weights before Viral Tests #2/#3.",
-  "selection_note": "04:00 KST v3.2 Recovery refresh. Fresh 24h research expanded to 48h found no distinct NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST Mexico remains actionable but is already rendered (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. STRAYCITY 270K remains VIRAL 84/HOLD: strong Mexico fandom emotion but no newly verified accelerating official/authorized clip plus concrete follow reason. KATSEYE merch remains NEWS 80/HOLD. No render.",
+  "selection_note": "10:00 KST v3.2 Recovery final selection. Fresh 24h research expanded to 48h found no distinct NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST Mexico remains the strongest actionable story but is already rendered and verified (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. STRAYCITY 270K remains VIRAL 84/HOLD: Mexico fandom emotion is strong, but no newly verified accelerating official/authorized clip plus concrete follow reason. KATSEYE merch remains NEWS 80/HOLD. No render.",
   "candidates": [
     {
       "news_id": "STRAYKIDS-STRAYCITY-270K-LATAM-20260929",
