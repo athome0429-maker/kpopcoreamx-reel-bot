@@ -1,12 +1,28 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-10-01",
-  "last_updated_at": "2026-10-02T10:00:00+09:00",
+  "mexico_date": "2026-10-02",
+  "last_updated_at": "2026-10-03T10:04:49+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: retention improved (skip 32.2%, watch ratio 0.80) but direct shares 0 and follows 1. Prioritize DM/share and concrete follow reason; do not change engine weights before Viral Tests #2/#3.",
-  "selection_note": "10:00 KST v3.2 Recovery final selection. Fresh 24h research expanded to 48h found no distinct NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST Mexico remains the strongest actionable story but is already rendered and verified (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. STRAYCITY 270K remains VIRAL 84/HOLD: Mexico fandom emotion is strong, but no newly verified accelerating official/authorized clip plus concrete follow reason. KATSEYE merch remains NEWS 80/HOLD. No render.",
+  "selection_note": "10:00 KST v3.2 Recovery final selection. Fresh 24h research expanded to 48h found no distinct new NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. TWICE ONE IN A MILL10N was time-sensitive but its Mexico-day viewing window has reached/entered the event start, so producing now would lose pre-event utility. HYBE CINE FEST Mexico remains strongly actionable and is receiving fresh Mexico coverage, but the same story is already rendered and verified (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. STRAYCITY remains below VIRAL floor without a newly verified accelerating authorized clip and concrete follow reason. No render.",
   "candidates": [
+    {
+      "news_id": "TWICE-ONE-IN-A-MILL10N-VEEPS-20261002",
+      "artist": "TWICE",
+      "headline_ko": "TWICE ONE IN A MILL10N VEEPS 스트리밍 — 멕시코 이벤트 시작 시점 도달로 사전 효용 소멸",
+      "engine": "NEWS",
+      "estimated_score": 82,
+      "status": "EXPIRED_FOR_PRE_EVENT_RENDER",
+      "winning_hook": "ONCE MÉXICO: TWICE HOY",
+      "mexico_relevance_reason": "Ticketmaster México에 VEEPS 이벤트가 10월 2일 등록되어 멕시코 팬 접근성이 확인됨.",
+      "share_reason": "시작 전에는 시간·접근 정보를 DM할 실용성이 있었으나 현재는 이벤트 시작 시점에 도달해 긴급 사전공유 가치가 크게 감소.",
+      "follow_reason": "48시간 다시보기 가능성은 있으나 이번 계정의 강한 멕시코 현지 업데이트 약속으로는 부족해 새 렌더 우선순위가 낮음.",
+      "source_urls": [
+        "https://www.ticketmaster.com.mx/browse/k-pop-catid-839/music-rid-10001/all-of-mexico-dma-801?language=en-mx"
+      ],
+      "verified_at": "2026-10-03T10:04:49+09:00"
+    },
     {
       "news_id": "STRAYKIDS-STRAYCITY-270K-LATAM-20260929",
       "artist": "Stray Kids",
