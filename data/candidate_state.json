@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-03",
-  "last_updated_at": "2026-10-03T16:04:54+09:00",
+  "last_updated_at": "2026-10-04T09:58:31+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
-  "performance_rule_active": "Viral Test #1 remains the only valid Viral test: retention improved (skip 32.2%, watch ratio 0.80) but direct shares 0 and follows 1. Prioritize DM/share and concrete follow reason; do not change engine weights before Viral Tests #2/#3.",
-  "selection_note": "16:00 KST v3.2 Recovery research run. Fresh 24h research expanded to 48h found no distinct new NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. TWICE ONE IN A MILL10N pre-event utility is expired; STRAYCITY remains below VIRAL floor without a newly verified accelerating authorized clip and concrete follow reason. HYBE CINE FEST Mexico remains previously rendered, so duplicate production is blocked. No render.",
+  "performance_rule_active": "Viral Test #1 remains the only valid Viral test: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Prioritize DM/share and concrete follow reason; do not change NEWS/VIRAL weights before Viral Tests #2/#3.",
+  "selection_note": "10:00 KST v3.2 Recovery final-selection run. Fresh 24h research expanded to 48h found no distinct new NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST has renewed Mexico press coverage but is already rendered (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. Stray Kids Grammy non-submission is fresh but lacks direct Mexico utility/follow conversion and remains below VIRAL floor. No render.",
   "candidates": [
     {
       "news_id": "TWICE-ONE-IN-A-MILL10N-VEEPS-20261002",
