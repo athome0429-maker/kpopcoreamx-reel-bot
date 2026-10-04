@@ -1,12 +1,30 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-10-03",
-  "last_updated_at": "2026-10-04T09:58:31+09:00",
+  "mexico_date": "2026-10-04",
+  "last_updated_at": "2026-10-04T16:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Prioritize DM/share and concrete follow reason; do not change NEWS/VIRAL weights before Viral Tests #2/#3.",
-  "selection_note": "10:00 KST v3.2 Recovery final-selection run. Fresh 24h research expanded to 48h found no distinct new NEWS >=84 or VIRAL >=85 candidate passing the shared quality gate. HYBE CINE FEST has renewed Mexico press coverage but is already rendered (workflow 36364442301 / artifact 10946652028), so duplicate production remains blocked. Stray Kids Grammy non-submission is fresh but lacks direct Mexico utility/follow conversion and remains below VIRAL floor. No render.",
+  "selection_note": "16:00 KST v3.2 Recovery research run. New time-sensitive NEWS candidate: Stray Kids SKZOO Global Pop-Up Store CDMX final day Oct 4, verified by multiple Mexico outlets citing the official pop-up; Río Elba 20, reservation required, reported hours 10:00-20:00. Estimated NEWS 88, clears recovery floor/shared gate. Delaying to next 10:00 KST would leave only about one hour before reported closing, so production is warranted now, but current GitHub connector exposes no workflow-dispatch/start action. State refreshed; render not falsely claimed. VIRAL candidates remain below 85.",
   "candidates": [
+    {
+      "news_id": "STRAYKIDS-SKZOO-POPUP-CDMX-LASTDAY-20261004",
+      "artist": "Stray Kids / SKZOO",
+      "headline_ko": "CDMX SKZOO 공식 팝업 10월 4일 마지막 날",
+      "engine": "NEWS",
+      "estimated_score": 88,
+      "status": "QUALIFIED_TIME_SENSITIVE_RENDER_BLOCKED_NO_DISPATCH",
+      "winning_hook": "STAY CDMX: ÚLTIMO DÍA SKZOO",
+      "mexico_relevance_reason": "CDMX Río Elba 20의 SKZOO Global Pop-Up Store가 10월 4일 종료. 멕시코 STAY가 오늘 직접 행동할 수 있는 현지 정보.",
+      "share_reason": "오늘이 마지막 날이고 예약이 필요해 친구에게 즉시 DM할 실용성이 높음.",
+      "follow_reason": "@kpopcoreamx가 멕시코 K-pop 팝업/티켓/마감 정보를 현지시간 기준으로 추적한다는 구체적 팔로우 약속과 연결 가능.",
+      "source_urls": [
+        "https://www.chicmagazine.com.mx/consejos/stray-kids-articulos-y-precios-de-su-pop-up-store-en-cdmx",
+        "https://infobae-infobae-prod.web.arc-cdn.net/mexico/2026/09/09/pop-up-store-de-stray-kids-en-mexico-2026-como-registrarte-y-reservar-tu-entrada/",
+        "https://los40.com.mx/2026/09/01/stray-kids-llega-a-la-cdmx-y-con-ellos-una-pop-up-store-de-skzoo/"
+      ],
+      "verified_at": "2026-10-04T16:00:00+09:00"
+    },
     {
       "news_id": "TWICE-ONE-IN-A-MILL10N-VEEPS-20261002",
       "artist": "TWICE",
