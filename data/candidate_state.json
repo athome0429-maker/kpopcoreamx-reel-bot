@@ -1,28 +1,44 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-10-05",
-  "last_updated_at": "2026-10-06T10:00:50+09:00",
+  "mexico_date": "2026-10-06",
+  "last_updated_at": "2026-10-06T16:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Prioritize DM/share and concrete follow reason; do not change NEWS/VIRAL weights before Viral Tests #2/#3.",
-  "selection_note": "10:00 KST v3.2 Recovery final-selection run. Fresh 24h research expanded to 48h. No new NEWS candidate cleared 84 with the shared quality gate, and no VIRAL candidate cleared 85 with verified current velocity + Mexico bridge + authorized/remix-quality source. Recent Stray Kids Grammy non-submission discussion remains current but lacks direct Mexico utility/follow conversion and is not a qualified VIRAL test. HYBE CINE FEST remains useful Mexico information but already has a verified render, so duplicate production is blocked. Recovery Mode remains active. No render started.",
+  "selection_note": "16:00 KST v3.2 Recovery research run. Fresh 24h research expanded to 48h. Strongest new VIRAL signal: Stray Kids/Bang Chan official-social dance clip ('Passinho do Jamal'), published Oct 5 and receiving fresh media pickup; estimated 83 because current velocity/emotion/source quality are strong but the bridge is Brazil/LatAm rather than Mexico and there is no concrete Mexico follow promise, so it fails the shared Mexico-relevance/follow gate and VIRAL floor 85. Strongest NEWS: BTS South America ARIRANG leg kickoff/follow-up, estimated 82; timely and regionally relevant but not directly actionable for Mexico fans and weak DM/follow utility. No NEWS clears 84 and no VIRAL clears 85 + shared gate. HYBE CINE FEST remains already rendered; duplicate blocked. Recovery Mode active. No render started.",
   "candidates": [
     {
-      "news_id": "STRAYKIDS-GRAMMY-NONSUBMISSION-20261002",
-      "artist": "Stray Kids",
-      "headline_ko": "Stray Kids 2027 Grammy 출품하지 않음",
+      "news_id": "STRAYKIDS-BANGCHAN-PASSINHO-20261005",
+      "artist": "Stray Kids / Bang Chan",
+      "headline_ko": "Bang Chan 공식 소셜 브라질 Passinho do Jamal 댄스 영상 확산",
       "engine": "VIRAL",
+      "estimated_score": 83,
+      "status": "HOLD_BELOW_FLOOR",
+      "winning_hook": "STAY LATAM: BANG CHAN CUMPLIÓ LA PROMESA",
+      "mexico_relevance_reason": "멕시코 STAY도 반응할 수 있는 라틴 팬 감정 소재지만 직접 연결은 브라질이며 Mexico-specific bridge가 약함.",
+      "share_reason": "공식 소셜 기반의 신선한 댄스 순간이라 감정·공유 잠재력은 높지만 멕시코 고유 편집가치가 부족함.",
+      "follow_reason": "후속 멕시코 일정/정보로 이어지는 구체적 약속이 없어 팔로우 전환 근거가 약함.",
+      "source_urls": [
+        "https://www.uol.com.br/splash/noticias/2026/10/05/lider-do-stray-kids-danca-funk-e-faz-passinho-do-jamal.ghtm",
+        "https://hitmagazine.com.br/prometeu-treinou-e-cumpriu-bang-chan-stray-kids-entrega-passinho-do-jamal-e-faz-b-stay-surtar/"
+      ],
+      "verified_at": "2026-10-06T16:00:00+09:00"
+    },
+    {
+      "news_id": "BTS-ARIRANG-SOUTHAMERICA-BOGOTA-20261005",
+      "artist": "BTS",
+      "headline_ko": "BTS ARIRANG 남미 투어 보고타 시작",
+      "engine": "NEWS",
       "estimated_score": 82,
       "status": "HOLD_BELOW_FLOOR",
-      "winning_hook": "STAY MÉXICO: SKZ NO ENTRÓ AL GRAMMY 2027",
-      "mexico_relevance_reason": "멕시코 STAY 팬덤 관심은 높지만 멕시코 직접 행동 정보나 현지 연결은 약함.",
-      "share_reason": "논쟁성과 팬 감정은 있으나 현재 가속 중인 authorized/remix 영상과 멕시코 고유 편집가치를 함께 검증하지 못함.",
-      "follow_reason": "후속 후보 발표는 가능하지만 계정의 멕시코 실용 업데이트 약속으로 전환되는 힘이 약함.",
+      "winning_hook": "ARMY LATAM: BTS YA ESTÁ EN SUDAMÉRICA",
+      "mexico_relevance_reason": "라틴아메리카 투어 흐름은 멕시코 ARMY 관심이 높지만 현재 멕시코에서 해야 할 행동 정보는 없음.",
+      "share_reason": "라틴 팬 자부심은 있으나 멕시코 친구에게 꼭 보내야 할 실용성이 약함.",
+      "follow_reason": "멕시코 관련 새 일정/변경이 확인되지 않아 구체적 후속 약속이 약함.",
       "source_urls": [
-        "https://f5.folha.uol.com.br/musica/2026/10/stray-kids-nao-se-inscreve-no-grammy-2027-apos-criacao-de-categoria-de-k-pop.shtml",
-        "https://www.uol.com.br/splash/noticias/2026/10/02/stray-kids-segue-bts-e-fica-fora-do-grammy-de-2027.ghtm"
+        "https://www.kpopvisage.com/news/2026-10-05"
       ],
-      "verified_at": "2026-10-06T10:00:50+09:00"
+      "verified_at": "2026-10-06T16:00:00+09:00"
     },
     {
       "news_id": "HYBE-CINE-FEST-MEXICO-TICKETS-20260928",
@@ -35,8 +51,10 @@
       "mexico_relevance_reason": "멕시코 팬에게 직접적인 극장·티켓 실용 정보.",
       "share_reason": "친구와 상영 일정/티켓 정보를 공유할 실용성이 높음.",
       "follow_reason": "상영시간·잔여석 등 후속 정보 추적 가능.",
-      "source_urls": ["https://www.elfinanciero.com.mx/entretenimiento/2026/09/30/hybe-fest-en-cines-fechas-cartelera-boletos-y-detalles-de-los-conciertos-de-bts-seventeen-y-mas/"],
-      "verified_at": "2026-10-06T10:00:50+09:00"
+      "source_urls": [
+        "https://www.elfinanciero.com.mx/entretenimiento/2026/09/30/hybe-fest-en-cines-fechas-cartelera-boletos-y-detalles-de-los-conciertos-de-bts-seventeen-y-mas/"
+      ],
+      "verified_at": "2026-10-06T16:00:00+09:00"
     }
   ]
 }
