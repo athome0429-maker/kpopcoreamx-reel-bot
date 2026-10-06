@@ -1,93 +1,42 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-10-04",
-  "last_updated_at": "2026-10-05T04:00:00+09:00",
+  "mexico_date": "2026-10-05",
+  "last_updated_at": "2026-10-06T10:00:50+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Prioritize DM/share and concrete follow reason; do not change NEWS/VIRAL weights before Viral Tests #2/#3.",
-  "selection_note": "04:00 KST v3.2 Recovery research run. The prior SKZOO CDMX final-day candidate has now expired as a pre-event utility Reel because Oct 4 local-day urgency is ending; do not render it after the fact. Fresh 24h research, expanded to 48h, found no new NEWS candidate clearing 84 and no VIRAL candidate clearing 85 with verified current velocity + Mexico bridge + authorized/remix-quality source. HYBE CINE FEST remains useful Mexico information but already has a verified render, so no duplicate production. Recovery Mode remains active. No render started.",
+  "selection_note": "10:00 KST v3.2 Recovery final-selection run. Fresh 24h research expanded to 48h. No new NEWS candidate cleared 84 with the shared quality gate, and no VIRAL candidate cleared 85 with verified current velocity + Mexico bridge + authorized/remix-quality source. Recent Stray Kids Grammy non-submission discussion remains current but lacks direct Mexico utility/follow conversion and is not a qualified VIRAL test. HYBE CINE FEST remains useful Mexico information but already has a verified render, so duplicate production is blocked. Recovery Mode remains active. No render started.",
   "candidates": [
     {
-      "news_id": "STRAYKIDS-SKZOO-POPUP-CDMX-LASTDAY-20261004",
-      "artist": "Stray Kids / SKZOO",
-      "headline_ko": "CDMX SKZOO 공식 팝업 10월 4일 마지막 날",
-      "engine": "NEWS",
-      "estimated_score": 76,
-      "status": "EXPIRED_FOR_PRE_EVENT_RENDER",
-      "winning_hook": "STAY CDMX: ÚLTIMO DÍA SKZOO",
-      "mexico_relevance_reason": "CDMX Río Elba 20의 SKZOO Global Pop-Up Store가 10월 4일 종료. 멕시코 STAY가 오늘 직접 행동할 수 있는 현지 정보.",
-      "share_reason": "10월 4일 마지막 날이라는 핵심 긴급성이 현지 날짜 종료와 함께 소멸해 사전 DM/행동 가치가 크게 감소.",
-      "follow_reason": "@kpopcoreamx가 멕시코 K-pop 팝업/티켓/마감 정보를 현지시간 기준으로 추적한다는 구체적 팔로우 약속과 연결 가능.",
-      "source_urls": [
-        "https://www.infobae.com/mexico/2026/09/09/pop-up-store-de-stray-kids-en-mexico-2026-como-registrarte-y-reservar-tu-entrada/",
-        "https://www.chicmagazine.com.mx/personajes/stray-kids-en-cdmx-horarios-ubicacion-fecha-apertura-pop-up-store",
-        "https://www.chicmagazine.com.mx/consejos/stray-kids-articulos-y-precios-de-su-pop-up-store-en-cdmx"
-      ],
-      "verified_at": "2026-10-05T04:00:00+09:00"
-    },
-    {
-      "news_id": "TWICE-ONE-IN-A-MILL10N-VEEPS-20261002",
-      "artist": "TWICE",
-      "headline_ko": "TWICE ONE IN A MILL10N VEEPS 스트리밍 — 멕시코 이벤트 시작 시점 도달로 사전 효용 소멸",
-      "engine": "NEWS",
-      "estimated_score": 82,
-      "status": "EXPIRED_FOR_PRE_EVENT_RENDER",
-      "winning_hook": "ONCE MÉXICO: TWICE HOY",
-      "mexico_relevance_reason": "Ticketmaster México에 VEEPS 이벤트가 10월 2일 등록되어 멕시코 팬 접근성이 확인됨.",
-      "share_reason": "시작 전에는 시간·접근 정보를 DM할 실용성이 있었으나 현재는 이벤트 시작 시점에 도달해 긴급 사전공유 가치가 크게 감소.",
-      "follow_reason": "48시간 다시보기 가능성은 있으나 이번 계정의 강한 멕시코 현지 업데이트 약속으로는 부족해 새 렌더 우선순위가 낮음.",
-      "source_urls": [
-        "https://www.ticketmaster.com.mx/browse/k-pop-catid-839/music-rid-10001/all-of-mexico-dma-801?language=en-mx"
-      ],
-      "verified_at": "2026-10-03T16:04:54+09:00"
-    },
-    {
-      "news_id": "STRAYKIDS-STRAYCITY-270K-LATAM-20260929",
+      "news_id": "STRAYKIDS-GRAMMY-NONSUBMISSION-20261002",
       "artist": "Stray Kids",
-      "headline_ko": "STRAYCITY 라틴아메리카 5회 공연 총 27만 관객, 멕시코시티 9월 25~26일 피날레",
+      "headline_ko": "Stray Kids 2027 Grammy 출품하지 않음",
       "engine": "VIRAL",
-      "estimated_score": 84,
-      "status": "HOLD_FOR_SOURCE_VELOCITY",
-      "winning_hook": "STAY MÉXICO: STRAYCITY CERRÓ CON 270 MIL",
-      "mexico_relevance_reason": "STRAYCITY 첫 라틴아메리카 런이 CDMX 이틀 공연으로 종료되어 멕시코 STAY와 직접 연결됨.",
-      "share_reason": "대형 관객 규모와 CDMX 피날레는 팬 자부심/감정 공유 이유가 있음.",
-      "follow_reason": "사건 자체는 종료된 후속 기록이라 다음 행동·지속 업데이트 약속이 약함.",
+      "estimated_score": 82,
+      "status": "HOLD_BELOW_FLOOR",
+      "winning_hook": "STAY MÉXICO: SKZ NO ENTRÓ AL GRAMMY 2027",
+      "mexico_relevance_reason": "멕시코 STAY 팬덤 관심은 높지만 멕시코 직접 행동 정보나 현지 연결은 약함.",
+      "share_reason": "논쟁성과 팬 감정은 있으나 현재 가속 중인 authorized/remix 영상과 멕시코 고유 편집가치를 함께 검증하지 못함.",
+      "follow_reason": "후속 후보 발표는 가능하지만 계정의 멕시코 실용 업데이트 약속으로 전환되는 힘이 약함.",
       "source_urls": [
-        "https://www.starnewskorea.com/en/music/2026/09/29/2026092909452818497"
+        "https://f5.folha.uol.com.br/musica/2026/10/stray-kids-nao-se-inscreve-no-grammy-2027-apos-criacao-de-categoria-de-k-pop.shtml",
+        "https://www.uol.com.br/splash/noticias/2026/10/02/stray-kids-segue-bts-e-fica-fora-do-grammy-de-2027.ghtm"
       ],
-      "verified_at": "2026-10-02T04:03:26+09:00"
+      "verified_at": "2026-10-06T10:00:50+09:00"
     },
     {
-      "news_id": "KATSEYE-WILDWORLD-MERCH-MEXICO-20260929",
-      "artist": "KATSEYE",
-      "headline_ko": "KATSEYE WILDWORLD 투어 공식 굿즈, 멕시코 배송 대상 포함",
+      "news_id": "HYBE-CINE-FEST-MEXICO-TICKETS-20260928",
+      "artist": "HYBE artists",
+      "headline_ko": "HYBE CINE FEST México 티켓/상영 정보",
       "engine": "NEWS",
-      "estimated_score": 80,
-      "status": "HOLD_BELOW_FLOOR",
-      "winning_hook": "EYEKONS MÉXICO: MERCH OFICIAL YA DISPONIBLE",
-      "mexico_relevance_reason": "Weverse US 공식 공지가 미국·캐나다·멕시코 배송 가능을 명시.",
-      "share_reason": "멕시코 팬에게 구매 가능 여부를 알려주는 실용성은 있으나 티켓/현지 이벤트보다 긴급성과 DM 이유가 약함.",
-      "follow_reason": "재고·추가 굿즈 후속 가능성은 있으나 강한 반복 업데이트 약속은 제한적.",
-      "source_urls": [
-        "https://weverse.io/katseye/notice/39528"
-      ],
-      "verified_at": "2026-09-30T22:00:00+09:00"
-    },
-    {
-      "news_id": "JENNIE-DRACULA-HOT100-W18-20260930",
-      "artist": "Jennie",
-      "headline_ko": "Jennie 'Dracula' Billboard Hot 100 Top 10 18주 연속",
-      "engine": "NEWS",
-      "estimated_score": 72,
-      "status": "HOLD_BELOW_FLOOR",
-      "winning_hook": "BLINK MÉXICO: JENNIE YA LLEVA 18 SEMANAS EN EL TOP 10",
-      "mexico_relevance_reason": "대형 BLACKPINK 팬덤 관심은 있으나 멕시코 직접 정보·행동가치가 없음.",
-      "share_reason": "기록 자부심은 있으나 멕시코 팬이 친구에게 반드시 보낼 실용/현지 이유가 약함.",
-      "follow_reason": "단발성 차트 기록으로 계정의 멕시코 업데이트 약속과 연결이 약함.",
-      "source_urls": [
-        "https://en.yna.co.kr/view/AEN20260930003200315"
-      ],
-      "verified_at": "2026-10-01T16:02:05+09:00"
+      "estimated_score": 96,
+      "status": "ALREADY_RENDERED_NO_DUPLICATE",
+      "winning_hook": "HYBE CINE FEST MX: BOLETOS YA",
+      "mexico_relevance_reason": "멕시코 팬에게 직접적인 극장·티켓 실용 정보.",
+      "share_reason": "친구와 상영 일정/티켓 정보를 공유할 실용성이 높음.",
+      "follow_reason": "상영시간·잔여석 등 후속 정보 추적 가능.",
+      "source_urls": ["https://www.elfinanciero.com.mx/entretenimiento/2026/09/30/hybe-fest-en-cines-fechas-cartelera-boletos-y-detalles-de-los-conciertos-de-bts-seventeen-y-mas/"],
+      "verified_at": "2026-10-06T10:00:50+09:00"
     }
   ]
 }
