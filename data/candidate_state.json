@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-06",
-  "last_updated_at": "2026-10-06T16:00:00+09:00",
+  "last_updated_at": "2026-10-07T04:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Prioritize DM/share and concrete follow reason; do not change NEWS/VIRAL weights before Viral Tests #2/#3.",
-  "selection_note": "16:00 KST v3.2 Recovery research run. Fresh 24h research expanded to 48h. Strongest new VIRAL signal: Stray Kids/Bang Chan official-social dance clip ('Passinho do Jamal'), published Oct 5 and receiving fresh media pickup; estimated 83 because current velocity/emotion/source quality are strong but the bridge is Brazil/LatAm rather than Mexico and there is no concrete Mexico follow promise, so it fails the shared Mexico-relevance/follow gate and VIRAL floor 85. Strongest NEWS: BTS South America ARIRANG leg kickoff/follow-up, estimated 82; timely and regionally relevant but not directly actionable for Mexico fans and weak DM/follow utility. No NEWS clears 84 and no VIRAL clears 85 + shared gate. HYBE CINE FEST remains already rendered; duplicate blocked. Recovery Mode active. No render started.",
+  "selection_note": "04:00 KST v3.2 Recovery research run. Fresh 24h research expanded to 48h, official/first-party preferred. No new candidate clears NEWS 84 or VIRAL 85 plus shared quality gate. Strongest VIRAL remains Stray Kids/Bang Chan 'Passinho do Jamal' at estimated 83: genuine fresh official-social velocity and fan emotion, but Brazil/LatAm bridge rather than Mexico and weak concrete follow promise. Strongest fresh NEWS signal is the Oct 6 Q4 comeback calendar/Lisa PRESS PLAY Oct 23 at estimated 78: current and high-fandom-interest, but no Mexico-specific action/utility yet. BLACKPINK 'Boombayah' 1.9B milestone is verified as a fresh milestone but one-off and weak Mexico/share/follow utility, estimated 77. Recovery Mode active. HYBE CINE FEST remains already rendered; duplicate blocked. No render started.",
   "candidates": [
     {
       "news_id": "STRAYKIDS-BANGCHAN-PASSINHO-20261005",
@@ -19,26 +19,42 @@
       "share_reason": "공식 소셜 기반의 신선한 댄스 순간이라 감정·공유 잠재력은 높지만 멕시코 고유 편집가치가 부족함.",
       "follow_reason": "후속 멕시코 일정/정보로 이어지는 구체적 약속이 없어 팔로우 전환 근거가 약함.",
       "source_urls": [
-        "https://www.uol.com.br/splash/noticias/2026/10/05/lider-do-stray-kids-danca-funk-e-faz-passinho-do-jamal.ghtm",
-        "https://hitmagazine.com.br/prometeu-treinou-e-cumpriu-bang-chan-stray-kids-entrega-passinho-do-jamal-e-faz-b-stay-surtar/"
+        "https://www.uol.com.br/splash/noticias/2026/10/05/lider-do-stray-kids-danca-funk-e-faz-passinho-do-jamal.ghtm"
       ],
-      "verified_at": "2026-10-06T16:00:00+09:00"
+      "verified_at": "2026-10-07T04:00:00+09:00"
     },
     {
-      "news_id": "BTS-ARIRANG-SOUTHAMERICA-BOGOTA-20261005",
-      "artist": "BTS",
-      "headline_ko": "BTS ARIRANG 남미 투어 보고타 시작",
+      "news_id": "LISA-PRESS-PLAY-OCT23-20261006",
+      "artist": "LISA",
+      "headline_ko": "LISA PRESS PLAY EP 10월 23일 발매 일정 재확인",
       "engine": "NEWS",
-      "estimated_score": 82,
+      "estimated_score": 78,
       "status": "HOLD_BELOW_FLOOR",
-      "winning_hook": "ARMY LATAM: BTS YA ESTÁ EN SUDAMÉRICA",
-      "mexico_relevance_reason": "라틴아메리카 투어 흐름은 멕시코 ARMY 관심이 높지만 현재 멕시코에서 해야 할 행동 정보는 없음.",
-      "share_reason": "라틴 팬 자부심은 있으나 멕시코 친구에게 꼭 보내야 할 실용성이 약함.",
-      "follow_reason": "멕시코 관련 새 일정/변경이 확인되지 않아 구체적 후속 약속이 약함.",
+      "winning_hook": "BLINK MÉXICO: LISA VUELVE EL 23 OCT",
+      "mexico_relevance_reason": "멕시코 BLINK 관심은 높지만 현재 Mexico-specific 시간·판매·행동 정보가 없음.",
+      "share_reason": "컴백 일정 공유 가치는 있으나 멕시코 친구에게 꼭 보내야 할 실용성이 낮음.",
+      "follow_reason": "멕시코 현지 프로모션/판매/이벤트 후속이 아직 확인되지 않아 구체적 팔로우 약속이 약함.",
       "source_urls": [
-        "https://www.kpopvisage.com/news/2026-10-05"
+        "https://www.koreatimes.co.kr/entertainment/k-pop/20261006/ive-illit-riize-collide-as-october-k-pop-comeback-race-heats-up",
+        "https://www.forbes.com/sites/jeffbenjamin/2026/10/01/2026-q4-release-calendar-all-the-new-k-pop-comebacks/"
       ],
-      "verified_at": "2026-10-06T16:00:00+09:00"
+      "verified_at": "2026-10-07T04:00:00+09:00"
+    },
+    {
+      "news_id": "BLACKPINK-BOOMBAYAH-1P9B-20261006",
+      "artist": "BLACKPINK",
+      "headline_ko": "BLACKPINK BOOMBAYAH 뮤직비디오 19억 조회 돌파",
+      "engine": "NEWS",
+      "estimated_score": 77,
+      "status": "HOLD_BELOW_FLOOR",
+      "winning_hook": "BLINK: BOOMBAYAH YA PASÓ 1.9B",
+      "mexico_relevance_reason": "대형 팬덤 기록이지만 멕시코 직접 연결이 없음.",
+      "share_reason": "팬 자부심 공유는 가능하지만 실용/DM 이유가 약함.",
+      "follow_reason": "일회성 기록이라 @kpopcoreamx를 계속 팔로우할 구체적 이유가 약함.",
+      "source_urls": [
+        "https://www.kpopangel.com/news/10893913"
+      ],
+      "verified_at": "2026-10-07T04:00:00+09:00"
     },
     {
       "news_id": "HYBE-CINE-FEST-MEXICO-TICKETS-20260928",
@@ -54,7 +70,7 @@
       "source_urls": [
         "https://www.elfinanciero.com.mx/entretenimiento/2026/09/30/hybe-fest-en-cines-fechas-cartelera-boletos-y-detalles-de-los-conciertos-de-bts-seventeen-y-mas/"
       ],
-      "verified_at": "2026-10-06T16:00:00+09:00"
+      "verified_at": "2026-10-07T04:00:00+09:00"
     }
   ]
 }
