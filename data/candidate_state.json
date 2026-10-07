@@ -1,12 +1,28 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-10-06",
-  "last_updated_at": "2026-10-07T04:00:00+09:00",
+  "mexico_date": "2026-10-07",
+  "last_updated_at": "2026-10-07T16:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 remains the only valid Viral test: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Prioritize DM/share and concrete follow reason; do not change NEWS/VIRAL weights before Viral Tests #2/#3.",
-  "selection_note": "04:00 KST v3.2 Recovery research run. Fresh 24h research expanded to 48h, official/first-party preferred. No new candidate clears NEWS 84 or VIRAL 85 plus shared quality gate. Strongest VIRAL remains Stray Kids/Bang Chan 'Passinho do Jamal' at estimated 83: genuine fresh official-social velocity and fan emotion, but Brazil/LatAm bridge rather than Mexico and weak concrete follow promise. Strongest fresh NEWS signal is the Oct 6 Q4 comeback calendar/Lisa PRESS PLAY Oct 23 at estimated 78: current and high-fandom-interest, but no Mexico-specific action/utility yet. BLACKPINK 'Boombayah' 1.9B milestone is verified as a fresh milestone but one-off and weak Mexico/share/follow utility, estimated 77. Recovery Mode active. HYBE CINE FEST remains already rendered; duplicate blocked. No render started.",
+  "selection_note": "16:00 KST v3.2 Recovery research run. Fresh 24h research expanded to 48h with official/first-party sources preferred. No new candidate clears NEWS 84 or VIRAL 85 plus the shared quality gate. Strongest fresh NEWS signal is BTS ARIRANG Lima on Oct 7 at estimated 82: Ticketmaster verifies the Lima show at 20:00 local, and the current South America tour gives strong ARMY/LatAm interest, but there is no Mexico-specific action, utility, or concrete follow promise now that Mexico dates are past. Strongest VIRAL remains Stray Kids/Bang Chan 'Passinho do Jamal' at estimated 83: genuine fresh official-social velocity and fan emotion, but the natural bridge is Brazil/LatAm rather than Mexico and direct DM/follow conversion rationale remains weak. HYBE CINE FEST Mexico remains the strongest Mexico-utility story but is already rendered and duplicate production is blocked. Recovery Mode active. No render started.",
   "candidates": [
+    {
+      "news_id": "BTS-ARIRANG-LIMA-20261007",
+      "artist": "BTS",
+      "headline_ko": "BTS ARIRANG 남미 투어 리마 공연 10월 7일 진행",
+      "engine": "NEWS",
+      "estimated_score": 82,
+      "status": "HOLD_BELOW_FLOOR",
+      "winning_hook": "ARMY LATAM: BTS HOY EN LIMA",
+      "mexico_relevance_reason": "남미 투어 흐름은 멕시코 ARMY 관심이 높지만 멕시코 공연은 이미 종료되어 현재 Mexico-specific 행동 정보가 없음.",
+      "share_reason": "라틴 ARMY 감정 공유는 가능하지만 멕시코 팬이 친구에게 꼭 보내야 할 실용 정보는 약함.",
+      "follow_reason": "멕시코 티켓·현지 일정·접근정보로 이어지는 구체적인 후속 약속이 현재 없음.",
+      "source_urls": [
+        "https://www.ticketmaster.com.mx/browse/k-pop-catid-839/music-rid-10001/all-of-mexico-dma-801%3Flanguage%3Den-mx"
+      ],
+      "verified_at": "2026-10-07T16:00:00+09:00"
+    },
     {
       "news_id": "STRAYKIDS-BANGCHAN-PASSINHO-20261005",
       "artist": "Stray Kids / Bang Chan",
