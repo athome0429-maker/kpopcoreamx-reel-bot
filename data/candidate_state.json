@@ -1,92 +1,97 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-07",
-  "last_updated_at": "2026-10-07T16:00:00+09:00",
+  "last_updated_at": "2026-10-08T10:02:33+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
-  "performance_rule_active": "Viral Test #1 remains the only valid Viral test: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Prioritize DM/share and concrete follow reason; do not change NEWS/VIRAL weights before Viral Tests #2/#3.",
-  "selection_note": "16:00 KST v3.2 Recovery research run. Fresh 24h research expanded to 48h with official/first-party sources preferred. No new candidate clears NEWS 84 or VIRAL 85 plus the shared quality gate. Strongest fresh NEWS signal is BTS ARIRANG Lima on Oct 7 at estimated 82: Ticketmaster verifies the Lima show at 20:00 local, and the current South America tour gives strong ARMY/LatAm interest, but there is no Mexico-specific action, utility, or concrete follow promise now that Mexico dates are past. Strongest VIRAL remains Stray Kids/Bang Chan 'Passinho do Jamal' at estimated 83: genuine fresh official-social velocity and fan emotion, but the natural bridge is Brazil/LatAm rather than Mexico and direct DM/follow conversion rationale remains weak. HYBE CINE FEST Mexico remains the strongest Mexico-utility story but is already rendered and duplicate production is blocked. Recovery Mode active. No render started.",
+  "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
+  "selection_note": "2026-10-08 10:00 KST v3.2 Recovery final-selection run (Mexico date Oct 7). Checked NEWS and VIRAL across Oct 7-8 KST / preceding 24h, with 48h expansion. New strongest NEWS: ATEEZ GOLDEN HOUR : Part.6 Nov 13 14:00 KST (Nov 12 23:00 CDMX), official teaser CRASH TO BEGIN, estimated 83/100. Strong source/date and usable official video but Mexico bridge is only time conversion; share/follow rationale does not clear 84 plus strong shared gate. BTS Lima Oct 7 opening and Peru fan drone show verified via Ticketmaster and BTS Peru fanclub; estimated NEWS 81 due Peru-not-Mexico actionability. Strongest current VIRAL: ATEEZ CRASH TO BEGIN teaser estimated 77/100; first-party video exists but independent 24h acceleration/viral velocity is unverified and Mexico bridge weak. BTS Lima crowd footage has first-party news video but no authorized remix rights/verified acceleration. Prior Bang Chan Brazil Passinho Oct 5 now outside current 48h window. HYBE CINE FEST Mexico remains previously rendered; do not duplicate. No qualifying NEW NEWS >=84 or VIRAL >=85; NO RENDER. Recovery Mode ACTIVE on recorded history, pending actual IG post verification. Instagram auto-post OFF. GitHub workflow not dispatched.",
   "candidates": [
     {
-      "news_id": "BTS-ARIRANG-LIMA-20261007",
-      "artist": "BTS",
-      "headline_ko": "BTS ARIRANG 남미 투어 리마 공연 10월 7일 진행",
+      "news_id": "ATEEZ-GOLDENHOUR-PART6-20261008",
+      "artist": "ATEEZ",
+      "headline_ko": "ATEEZ GOLDEN HOUR : Part.6 11월 13일 14시 KST 컴백 공식 티저 공개",
       "engine": "NEWS",
-      "estimated_score": 82,
-      "status": "HOLD_BELOW_FLOOR",
-      "winning_hook": "ARMY LATAM: BTS HOY EN LIMA",
-      "mexico_relevance_reason": "남미 투어 흐름은 멕시코 ARMY 관심이 높지만 멕시코 공연은 이미 종료되어 현재 Mexico-specific 행동 정보가 없음.",
-      "share_reason": "라틴 ARMY 감정 공유는 가능하지만 멕시코 팬이 친구에게 꼭 보내야 할 실용 정보는 약함.",
-      "follow_reason": "멕시코 티켓·현지 일정·접근정보로 이어지는 구체적인 후속 약속이 현재 없음.",
-      "source_urls": [
-        "https://www.ticketmaster.com.mx/browse/k-pop-catid-839/music-rid-10001/all-of-mexico-dma-801%3Flanguage%3Den-mx"
-      ],
-      "verified_at": "2026-10-07T16:00:00+09:00"
-    },
-    {
-      "news_id": "STRAYKIDS-BANGCHAN-PASSINHO-20261005",
-      "artist": "Stray Kids / Bang Chan",
-      "headline_ko": "Bang Chan 공식 소셜 브라질 Passinho do Jamal 댄스 영상 확산",
-      "engine": "VIRAL",
       "estimated_score": 83,
       "status": "HOLD_BELOW_FLOOR",
-      "winning_hook": "STAY LATAM: BANG CHAN CUMPLIÓ LA PROMESA",
-      "mexico_relevance_reason": "멕시코 STAY도 반응할 수 있는 라틴 팬 감정 소재지만 직접 연결은 브라질이며 Mexico-specific bridge가 약함.",
-      "share_reason": "공식 소셜 기반의 신선한 댄스 순간이라 감정·공유 잠재력은 높지만 멕시코 고유 편집가치가 부족함.",
-      "follow_reason": "후속 멕시코 일정/정보로 이어지는 구체적 약속이 없어 팔로우 전환 근거가 약함.",
+      "winning_hook": "ATINY MÉXICO: ATEEZ · 12 NOV, 11 PM",
+      "mexico_relevance_reason": "공식 발매시각을 CDMX 11월 12일 23:00으로 변환할 수 있지만 멕시코 독점 판매/행사/티켓/접근정보는 확인되지 않음.",
+      "share_reason": "멕시코 ATINY가 컴백 시간을 친구에게 보낼 수 있으나 발매까지 5주 남았고 즉시 행동·공유 긴급성은 제한적.",
+      "follow_reason": "공식 티저/트랙리스트 등 후속 확인 가능성은 있으나 구체적 멕시코 전용 업데이트 약속은 아직 약함.",
       "source_urls": [
-        "https://www.uol.com.br/splash/noticias/2026/10/05/lider-do-stray-kids-danca-funk-e-faz-passinho-do-jamal.ghtm"
+        "https://www.youtube.com/watch?v=SHIL6u0iRuk",
+        "https://www.soompi.com/article/1876093wpp/watch-ateez-announces-november-comeback-date-with-exciting-crash-to-begin-teaser",
+        "https://www.posta.com.mx/share/ateez-anuncia-golden-hour-part6-crash-to-begin-y-regresa-antes-de-lo-esperado/vl2263784"
       ],
-      "verified_at": "2026-10-07T04:00:00+09:00"
+      "verified_at": "2026-10-08T10:02:33+09:00"
     },
     {
-      "news_id": "LISA-PRESS-PLAY-OCT23-20261006",
-      "artist": "LISA",
-      "headline_ko": "LISA PRESS PLAY EP 10월 23일 발매 일정 재확인",
+      "news_id": "BTS-LIMA-OPENING-20261007",
+      "artist": "BTS",
+      "headline_ko": "BTS 리마 첫 공연 10월 7일 개최, 페루 ARMY 드론쇼 10월 8일 예정",
       "engine": "NEWS",
-      "estimated_score": 78,
+      "estimated_score": 81,
       "status": "HOLD_BELOW_FLOOR",
-      "winning_hook": "BLINK MÉXICO: LISA VUELVE EL 23 OCT",
-      "mexico_relevance_reason": "멕시코 BLINK 관심은 높지만 현재 Mexico-specific 시간·판매·행동 정보가 없음.",
-      "share_reason": "컴백 일정 공유 가치는 있으나 멕시코 친구에게 꼭 보내야 할 실용성이 낮음.",
-      "follow_reason": "멕시코 현지 프로모션/판매/이벤트 후속이 아직 확인되지 않아 구체적 팔로우 약속이 약함.",
+      "winning_hook": "ARMY LATAM: BTS ESTRENA LIMA HOY",
+      "mexico_relevance_reason": "공식 티켓 플랫폼으로 리마 공연 일정 확인, 페루 팬클럽이 드론쇼 일정 확인. 멕시코 팬이 직접 참여/시청할 수 있는 정보는 미확인.",
+      "share_reason": "라틴 ARMY 감정/연대 가치 있으나 멕시코 직접 효용 약함.",
+      "follow_reason": "멕시코 관련 후속 일정이나 실용 정보 약함.",
       "source_urls": [
-        "https://www.koreatimes.co.kr/entertainment/k-pop/20261006/ive-illit-riize-collide-as-october-k-pop-comeback-race-heats-up",
-        "https://www.forbes.com/sites/jeffbenjamin/2026/10/01/2026-q4-release-calendar-all-the-new-k-pop-comebacks/"
+        "https://www.ticketmaster.com.mx/browse/k-pop-catid-839/music-rid-10001/all-of-mexico-dma-801%3Flanguage%3Den-mx",
+        "https://www.roadto7.app/",
+        "https://www.atv.pe/noticia/bts-lima-mtc-show-drones-verde/"
       ],
-      "verified_at": "2026-10-07T04:00:00+09:00"
+      "verified_at": "2026-10-08T10:02:33+09:00"
     },
     {
-      "news_id": "BLACKPINK-BOOMBAYAH-1P9B-20261006",
-      "artist": "BLACKPINK",
-      "headline_ko": "BLACKPINK BOOMBAYAH 뮤직비디오 19억 조회 돌파",
-      "engine": "NEWS",
+      "news_id": "ATEEZ-CRASH-TO-BEGIN-TEASER-20261008",
+      "artist": "ATEEZ",
+      "headline_ko": "ATEEZ 공식 CRASH TO BEGIN 25초 티저 공개",
+      "engine": "VIRAL",
       "estimated_score": 77,
-      "status": "HOLD_BELOW_FLOOR",
-      "winning_hook": "BLINK: BOOMBAYAH YA PASÓ 1.9B",
-      "mexico_relevance_reason": "대형 팬덤 기록이지만 멕시코 직접 연결이 없음.",
-      "share_reason": "팬 자부심 공유는 가능하지만 실용/DM 이유가 약함.",
-      "follow_reason": "일회성 기록이라 @kpopcoreamx를 계속 팔로우할 구체적 이유가 약함.",
+      "status": "HOLD_BELOW_FLOOR_VELOCITY_UNVERIFIED",
+      "winning_hook": "ATINY MÉXICO: ¿QUÉ ESCONDE EL TEASER?",
+      "mexico_relevance_reason": "멕시코 팬에게 스페인어 티저 해설 가능하지만 Mexico-specific 직접 연결은 약함.",
+      "share_reason": "새 티저의 시각적 호기심은 있으나 실제 확산 가속/DM 수치는 확인되지 않음.",
+      "follow_reason": "후속 공식 티저를 추적할 수 있지만 현재 팔로우 전환 동기는 제한적.",
       "source_urls": [
-        "https://www.kpopangel.com/news/10893913"
+        "https://www.youtube.com/watch?v=SHIL6u0iRuk",
+        "https://www.soompi.com/article/1876093wpp/watch-ateez-announces-november-comeback-date-with-exciting-crash-to-begin-teaser"
       ],
-      "verified_at": "2026-10-07T04:00:00+09:00"
+      "verified_at": "2026-10-08T10:02:33+09:00"
+    },
+    {
+      "news_id": "BTS-LIMA-FAN-CROWD-20261007",
+      "artist": "BTS",
+      "headline_ko": "리마 BTS 첫 공연 당일 팬 입장/현장 반응 영상",
+      "engine": "VIRAL",
+      "estimated_score": 75,
+      "status": "HOLD_BELOW_FLOOR_SOURCE_RIGHTS_VELOCITY_UNVERIFIED",
+      "winning_hook": "ARMY LATAM: LIMA RECIBE A BTS",
+      "mexico_relevance_reason": "라틴 팬덤 연결은 있으나 페루 현장 중심.",
+      "share_reason": "팬 감정은 강하지만 현재 확산속도 측정 불가, 뉴스 영상 리믹스 사용권 확인되지 않음.",
+      "follow_reason": "멕시코 시청자에게 지속적 효용 약함.",
+      "source_urls": [
+        "https://www.apnoticias.pe/video/armys-llegan-al-estadio-san-marcos-para-el-primer-concierto-de-bts-627099",
+        "https://www.apnoticias.pe/video/bts-paraliza-lima-fans-llegan-desde-temprano-al-estadio-san-marcos-para-el-soundcheck-627049"
+      ],
+      "verified_at": "2026-10-08T10:02:33+09:00"
     },
     {
       "news_id": "HYBE-CINE-FEST-MEXICO-TICKETS-20260928",
       "artist": "HYBE artists",
-      "headline_ko": "HYBE CINE FEST México 티켓/상영 정보",
+      "headline_ko": "HYBE CINE FEST México 티켓/상영 정보 기존 제작 완료",
       "engine": "NEWS",
       "estimated_score": 96,
       "status": "ALREADY_RENDERED_NO_DUPLICATE",
       "winning_hook": "HYBE CINE FEST MX: BOLETOS YA",
-      "mexico_relevance_reason": "멕시코 팬에게 직접적인 극장·티켓 실용 정보.",
-      "share_reason": "친구와 상영 일정/티켓 정보를 공유할 실용성이 높음.",
-      "follow_reason": "상영시간·잔여석 등 후속 정보 추적 가능.",
+      "mexico_relevance_reason": "멕시코 극장/티켓 정보",
+      "share_reason": "상영 일정 공유",
+      "follow_reason": "상영 시간/잔여석 후속 가능",
       "source_urls": [
-        "https://www.elfinanciero.com.mx/entretenimiento/2026/09/30/hybe-fest-en-cines-fechas-cartelera-boletos-y-detalles-de-los-conciertos-de-bts-seventeen-y-mas/"
+        "https://www.infobae.com/mexico/2026/10/02/hybe-cine-fest-2026-el-k-pop-toma-las-salas-de-cine-en-mexico-durante-octubre-con-conciertos-de-bts-enhypen-y-seventeen/"
       ],
-      "verified_at": "2026-10-07T04:00:00+09:00"
+      "verified_at": "2026-10-08T10:02:33+09:00"
     }
   ]
 }
