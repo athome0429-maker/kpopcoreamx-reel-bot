@@ -1,12 +1,29 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-10-07",
-  "last_updated_at": "2026-10-08T10:02:33+09:00",
+  "mexico_date": "2026-10-08",
+  "last_updated_at": "2026-10-09T04:00:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
-  "selection_note": "2026-10-08 10:00 KST v3.2 Recovery final-selection run (Mexico date Oct 7). Checked NEWS and VIRAL across Oct 7-8 KST / preceding 24h, with 48h expansion. New strongest NEWS: ATEEZ GOLDEN HOUR : Part.6 Nov 13 14:00 KST (Nov 12 23:00 CDMX), official teaser CRASH TO BEGIN, estimated 83/100. Strong source/date and usable official video but Mexico bridge is only time conversion; share/follow rationale does not clear 84 plus strong shared gate. BTS Lima Oct 7 opening and Peru fan drone show verified via Ticketmaster and BTS Peru fanclub; estimated NEWS 81 due Peru-not-Mexico actionability. Strongest current VIRAL: ATEEZ CRASH TO BEGIN teaser estimated 77/100; first-party video exists but independent 24h acceleration/viral velocity is unverified and Mexico bridge weak. BTS Lima crowd footage has first-party news video but no authorized remix rights/verified acceleration. Prior Bang Chan Brazil Passinho Oct 5 now outside current 48h window. HYBE CINE FEST Mexico remains previously rendered; do not duplicate. No qualifying NEW NEWS >=84 or VIRAL >=85; NO RENDER. Recovery Mode ACTIVE on recorded history, pending actual IG post verification. Instagram auto-post OFF. GitHub workflow not dispatched.",
+  "selection_note": "2026-10-09 04:00 KST research: newly verified XG Mexico City November 22 concert cancellation and first-party Superboletos refund instructions. NEWS estimated 86/100, qualifies for Recovery floor84. Best hook: XG CDMX CANCELADO: ASÍ TE REEMBOLSAN. Scheduled for 10:00 KST base selection; no material value loss over next six hours. Strongest VIRAL BTS Lima moment estimated 82/100, below floor and usable footage/velocity unverified. No render at 04:00. Recovery active from last recorded post; actual IG status unverified. Auto-post OFF.",
   "candidates": [
+    {
+      "news_id": "XG-CDMX-CANCELLED-REFUND-20261007",
+      "artist": "XG",
+      "headline_ko": "XG 11월 22일 멕시코시티 공연 취소 및 공식 예매처 환불 안내",
+      "engine": "NEWS",
+      "estimated_score": 86,
+      "status": "QUALIFIED_FOR_10KST_SELECTION",
+      "winning_hook": "XG CDMX CANCELADO: ASÍ TE REEMBOLSAN",
+      "mexico_relevance_reason": "CDMX concert and official local ticketing guidance",
+      "share_reason": "Mexico ticket holders can share official event and refund information",
+      "follow_reason": "Follow for future verified Mexico concert updates",
+      "source_urls": [
+        "https://xgalx.com/xg/news/detail.php?id=1136489",
+        "https://www.superboletos.com/landing-evento/yY09_qZ1H_GzcvfdmjyuLg"
+      ],
+      "verified_at": "2026-10-09T04:00:00+09:00"
+    },
     {
       "news_id": "ATEEZ-GOLDENHOUR-PART6-20261008",
       "artist": "ATEEZ",
@@ -74,22 +91,6 @@
       "source_urls": [
         "https://www.apnoticias.pe/video/armys-llegan-al-estadio-san-marcos-para-el-primer-concierto-de-bts-627099",
         "https://www.apnoticias.pe/video/bts-paraliza-lima-fans-llegan-desde-temprano-al-estadio-san-marcos-para-el-soundcheck-627049"
-      ],
-      "verified_at": "2026-10-08T10:02:33+09:00"
-    },
-    {
-      "news_id": "HYBE-CINE-FEST-MEXICO-TICKETS-20260928",
-      "artist": "HYBE artists",
-      "headline_ko": "HYBE CINE FEST México 티켓/상영 정보 기존 제작 완료",
-      "engine": "NEWS",
-      "estimated_score": 96,
-      "status": "ALREADY_RENDERED_NO_DUPLICATE",
-      "winning_hook": "HYBE CINE FEST MX: BOLETOS YA",
-      "mexico_relevance_reason": "멕시코 극장/티켓 정보",
-      "share_reason": "상영 일정 공유",
-      "follow_reason": "상영 시간/잔여석 후속 가능",
-      "source_urls": [
-        "https://www.infobae.com/mexico/2026/10/02/hybe-cine-fest-2026-el-k-pop-toma-las-salas-de-cine-en-mexico-durante-octubre-con-conciertos-de-bts-enhypen-y-seventeen/"
       ],
       "verified_at": "2026-10-08T10:02:33+09:00"
     }
