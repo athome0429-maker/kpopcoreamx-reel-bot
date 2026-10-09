@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-09",
-  "last_updated_at": "2026-10-09T21:58:02+09:00",
+  "last_updated_at": "2026-10-10T03:57:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
-  "selection_note": "2026-10-09T21:58:02+09:00: 22 KST research. NO_RENDER_QUALITY_GATE. Seven tracked candidates. SUHO NEWS89 provisional: official ticket listing unverified; press sources conflict on sale time (15:00 vs 17:00 CDMX). TWICE VIRAL80 below floor85. XG duplicate. No render request. Instagram auto-post OFF.",
+  "selection_note": "2026-10-10T03:57:00+09:00: 04 KST NEWS/VIRAL research. NO_RENDER_QUALITY_GATE. Seven tracked candidates. SUHO NEWS89 provisional: promoter post quoted by press suggests 15:00 but other press 17:00; Passline direct event link not verified. TWICE VIRAL80 below floor85 and no verified acceleration. XG duplicate already rendered. No new source-verified >=96 breaking candidate. No render request; Instagram auto-post OFF.",
   "candidates": [
     {
       "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
@@ -14,7 +14,7 @@
       "engine": "NEWS",
       "estimated_score": 89,
       "score_type": "PROVISIONAL_NOT_PUBLISHABLE",
-      "status": "HOLD_PRIMARY_SOURCE_AND_SALE_TIME_CONFLICT",
+      "status": "HOLD_PRIMARY_TICKETING_SOURCE_UNVERIFIED_CONFLICTING_SALE_TIME",
       "winning_hook": "EXO-L MÉXICO: ¿SUHO EN CDMX?",
       "mexico_relevance_reason": "Reported CDMX performances Dec22-23 and near-term Oct9 ticket sale; strong Mexico direct relevance but artist/promoter/Passline direct event listing not independently confirmed.",
       "share_reason": "Potentially high ticket urgency but do not promote sale until first-party verification.",
@@ -22,10 +22,13 @@
       "source_urls": [
         "https://www.excelsior.com.mx/espectaculos/suho-lider-exo-anuncia-fan-con-mexico-fechas-boletos-y-donde-presentara",
         "https://www.publimetro.com.mx/entretenimiento/2026/10/08/suho-de-exo-anuncia-dos-fechas-en-cdmx-dias-de-venta-precios-y-todo-lo-que-debes-saber/",
-        "https://unniepop.cl/2026/10/08/suho-de-exo-anuncia-visita-a-latinoamerica-con-su-fancon-k-pop-chronicle-live/"
+        "https://unniepop.cl/2026/10/08/suho-de-exo-anuncia-visita-a-latinoamerica-con-su-fancon-k-pop-chronicle-live/",
+        "https://www.infobae.com/mexico/2026/10/09/suho-de-exo-anuncia-fan-con-en-mexico-fechas-precios-y-paquetes-vip/",
+        "https://celebriteen.com.mx/noticias/suho-de-exo-trae-a-mexico-su-2026-kpop-chronicle-live-fan-con/"
       ],
-      "source_conflict": "Excelsior states Oct9 17:00 CDMX; Publimetro cites promoter social post stating Oct9 15:00 CDMX; direct official Passline event not found.",
-      "verified_at": "2026-10-09T16:00:47+09:00"
+      "source_conflict": "October 9 cross-check: Publimetro quotes Oct 8 TRECE ENTERTAINMENT promoter post stating sale 15:00 CDMX; Excelsior and Celebriteen report 17:00, with Celebriteen attributing to Passline website. No directly retrievable SUHO Passline event listing verified. Treat ticket opening time and live ticket inventory as unverified; do not use a sale-time CTA.",
+      "verified_at": "2026-10-09T16:00:47+09:00",
+      "last_checked_at": "2026-10-10T03:57:00+09:00"
     },
     {
       "news_id": "XG-CDMX-CANCELLED-REFUND-20261007",
@@ -135,22 +138,26 @@
     }
   ],
   "last_run_report": {
-    "run_at_kst": "2026-10-09T21:58:02+09:00",
-    "run_type": "RESEARCH_ONLY_22_KST",
+    "run_at_kst": "2026-10-10T03:57:00+09:00",
+    "run_type": "RESEARCH_ONLY_04_KST",
     "candidate_count": 7,
     "strongest_news": {
       "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
       "provisional_score": 89,
-      "quality_gate": "FAIL_UNVERIFIED_OFFICIAL_TICKET_LINK_AND_CONFLICTING_SALE_TIME"
+      "quality_gate": "FAIL_OFFICIAL_TICKET_EVENT_NOT_VERIFIED_AND_CONFLICTING_SALE_TIME",
+      "winning_hook": "EXO-L MÉXICO: ¿SUHO EN CDMX?"
     },
     "strongest_viral": {
       "news_id": "TWICE-TDOONGZ-CHARACTERS-20261008",
       "estimated_score": 80,
-      "quality_gate": "FAIL_BELOW_85"
+      "quality_gate": "FAIL_BELOW_85_AND_VELOCITY_UNVERIFIED",
+      "winning_hook": "ONCE MÉXICO: ¿CUÁL TDOONGZ ES TU FAVORITO?"
     },
     "render_decision": "NO_RENDER_QUALITY_GATE",
     "github_render_request_write": "NOT_ATTEMPTED",
     "github_render_history_write": "NOT_ATTEMPTED",
-    "instagram_auto_post": false
+    "render_result": "NO_NEW_RENDER",
+    "instagram_auto_post": false,
+    "blocker": "No directly verified official Passline SUHO event listing; sale times conflict across reports. No 96+ breaking exception. Continue at 10 KST selection."
   }
 }
