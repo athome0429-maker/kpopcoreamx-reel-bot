@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-08",
-  "last_updated_at": "2026-10-09T04:00:00+09:00",
+  "last_updated_at": "2026-10-09T14:30:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
-  "selection_note": "2026-10-09 04:00 KST research: newly verified XG Mexico City November 22 concert cancellation and first-party Superboletos refund instructions. NEWS estimated 86/100, qualifies for Recovery floor84. Best hook: XG CDMX CANCELADO: ASÍ TE REEMBOLSAN. Scheduled for 10:00 KST base selection; no material value loss over next six hours. Strongest newly researched VIRAL TWICE TDOONGZ official character launch estimated 80/100: strong fan reaction, but no verified 24h acceleration and weak Mexico bridge; BTS Lima footage remains below floor and rights/velocity unverified. No render at 04:00. Recovery active from last recorded post; actual IG status unverified. Auto-post OFF.",
+  "selection_note": "2026-10-09 KST: XG CDMX refund NEWS86 selected; render_request.json committed 218f506444d8218a161ef0c3b0148e0ed918e08a. Status RENDER_REQUEST_COMMITTED_AWAITING_ACTIONS_VERIFICATION. MP4/cover/manifest not verified; do not claim rendered or posted. Instagram auto-post OFF.",
   "candidates": [
     {
       "news_id": "XG-CDMX-CANCELLED-REFUND-20261007",
@@ -13,7 +13,7 @@
       "headline_ko": "XG 11월 22일 멕시코시티 공연 취소 및 공식 예매처 환불 안내",
       "engine": "NEWS",
       "estimated_score": 86,
-      "status": "QUALIFIED_FOR_10KST_SELECTION",
+      "status": "RENDER_REQUEST_COMMITTED_AWAITING_ACTIONS_VERIFICATION",
       "winning_hook": "XG CDMX CANCELADO: ASÍ TE REEMBOLSAN",
       "mexico_relevance_reason": "CDMX concert and official local ticketing guidance",
       "share_reason": "Mexico ticket holders can share official event and refund information",
