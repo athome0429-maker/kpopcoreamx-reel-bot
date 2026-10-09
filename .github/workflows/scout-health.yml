@@ -1,0 +1,31 @@
+name: Scout Health Check
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 1,7,13,19 * * *'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check research freshness and render payload
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime, timezone
+          state=json.loads(Path("data/candidate_state.json").read_text())
+          payload=json.loads(Path("data/render_request.json").read_text())
+          last=datetime.fromisoformat(state["last_updated_at"].replace("Z","+00:00"))
+          age=(datetime.now(timezone.utc)-last).total_seconds()/3600
+          scenes=payload.get("scenes",[])
+          print("Research age (hours):",round(age,1))
+          print("Candidate count:",len(state.get("candidates",[])))
+          print("Render scenes:",len(scenes))
+          assert scenes, "Render payload has no scenes"
+          assert all(s.get("image_url") or s.get("image_path") for s in scenes), "Render image source missing"
+          assert age<=24, "Research state stale: check Scout research scheduling"
+          print("Scout health check passed")
+          PY
