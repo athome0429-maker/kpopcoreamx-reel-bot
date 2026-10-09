@@ -50,5 +50,10 @@
       "focus_y": 0.5,
       "zoom": 1.12
     }
-  ]
+  ],
+  "pipeline_test": {
+    "requested_at": "2026-10-09T14:36:00+09:00",
+    "purpose": "end_to_end_preflight_and_render_validation",
+    "instagram_auto_post": false
+  }
 }
