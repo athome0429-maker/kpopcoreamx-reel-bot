@@ -56,11 +56,49 @@ jobs:
       - name: Normalize payload
         run: python scripts/normalize_payload.py --input "${{ steps.payload.outputs.path }}" --output data/_render_normalized.json
 
+      - name: Preflight image sources and payload
+        run: |
+          python - <<'PY'
+          import json, requests
+          from PIL import Image
+          from io import BytesIO
+          from pathlib import Path
+          p = json.loads(Path('data/_render_normalized.json').read_text(encoding='utf-8'))
+          scenes = p.get('scenes', [])
+          assert 2 <= len(scenes) <= 5, 'Expected 2-5 scenes'
+          duration = sum(float(s['duration']) for s in scenes)
+          assert 6 <= duration <= 8, f'Invalid total duration: {duration}'
+          seen = set()
+          for i, scene in enumerate(scenes, 1):
+              url = scene.get('image_url') or scene.get('image_path')
+              assert url, f'Scene {i} missing image'
+              if url in seen: continue
+              seen.add(url)
+              if url.startswith(('https://', 'http://')):
+                  resp = requests.get(url, timeout=30, headers={'User-Agent': 'Mozilla/5.0'})
+                  resp.raise_for_status()
+                  assert len(resp.content) <= 20*1024*1024, f'Image too large: {url}'
+                  im = Image.open(BytesIO(resp.content))
+              else:
+                  im = Image.open(url)
+              with im:
+                  assert max(im.size) >= 720, f'Image too small {im.size}: {url}'
+                  im.verify()
+              print(f'PASS scene {i}: {url}')
+          print('PREFLIGHT_OK')
+          PY
+
       - name: Render and verify reel
         run: python scripts/render_reel.py --payload data/_render_normalized.json
 
       - name: Add v3 strategy metadata to manifest
         run: python scripts/enrich_manifest.py --payload data/_render_normalized.json --out-dir out
+
+      - name: Report render failure
+        if: failure()
+        run: |
+          echo "::error::Reel pipeline failed. Check the failed step above for image HTTP errors, payload validation, FFmpeg, or artifact issues."
+          echo "Failed run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload Reel package
         uses: actions/upload-artifact@v4
