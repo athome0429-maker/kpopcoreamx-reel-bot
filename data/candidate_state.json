@@ -1,19 +1,39 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-10-08",
-  "last_updated_at": "2026-10-09T14:30:00+09:00",
+  "mexico_date": "2026-10-09",
+  "last_updated_at": "2026-10-09T16:00:47+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
-  "selection_note": "2026-10-09 KST: XG CDMX refund NEWS86 selected; render_request.json committed 218f506444d8218a161ef0c3b0148e0ed918e08a. Status RENDER_REQUEST_COMMITTED_AWAITING_ACTIONS_VERIFICATION. MP4/cover/manifest not verified; do not claim rendered or posted. Instagram auto-post OFF.",
+  "selection_note": "2026-10-09 16:00 KST research cycle: 7 tracked candidates including new SUHO CDMX Dec22-23; NO_RENDER_SOURCE_VERIFICATION_AND_DUPLICATE. SUHO Oct9 ticket-sale time conflicts across press (15:00 vs 17:00 CDMX) and no direct artist/promoter/Passline event listing verified, so shared truth gate FAIL despite high provisional NEWS potential. XG cancellation/refund confirmed by official XG/Superboletos but already requested/rendered earlier; no duplicate. Viral strongest TWICE TDOONGZ 80 below VIRAL85, no verified velocity. Research-only cycle, no new render_request commit. Instagram auto-post OFF.",
   "candidates": [
+    {
+      "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
+      "artist": "SUHO (EXO)",
+      "headline_ko": "SUHO 12월 22·23일 CDMX La Maraka 팬콘 보도, 10월 9일 티켓 판매시간 상충",
+      "engine": "NEWS",
+      "estimated_score": 89,
+      "score_type": "PROVISIONAL_NOT_PUBLISHABLE",
+      "status": "HOLD_PRIMARY_SOURCE_AND_SALE_TIME_CONFLICT",
+      "winning_hook": "EXO-L MÉXICO: ¿SUHO EN CDMX?",
+      "mexico_relevance_reason": "Reported CDMX performances Dec22-23 and near-term Oct9 ticket sale; strong Mexico direct relevance but artist/promoter/Passline direct event listing not independently confirmed.",
+      "share_reason": "Potentially high ticket urgency but do not promote sale until first-party verification.",
+      "follow_reason": "Possible updates on official sale time, ticket categories and venue if first-party verified.",
+      "source_urls": [
+        "https://www.excelsior.com.mx/espectaculos/suho-lider-exo-anuncia-fan-con-mexico-fechas-boletos-y-donde-presentara",
+        "https://www.publimetro.com.mx/entretenimiento/2026/10/08/suho-de-exo-anuncia-dos-fechas-en-cdmx-dias-de-venta-precios-y-todo-lo-que-debes-saber/",
+        "https://unniepop.cl/2026/10/08/suho-de-exo-anuncia-visita-a-latinoamerica-con-su-fancon-k-pop-chronicle-live/"
+      ],
+      "source_conflict": "Excelsior states Oct9 17:00 CDMX; Publimetro cites promoter social post stating Oct9 15:00 CDMX; direct official Passline event not found.",
+      "verified_at": "2026-10-09T16:00:47+09:00"
+    },
     {
       "news_id": "XG-CDMX-CANCELLED-REFUND-20261007",
       "artist": "XG",
       "headline_ko": "XG 11월 22일 멕시코시티 공연 취소 및 공식 예매처 환불 안내",
       "engine": "NEWS",
       "estimated_score": 86,
-      "status": "RENDER_REQUEST_COMMITTED_AWAITING_ACTIONS_VERIFICATION",
+      "status": "ALREADY_RENDERED_GITHUB_SCREENSHOT_ARTIFACT_LISTED_CONTENT_NOT_INDEPENDENTLY_VERIFIED",
       "winning_hook": "XG CDMX CANCELADO: ASÍ TE REEMBOLSAN",
       "mexico_relevance_reason": "CDMX concert and official local ticketing guidance",
       "share_reason": "Mexico ticket holders can share official event and refund information",
@@ -22,7 +42,9 @@
         "https://xgalx.com/xg/news/detail.php?id=1136489",
         "https://www.superboletos.com/landing-evento/yY09_qZ1H_GzcvfdmjyuLg"
       ],
-      "verified_at": "2026-10-09T04:00:00+09:00"
+      "verified_at": "2026-10-09T04:00:00+09:00",
+      "last_checked_at": "2026-10-09T16:00:47+09:00",
+      "duplicate_render_blocked": true
     },
     {
       "news_id": "ATEEZ-GOLDENHOUR-PART6-20261008",
@@ -111,5 +133,32 @@
       ],
       "verified_at": "2026-10-08T10:02:33+09:00"
     }
-  ]
+  ],
+  "last_run_report": {
+    "run_at_kst": "2026-10-09T16:00:47+09:00",
+    "run_type": "RESEARCH_ONLY_16_KST",
+    "candidate_count": 7,
+    "new_candidate_count": 1,
+    "strongest_news": {
+      "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
+      "provisional_score": 89,
+      "quality_gate": "FAIL_PRIMARY_SOURCE_AND_SALE_TIME_CONFLICT",
+      "reason": "Multiple Mexican media report SUHO CDMX Dec22/23 at La Maraka; Oct9 sale time differs 15:00 vs 17:00 CDMX. Direct artist/promoter/Passline event verification not established. Do not publish or state unverified prices."
+    },
+    "strongest_viral": {
+      "news_id": "TWICE-TDOONGZ-CHARACTERS-20261008",
+      "estimated_score": 80,
+      "quality_gate": "FAIL_BELOW_85_AND_NO_VERIFIED_VELOCITY"
+    },
+    "render_decision": "NO_RENDER_SOURCE_VERIFICATION_AND_DUPLICATE",
+    "github_render_request_write": "NOT_ATTEMPTED_NO_QUALIFIED_NEW_TIME_SENSITIVE_CANDIDATE",
+    "github_render_history_write": "NOT_ATTEMPTED_NO_NEW_VERIFIED_ARTIFACT",
+    "instagram_auto_post": false,
+    "verification_sources": [
+      "https://www.excelsior.com.mx/espectaculos/suho-lider-exo-anuncia-fan-con-mexico-fechas-boletos-y-donde-presentara",
+      "https://www.publimetro.com.mx/entretenimiento/2026/10/08/suho-de-exo-anuncia-dos-fechas-en-cdmx-dias-de-venta-precios-y-todo-lo-que-debes-saber/",
+      "https://xgalx.com/ko/xg/news/detail.php?id=1136489",
+      "https://www.superboletos.com/landing-evento/yY09_qZ1H_GzcvfdmjyuLg"
+    ]
+  }
 }
