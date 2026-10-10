@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-09",
-  "last_updated_at": "2026-10-10T03:57:00+09:00",
+  "last_updated_at": "2026-10-10T10:01:41+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
-  "selection_note": "2026-10-10T03:57:00+09:00: 04 KST NEWS/VIRAL research. NO_RENDER_QUALITY_GATE. Seven tracked candidates. SUHO NEWS89 provisional: promoter post quoted by press suggests 15:00 but other press 17:00; Passline direct event link not verified. TWICE VIRAL80 below floor85 and no verified acceleration. XG duplicate already rendered. No new source-verified >=96 breaking candidate. No render request; Instagram auto-post OFF.",
+  "selection_note": "2026-10-10T10:01:41+09:00: 10 KST final NEWS/VIRAL selection: NO_RENDER_QUALITY_GATE. 8 tracked candidates. NEWS SUHO provisional 89 meets numeric floor 84 but fails mandatory first-party ticket listing and verified image source; sale times 15:00/17:00 conflict. VIRAL TWICE 80 below floor 85, acceleration unverified. New LE SSERAFIM official release 72 below NEWS floor due Mexico utility. XG duplicate blocked. No render_request write; no new MP4 verified. Instagram auto-post OFF.",
   "candidates": [
     {
       "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
@@ -14,7 +14,7 @@
       "engine": "NEWS",
       "estimated_score": 89,
       "score_type": "PROVISIONAL_NOT_PUBLISHABLE",
-      "status": "HOLD_PRIMARY_TICKETING_SOURCE_UNVERIFIED_CONFLICTING_SALE_TIME",
+      "status": "HOLD_OFFICIAL_PASSLINE_EVENT_NOT_FOUND_AND_RENDER_ASSET_UNVERIFIED",
       "winning_hook": "EXO-L MÉXICO: ¿SUHO EN CDMX?",
       "mexico_relevance_reason": "Reported CDMX performances Dec22-23 and near-term Oct9 ticket sale; strong Mexico direct relevance but artist/promoter/Passline direct event listing not independently confirmed.",
       "share_reason": "Potentially high ticket urgency but do not promote sale until first-party verification.",
@@ -24,11 +24,14 @@
         "https://www.publimetro.com.mx/entretenimiento/2026/10/08/suho-de-exo-anuncia-dos-fechas-en-cdmx-dias-de-venta-precios-y-todo-lo-que-debes-saber/",
         "https://unniepop.cl/2026/10/08/suho-de-exo-anuncia-visita-a-latinoamerica-con-su-fancon-k-pop-chronicle-live/",
         "https://www.infobae.com/mexico/2026/10/09/suho-de-exo-anuncia-fan-con-en-mexico-fechas-precios-y-paquetes-vip/",
-        "https://celebriteen.com.mx/noticias/suho-de-exo-trae-a-mexico-su-2026-kpop-chronicle-live-fan-con/"
+        "https://celebriteen.com.mx/noticias/suho-de-exo-trae-a-mexico-su-2026-kpop-chronicle-live-fan-con/",
+        "https://www.passline.com/venue/la-maraka",
+        "https://tickets.lamaraka.com.mx/en/taxons/conciertos-y-espectaculos",
+        "https://www.posta.com.mx/share/suho-de-exo-en-cdmx-2026-cuanto-cuesta-verlo-y-que-incluyen-los-paquetes-vip/vl2264427"
       ],
-      "source_conflict": "October 9 cross-check: Publimetro quotes Oct 8 TRECE ENTERTAINMENT promoter post stating sale 15:00 CDMX; Excelsior and Celebriteen report 17:00, with Celebriteen attributing to Passline website. No directly retrievable SUHO Passline event listing verified. Treat ticket opening time and live ticket inventory as unverified; do not use a sale-time CTA.",
+      "source_conflict": "2026-10-10 10:00 KST review: promoter TRECE ENTERTAINMENT Oct 8 post is quoted in Publimetro with 15:00 CDMX sale, other press reported 17:00. No independently retrievable SUHO event detail page on Passline; Passline La Maraka venue listing and La Maraka's own ticket catalog currently do not show SUHO. Media mention W+ Entertainment official tour poster, but original usable verified poster image URL was not retrieved. Dates are broadly reported; direct purchase guidance, inventory, prices and render visual asset remain unverified. No ticket CTA or production.",
       "verified_at": "2026-10-09T16:00:47+09:00",
-      "last_checked_at": "2026-10-10T03:57:00+09:00"
+      "last_checked_at": "2026-10-10T10:01:41+09:00"
     },
     {
       "news_id": "XG-CDMX-CANCELLED-REFUND-20261007",
@@ -135,16 +138,34 @@
         "https://www.apnoticias.pe/video/bts-paraliza-lima-fans-llegan-desde-temprano-al-estadio-san-marcos-para-el-soundcheck-627049"
       ],
       "verified_at": "2026-10-08T10:02:33+09:00"
+    },
+    {
+      "news_id": "LESSERAFIM-MADEMYNIGHT-RELEASE-20261009",
+      "artist": "LE SSERAFIM",
+      "headline_ko": "LE SSERAFIM 'Made My Night' 2nd Single Album 10월 9일 발매 — Weverse 공식 상품 등록 확인",
+      "engine": "NEWS",
+      "estimated_score": 72,
+      "score_type": "PROVISIONAL_LOW_MEXICO_UTILITY",
+      "status": "HOLD_BELOW_NEWS_FLOOR_MEXICO_BRIDGE_UNVERIFIED",
+      "winning_hook": "FEARNOT MÉXICO: MADE MY NIGHT",
+      "mexico_relevance_reason": "Weverse official album release date 2026-10-09; Mexico delivery/availability, local event or local utility not confirmed.",
+      "share_reason": "Album interest, but no actionable Mexico-specific reason for immediate shares.",
+      "follow_reason": "Future Mexico stock/shipping availability might be relevant, not verified.",
+      "source_urls": [
+        "https://shop.weverse.io/ko/shop/KRW/artists/50/sales/67136"
+      ],
+      "verified_at": "2026-10-10T10:01:41+09:00"
     }
   ],
   "last_run_report": {
-    "run_at_kst": "2026-10-10T03:57:00+09:00",
-    "run_type": "RESEARCH_ONLY_04_KST",
-    "candidate_count": 7,
+    "run_at_kst": "2026-10-10T10:01:41+09:00",
+    "run_type": "FINAL_SELECTION_10_KST",
+    "candidate_count": 8,
+    "new_candidates_added": 1,
     "strongest_news": {
       "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
       "provisional_score": 89,
-      "quality_gate": "FAIL_OFFICIAL_TICKET_EVENT_NOT_VERIFIED_AND_CONFLICTING_SALE_TIME",
+      "quality_gate": "FAIL_OFFICIAL_TICKET_LISTING_AND_VERIFIED_VISUAL_ASSET",
       "winning_hook": "EXO-L MÉXICO: ¿SUHO EN CDMX?"
     },
     "strongest_viral": {
@@ -158,6 +179,6 @@
     "github_render_history_write": "NOT_ATTEMPTED",
     "render_result": "NO_NEW_RENDER",
     "instagram_auto_post": false,
-    "blocker": "No directly verified official Passline SUHO event listing; sale times conflict across reports. No 96+ breaking exception. Continue at 10 KST selection."
+    "blocker": "SUHO official Passline event detail and verified official usable image not retrieved; 15:00/17:00 sale time conflict. No alternate NEWS>=84 or VIRAL>=85 meeting shared quality gate."
   }
 }
