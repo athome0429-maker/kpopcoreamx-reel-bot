@@ -259,6 +259,23 @@
     "github_render_history_write": "NOT_ATTEMPTED",
     "render_result": "NO_NEW_RENDER",
     "instagram_auto_post": false,
-    "blocker": "No qualifying breaking candidate; SUHO ticket details and usable image unverified."
+    "blocker": "No qualifying breaking candidate; SUHO ticket details and usable image unverified.",
+    "additional_screened_candidates": [
+      {
+        "news_id": "KATSEYE-CDMX-NOV27",
+        "engine": "NEWS",
+        "score": 82,
+        "status": "HOLD_EXISTING_EVENT_NO_BREAKING",
+        "source": "Weverse official VIP pickup and Ticketmaster MX"
+      },
+      {
+        "news_id": "NCTWISH-ISPY-OCT12",
+        "engine": "NEWS",
+        "score": 75,
+        "status": "HOLD_LOW_MEXICO_UTILITY",
+        "source": "Weverse official album notice"
+      }
+    ],
+    "total_screened_this_run": 12
   }
 }
