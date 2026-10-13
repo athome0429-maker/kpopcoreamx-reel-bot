@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
-  "mexico_date": "2026-10-12",
-  "last_updated_at": "2026-10-13T10:04:26.204+09:00",
+  "mexico_date": "2026-10-13",
+  "last_updated_at": "2026-10-13T15:57:47.467+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
-  "selection_note": "10 KST: SUHO NEWS 89 leads but verified original image URL and event-level details unavailable. No new render. NO_RENDER_QUALITY_GATE.",
+  "selection_note": "16 KST: no independently verified breaking candidate >=96. SUHO 89: Passline listing verified; event detail and original image not validated. NO_RENDER_QUALITY_GATE.",
   "candidates": [
     {
       "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
@@ -187,88 +187,72 @@
     }
   ],
   "last_run_report": {
-    "run_at_kst": "2026-10-13T10:04:26.204+09:00",
-    "run_type": "FINAL_SELECTION_10_KST",
-    "mexico_date": "2026-10-12",
+    "run_at_kst": "2026-10-13T15:57:47.467+09:00",
+    "run_type": "RESEARCH_16_KST",
+    "mexico_date": "2026-10-13",
     "candidate_count": 10,
-    "total_screened_this_run": 12,
+    "total_screened_this_run": 11,
     "new_candidates_added": 0,
     "candidate_outcomes": [
       {
         "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
         "engine": "NEWS",
         "score": 89,
-        "status": "HOLD_PASSLINE_LISTING_VERIFIED_EVENT_DETAIL_AND_IMAGE_UNVERIFIED"
+        "status": "HOLD_89_NONBREAKING_IMAGE_UNVERIFIED"
       },
       {
         "news_id": "XG-CDMX-CANCELLED-REFUND-20261007",
         "engine": "NEWS",
         "score": 86,
-        "status": "ALREADY_RENDERED_GITHUB_SCREENSHOT_ARTIFACT_LISTED_CONTENT_NOT_INDEPENDENTLY_VERIFIED"
+        "status": "DUPLICATE_PREVIOUS_RENDER_REQUEST"
       },
       {
         "news_id": "ATEEZ-GOLDENHOUR-PART6-20261008",
         "engine": "NEWS",
         "score": 83,
-        "status": "HOLD_BELOW_FLOOR"
+        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
       },
       {
         "news_id": "TWICE-TDOONGZ-CHARACTERS-20261008",
         "engine": "VIRAL",
         "score": 80,
-        "status": "HOLD_BELOW_FLOOR_VELOCITY_MEXICO_BRIDGE"
+        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
       },
       {
         "news_id": "BTS-LIMA-OPENING-20261007",
         "engine": "NEWS",
         "score": 81,
-        "status": "HOLD_BELOW_FLOOR"
+        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
       },
       {
         "news_id": "ATEEZ-CRASH-TO-BEGIN-TEASER-20261008",
         "engine": "VIRAL",
         "score": 77,
-        "status": "HOLD_BELOW_FLOOR_VELOCITY_UNVERIFIED"
+        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
       },
       {
         "news_id": "BTS-LIMA-FAN-CROWD-20261007",
         "engine": "VIRAL",
         "score": 75,
-        "status": "HOLD_BELOW_FLOOR_SOURCE_RIGHTS_VELOCITY_UNVERIFIED"
+        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
       },
       {
         "news_id": "LESSERAFIM-MADEMYNIGHT-RELEASE-20261009",
         "engine": "NEWS",
         "score": 72,
-        "status": "HOLD_BELOW_NEWS_FLOOR_MEXICO_BRIDGE_UNVERIFIED"
+        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
       },
       {
         "news_id": "8TURN-CDMX-NOV16-20261010",
         "engine": "NEWS",
         "score": 79,
-        "status": "HOLD_BELOW_FLOOR_AND_NOT_TIME_SENSITIVE"
+        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
       },
       {
         "news_id": "ATEEZ-ZERO-TO-ALL-TOUR-20261010",
         "engine": "NEWS",
         "score": 81,
-        "status": "HOLD_BELOW_FLOOR_NO_CONFIRMED_MEXICO_SHOW"
-      }
-    ],
-    "additional_screened_candidates": [
-      {
-        "news_id": "ONEUS-CDMX-NOV10",
-        "engine": "NEWS",
-        "score": 78,
-        "status": "EXISTING_EVENT_NOT_NEW",
-        "source": "Passline official venue list"
-      },
-      {
-        "news_id": "TREASURE-MAMA-IF-I-OCT12",
-        "engine": "VIRAL",
-        "score": 66,
-        "status": "NO_MEXICO_BRIDGE_OR_VELOCITY",
-        "source": "MnetPlus official Oct 12 video"
+        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
       }
     ],
     "winning_candidate": {
@@ -278,11 +262,11 @@
       "image_verified": false
     },
     "render_decision": "NO_RENDER_QUALITY_GATE",
-    "no_render_reason": "SUHO scores 89 but Passline individual ticket pages are inaccessible via Queue-it; official source poster image direct URL is not validated. Other candidates fail floors or duplicate an existing render. No qualified render-ready candidate.",
+    "no_render_reason": "No verified time-sensitive breaking >=96 at 16 KST. SUHO official dates confirmed but image and event-level details unverified. Other candidates not breaking or below floor.",
     "github_render_request_write": "NOT_ATTEMPTED",
     "github_render_history_write": "NOT_ATTEMPTED",
     "render_result": "NO_NEW_RENDER",
     "instagram_auto_post": false,
-    "blocker": "Official SUHO image URL and event-level ticket details unverified; no MP4."
+    "blocker": "No breaking >=96; SUHO event page Queue-it and image unverified."
   }
 }
