@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-13",
-  "last_updated_at": "2026-10-13T15:57:47.467+09:00",
+  "last_updated_at": "2026-10-14T04:04:29.492+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
-  "selection_note": "16 KST: no independently verified breaking candidate >=96. SUHO 89: Passline listing verified; event detail and original image not validated. NO_RENDER_QUALITY_GATE.",
+  "selection_note": "04 KST recovery: screened 13 NEWS/VIRAL candidates (10 carried + 3 newly screened). No independently verified, Mexico-relevant time-sensitive breaking story >=96; SUHO 89 is nonbreaking and official usable images/event detail unverified. Three new global announcements are below NEWS 84 and lack first-party claim verification. NO_RENDER_QUALITY_GATE.",
   "candidates": [
     {
       "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
@@ -184,89 +184,158 @@
         "https://ateez.kqent.com/contents/6ac915ceb899027df4664814"
       ],
       "verified_at": "2026-10-12T16:27:10.516+09:00"
+    },
+    {
+      "news_id": "LISA-PRESSPLAY-TRACKLIST-20261013",
+      "artist": "LISA / BLACKPINK",
+      "headline_ko": "LISA PRESS PLAY EP 트랙리스트 공개 보도",
+      "engine": "NEWS",
+      "estimated_score": 74,
+      "score_type": "PROVISIONAL_FIRST_PARTY_UNVERIFIED",
+      "status": "HOLD_PRIMARY_TRACKLIST_UNVERIFIED_NO_MEXICO_UTILITY",
+      "source_urls": [
+        "https://www.soompi.com/article/1877860wpp/blackpinks-lisa-unveils-track-list-for-solo-ep-press-play"
+      ],
+      "verified_at": "2026-10-14T04:04:29.492+09:00",
+      "mexico_relevance_reason": "멕시코 BLINK 관심은 있으나 공식 트랙리스트 원문 및 현지 일정·이용 효용 확인 안 됨.",
+      "share_reason": "신곡 트랙리스트는 팬 관심 소재지만 멕시코 특화 DM 공유 이유 약함.",
+      "follow_reason": "멕시코 현지 후속 일정이 확인되지 않음."
+    },
+    {
+      "news_id": "MAMA-2026-FIRST-LINEUP-20261013",
+      "artist": "2026 MAMA AWARDS",
+      "headline_ko": "2026 MAMA 첫 출연진 발표 보도",
+      "engine": "NEWS",
+      "estimated_score": 77,
+      "score_type": "PROVISIONAL_LINEUP_PRIMARY_UNVERIFIED",
+      "status": "HOLD_PRIMARY_LINEUP_UNVERIFIED_MEXICO_STREAM_INFO_UNVERIFIED",
+      "source_urls": [
+        "https://www.soompi.com/article/1877509wpp/2026-mama-awards-announces-first-lineup",
+        "https://www.mnetplus.world/contents/en/shows/6a85550be99fb5128ae1d76f/basic-info"
+      ],
+      "verified_at": "2026-10-14T04:04:29.492+09:00",
+      "mexico_relevance_reason": "공식 Mnet Plus 11/20-21 개최일 확인, 첫 라인업 공식 원문과 멕시코 시청시간/시청방법 미확인.",
+      "share_reason": "멕시코 팬에게 확정된 실용 시청 정보 부족.",
+      "follow_reason": "멕시코 시청 링크 및 시간 추후 확인 가능하지만 현재 미검증."
+    },
+    {
+      "news_id": "BABYMONSTER-ILIKEIT-100M-20261013",
+      "artist": "BABYMONSTER",
+      "headline_ko": "I LIKE IT MV 1억뷰 달성 보도",
+      "engine": "NEWS",
+      "estimated_score": 70,
+      "score_type": "PROVISIONAL_PRIMARY_MILESTONE_UNVERIFIED",
+      "status": "HOLD_PRIMARY_100M_MILESTONE_UNVERIFIED_LOW_MEXICO_UTILITY",
+      "source_urls": [
+        "https://www.soompi.com/article/1877719wpp/babymonsters-i-like-it-becomes-their-13th-mv-to-hit-100-million-views",
+        "https://ygfamily.com/en/news/report/7569"
+      ],
+      "verified_at": "2026-10-14T04:04:29.492+09:00",
+      "mexico_relevance_reason": "YG 공식 과거 소개는 확인되나 10/13 1억뷰 공식 수치와 멕시코 직접 효용은 미확인.",
+      "share_reason": "일반 기록 소식으로 멕시코 타깃 즉시 공유 동기 약함.",
+      "follow_reason": "멕시코 팬 대상 구체적 후속 효용 없음."
     }
   ],
   "last_run_report": {
-    "run_at_kst": "2026-10-13T15:57:47.467+09:00",
-    "run_type": "RESEARCH_16_KST",
+    "run_at_kst": "2026-10-14T04:04:29.492+09:00",
+    "run_type": "RESEARCH_04_KST",
     "mexico_date": "2026-10-13",
-    "candidate_count": 10,
-    "total_screened_this_run": 11,
-    "new_candidates_added": 0,
+    "candidate_count": 13,
+    "total_screened_this_run": 13,
+    "new_candidates_added": 3,
     "candidate_outcomes": [
       {
         "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
         "engine": "NEWS",
         "score": 89,
-        "status": "HOLD_89_NONBREAKING_IMAGE_UNVERIFIED"
+        "status": "HOLD_NONBREAKING_IMAGE_AND_EVENT_DETAIL_UNVERIFIED"
       },
       {
         "news_id": "XG-CDMX-CANCELLED-REFUND-20261007",
         "engine": "NEWS",
         "score": 86,
-        "status": "DUPLICATE_PREVIOUS_RENDER_REQUEST"
+        "status": "DUPLICATE_PRIOR_RENDER_REQUEST"
       },
       {
         "news_id": "ATEEZ-GOLDENHOUR-PART6-20261008",
         "engine": "NEWS",
         "score": 83,
-        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
+        "status": "HOLD_BELOW_FLOOR"
       },
       {
         "news_id": "TWICE-TDOONGZ-CHARACTERS-20261008",
         "engine": "VIRAL",
         "score": 80,
-        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
+        "status": "HOLD_BELOW_FLOOR_VELOCITY_MEXICO_BRIDGE"
       },
       {
         "news_id": "BTS-LIMA-OPENING-20261007",
         "engine": "NEWS",
         "score": 81,
-        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
+        "status": "HOLD_BELOW_FLOOR"
       },
       {
         "news_id": "ATEEZ-CRASH-TO-BEGIN-TEASER-20261008",
         "engine": "VIRAL",
         "score": 77,
-        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
+        "status": "HOLD_BELOW_FLOOR_VELOCITY_UNVERIFIED"
       },
       {
         "news_id": "BTS-LIMA-FAN-CROWD-20261007",
         "engine": "VIRAL",
         "score": 75,
-        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
+        "status": "HOLD_BELOW_FLOOR_SOURCE_RIGHTS_VELOCITY_UNVERIFIED"
       },
       {
         "news_id": "LESSERAFIM-MADEMYNIGHT-RELEASE-20261009",
         "engine": "NEWS",
         "score": 72,
-        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
+        "status": "HOLD_BELOW_NEWS_FLOOR_MEXICO_BRIDGE_UNVERIFIED"
       },
       {
         "news_id": "8TURN-CDMX-NOV16-20261010",
         "engine": "NEWS",
         "score": 79,
-        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
+        "status": "HOLD_BELOW_FLOOR_AND_NOT_TIME_SENSITIVE"
       },
       {
         "news_id": "ATEEZ-ZERO-TO-ALL-TOUR-20261010",
         "engine": "NEWS",
         "score": 81,
-        "status": "HOLD_NO_VERIFIED_BREAKING_UPDATE"
+        "status": "HOLD_BELOW_FLOOR_NO_CONFIRMED_MEXICO_SHOW"
+      },
+      {
+        "news_id": "LISA-PRESSPLAY-TRACKLIST-20261013",
+        "engine": "NEWS",
+        "score": 74,
+        "status": "HOLD_PRIMARY_TRACKLIST_UNVERIFIED_NO_MEXICO_UTILITY"
+      },
+      {
+        "news_id": "MAMA-2026-FIRST-LINEUP-20261013",
+        "engine": "NEWS",
+        "score": 77,
+        "status": "HOLD_PRIMARY_LINEUP_UNVERIFIED_MEXICO_STREAM_INFO_UNVERIFIED"
+      },
+      {
+        "news_id": "BABYMONSTER-ILIKEIT-100M-20261013",
+        "engine": "NEWS",
+        "score": 70,
+        "status": "HOLD_PRIMARY_100M_MILESTONE_UNVERIFIED_LOW_MEXICO_UTILITY"
       }
     ],
     "winning_candidate": {
       "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
       "engine": "NEWS",
       "score": 89,
-      "image_verified": false
+      "image_verified": false,
+      "breaking_qualified": false
     },
     "render_decision": "NO_RENDER_QUALITY_GATE",
-    "no_render_reason": "No verified time-sensitive breaking >=96 at 16 KST. SUHO official dates confirmed but image and event-level details unverified. Other candidates not breaking or below floor.",
-    "github_render_request_write": "NOT_ATTEMPTED",
-    "github_render_history_write": "NOT_ATTEMPTED",
+    "no_render_reason": "04:00 KST research-only slot: no new time-sensitive first-party-verified Mexico-relevant breaking candidate scoring >=96. SUHO 89 is older nonbreaking and image/event-level details not verified. LISA 74, MAMA 77, BABYMONSTER 70 are below NEWS 84 and primary announcement details not independently verified. Existing VIRAL highest 80 <85 with no verified current velocity.",
+    "github_render_request_write": "NOT_ATTEMPTED_QUALITY_GATE",
+    "github_render_history_write": "NOT_ATTEMPTED_NO_VERIFIED_NEW_ARTIFACT",
     "render_result": "NO_NEW_RENDER",
     "instagram_auto_post": false,
-    "blocker": "No breaking >=96; SUHO event page Queue-it and image unverified."
+    "blocker": "No new verified >=96 Mexico-relevant breaking candidate; SUHO original image/event-level detail still unverified. Next standard selection at 10 KST."
   }
 }
