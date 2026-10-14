@@ -21,7 +21,8 @@
       "image_fallback_urls": [
         "https://s1.ticketm.net/dam/a/5ea/296334a4-8af5-47b8-8566-bd04b79545ea_TABLET_LANDSCAPE_LARGE_16_9.jpg",
         "https://cdn.shopify.com/s/files/1/0469/3927/5428/files/Bildschirmfoto_2026-05-19_um_13.21.41.jpg?v=1779189829",
-        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp"
+        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp",
+        "https://storage.orshot.com/cloud/w-8339/renders/images/oHUDUVxgxWy.png"
       ],
       "screenshot_page_url": "https://www.cryptoarena.com/news/detail/katseye-announces-2026-headline-arena-tour-of-uk-eu-and-north-america"
     },
@@ -35,7 +36,8 @@
       "image_fallback_urls": [
         "https://s1.ticketm.net/dam/a/5ea/296334a4-8af5-47b8-8566-bd04b79545ea_TABLET_LANDSCAPE_LARGE_16_9.jpg",
         "https://cdn.shopify.com/s/files/1/0469/3927/5428/files/Bildschirmfoto_2026-05-19_um_13.21.41.jpg?v=1779189829",
-        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp"
+        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp",
+        "https://storage.orshot.com/cloud/w-8339/renders/images/oHUDUVxgxWy.png"
       ],
       "screenshot_page_url": "https://www.cryptoarena.com/news/detail/katseye-announces-2026-headline-arena-tour-of-uk-eu-and-north-america"
     },
@@ -49,7 +51,8 @@
       "image_fallback_urls": [
         "https://s1.ticketm.net/dam/a/5ea/296334a4-8af5-47b8-8566-bd04b79545ea_TABLET_LANDSCAPE_LARGE_16_9.jpg",
         "https://cdn.shopify.com/s/files/1/0469/3927/5428/files/Bildschirmfoto_2026-05-19_um_13.21.41.jpg?v=1779189829",
-        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp"
+        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp",
+        "https://storage.orshot.com/cloud/w-8339/renders/images/oHUDUVxgxWy.png"
       ],
       "screenshot_page_url": "https://www.cryptoarena.com/news/detail/katseye-announces-2026-headline-arena-tour-of-uk-eu-and-north-america"
     }
@@ -58,6 +61,7 @@
     "purpose": "real_original_photo_end_to_end_test",
     "instagram_auto_post": false,
     "requires_asset_preflight": true,
-    "image_fallbacks": 4
+    "image_fallbacks": 4,
+    "capture_fallback_url": "https://storage.orshot.com/cloud/w-8339/renders/images/oHUDUVxgxWy.png"
   }
 }
