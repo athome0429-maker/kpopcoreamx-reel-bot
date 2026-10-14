@@ -1,11 +1,11 @@
 {
   "schema_version": "3.2-recovery",
   "mexico_date": "2026-10-13",
-  "last_updated_at": "2026-10-14T04:04:29.492+09:00",
+  "last_updated_at": "2026-10-14T12:20:00+09:00",
   "daily_render_limit_reached": false,
   "daily_render_news_id": null,
   "performance_rule_active": "Viral Test #1 is the only verified valid Viral test in performance_history: skip 32.2%, watch ratio 0.80, direct shares 0, follows 1. Do not change engine weights until 3 valid Viral results. Instagram post status after 2026-09-17 is not independently confirmed; Recovery Mode is active based on last recorded post, not a live Instagram verification.",
-  "selection_note": "04 KST recovery: screened 13 NEWS/VIRAL candidates (10 carried + 3 newly screened). No independently verified, Mexico-relevant time-sensitive breaking story >=96; SUHO 89 is nonbreaking and official usable images/event detail unverified. Three new global announcements are below NEWS 84 and lack first-party claim verification. NO_RENDER_QUALITY_GATE.",
+  "selection_note": "2026-10-14 12:20 KST recovery follow-up: KATSEYE 27/28 Nov 2026 20:00 Palacio de los Deportes, both Poca disponibilidad, verified on official Ticketmaster MX artist listing. NEWS provisional 89; image direct URL/downloadability and renderer preflight remain unverified. Outside 10:00 scheduled selection and below breaking 96; no render_request update. NO_RENDER_QUALITY_GATE (asset gate + nonbreaking outside scheduled slot). Existing SUHO 89 remains HOLD. No strategy weight changes; Instagram auto-post OFF.",
   "candidates": [
     {
       "news_id": "SUHO-CDMX-FANCON-DEC22-23-20261008",
@@ -234,6 +234,23 @@
       "mexico_relevance_reason": "YG 공식 과거 소개는 확인되나 10/13 1억뷰 공식 수치와 멕시코 직접 효용은 미확인.",
       "share_reason": "일반 기록 소식으로 멕시코 타깃 즉시 공유 동기 약함.",
       "follow_reason": "멕시코 팬 대상 구체적 후속 효용 없음."
+    },
+    {
+      "news_id": "KATSEYE-CDMX-NOV27-28-LOWAVAIL-20261014",
+      "artist": "KATSEYE",
+      "headline_ko": "KATSEYE 11월 27·28일 CDMX Palacio de los Deportes 20:00 공연, Ticketmaster 두 날짜 Poca disponibilidad 표시",
+      "engine": "NEWS",
+      "estimated_score": 89,
+      "score_type": "PROVISIONAL_ASSET_UNVERIFIED",
+      "status": "HOLD_OFFICIAL_IMAGE_DIRECT_URL_AND_PREFLIGHT_UNVERIFIED_NONBREAKING",
+      "winning_hook": "KATSEYE CDMX: POCOS BOLETOS · 27 Y 28 NOV",
+      "mexico_relevance_reason": "Official Ticketmaster Mexico listing confirms both dates and limited availability",
+      "share_reason": "Useful ticket availability alert to Mexican fans",
+      "follow_reason": "Future verified ticket status updates",
+      "source_urls": [
+        "https://www.ticketmaster.com.mx/katseye-boletos/artist/3259344"
+      ],
+      "verified_at": "2026-10-14T12:20:00+09:00"
     }
   ],
   "last_run_report": {
