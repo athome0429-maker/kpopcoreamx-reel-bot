@@ -42,7 +42,7 @@ def main():
                 if not path.is_file() or path.stat().st_size > MAX: raise ValueError("Invalid local source")
                 blob = path.read_bytes()
             digest = hashlib.sha256(blob).hexdigest()
-            ext = ".png" if blob.startswith(b"\\x89PNG") else ".webp" if blob.startswith(b"RIFF") else ".jpg"
+            ext = ".png" if blob.startswith(bytes([137,80,78,71])) else ".webp" if blob.startswith(b"RIFF") else ".jpg"
             dest = CACHE / (digest + ext)
             dest.write_bytes(blob)
             with Image.open(dest) as im:
