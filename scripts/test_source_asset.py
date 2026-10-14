@@ -8,7 +8,7 @@ import requests
 from PIL import Image
 
 URLS = [
-    "https://cdn.shopify.com/s/files/1/0469/3927/5428/files/Bildschirmfoto_2026-05-19_um_13.21.41.jpg?v=1779189829",
+    "https://www.cryptoarena.com/assets/img/1130x665_KATSEYE_EDP_Hero-741e32c551.jpg",
     "https://cdn2.chicmagazine.com.mx/uploads/media/2026/05/13/katseye-regresa-a-mexico-imagen.png",
 ]
 OUT = Path("asset-test-output")
