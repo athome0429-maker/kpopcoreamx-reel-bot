@@ -1,6 +1,10 @@
 name: Test KATSEYE Source Image
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/test_source_asset.py'
+      - '.github/workflows/test-source-asset.yml'
 permissions:
   contents: read
 jobs:
