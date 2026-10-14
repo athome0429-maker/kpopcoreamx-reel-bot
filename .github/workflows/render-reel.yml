@@ -76,6 +76,17 @@ jobs:
           echo "::error::Reel pipeline failed. Check the failed step above for image HTTP errors, payload validation, FFmpeg, or artifact issues."
           echo "Failed run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Upload source diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-diagnostics
+          path: |
+            tmp/source_cache/sources.json
+            data/_render_normalized.json
+          if-no-files-found: warn
+          retention-days: 14
+
       - name: Upload Reel package
         uses: actions/upload-artifact@v4
         with:
