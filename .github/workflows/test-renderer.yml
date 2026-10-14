@@ -1,0 +1,22 @@
+name: Test Reel Renderer
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/render_reel.py'
+      - 'scripts/smoke_test_renderer.py'
+      - '.github/workflows/test-renderer.yml'
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Test original-media preservation and MP4 encoding
+        run: python scripts/smoke_test_renderer.py
