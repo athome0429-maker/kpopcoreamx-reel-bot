@@ -10,6 +10,8 @@ on:
   push:
     paths:
       - 'data/render_request.json'
+      - 'scripts/render_reel.py'
+      - 'scripts/smoke_test_renderer.py'
 
 permissions:
   contents: read
@@ -43,6 +45,9 @@ jobs:
 
       - name: Install Python deps
         run: pip install -r requirements.txt
+
+      - name: Smoke test renderer
+        run: python scripts/smoke_test_renderer.py
 
       - name: Pick payload path
         id: payload
