@@ -44,6 +44,11 @@ jobs:
       - name: Install Python deps
         run: pip install -r requirements.txt
 
+      - name: Install browser screenshot fallback
+        run: |
+          pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+
       - name: Pick payload path
         id: payload
         run: |
