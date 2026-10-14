@@ -85,29 +85,12 @@ def fit_text(draw, text, max_w, max_h, start=108, minimum=34, spacing=6):
 
 
 def prepare_photo(scene, src_path, out_path, width, height):
+    """Keep the source image intact: no crop, blur, recolor or zoom."""
     src = ImageOps.exif_transpose(Image.open(src_path)).convert("RGB")
-    mode = scene.get("fit_mode", "auto")
-    fx = min(1.0, max(0.0, float(scene.get("focus_x", 0.5))))
-    fy = min(1.0, max(0.0, float(scene.get("focus_y", 0.38))))
-    ratio = src.width / max(1, src.height)
-    if mode == "auto":
-        mode = "contain" if ratio >= 0.85 else "cover"
-
-    if mode == "contain":
-        bg = ImageOps.fit(src, (width, height), Image.Resampling.LANCZOS, centering=(fx, fy))
-        bg = bg.filter(ImageFilter.GaussianBlur(34))
-        bg = Image.blend(bg, Image.new("RGB", (width, height), "black"), 0.22).convert("RGBA")
-        fg = src.copy()
-        fg.thumbnail((int(width * 0.96), int(height * 0.72)), Image.Resampling.LANCZOS)
-        x, y = (width - fg.width) // 2, max(55, int(height * 0.055))
-        shadow = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-        sh = Image.new("RGBA", fg.size, (0, 0, 0, 165)).filter(ImageFilter.GaussianBlur(18))
-        shadow.alpha_composite(sh, (x, y + 16))
-        bg.alpha_composite(shadow)
-        bg.alpha_composite(fg.convert("RGBA"), (x, y))
-        bg.convert("RGB").save(out_path, quality=95)
-    else:
-        ImageOps.fit(src, (width, height), Image.Resampling.LANCZOS, centering=(fx, fy)).save(out_path, quality=95)
+    src.thumbnail((width, height), Image.Resampling.LANCZOS)
+    canvas = Image.new("RGB", (width, height), (0, 0, 0))
+    canvas.paste(src, ((width - src.width) // 2, (height - src.height) // 2))
+    canvas.save(out_path, quality=95)
 
 
 def add_gradient(im, top_y):
@@ -150,19 +133,14 @@ def make_overlay(scene, brand, width, height, out_path):
 
 
 def render_scene(base_path, overlay_path, out_path, duration, width, height, fps, scene):
-    frames = max(1, int(round(duration * fps)))
-    zoom_end = min(1.16, max(1.03, float(scene.get("zoom", 1.09))))
-    step = max(0.0002, (zoom_end - 1.0) / frames)
-    pan_x, pan_y = float(scene.get("pan_x", 0.0)), float(scene.get("pan_y", 0.0))
-    vf = (
-        f"zoompan=z='min(zoom+{step:.7f},{zoom_end:.4f})':"
-        f"x='max(0,min(iw-iw/zoom,iw/2-(iw/zoom/2)+{pan_x:.2f}))':"
-        f"y='max(0,min(ih-ih/zoom,ih/2-(ih/zoom/2)+{pan_y:.2f}))':"
-        f"d={frames}:s={width}x{height}:fps={fps},"
-        f"eq=contrast=1.03:brightness=-0.01:saturation=1.03[bg];"
-        f"[1:v]format=rgba[fg];[bg][fg]overlay=0:0:format=auto"
-    )
-    run(["ffmpeg", "-y", "-loop", "1", "-i", str(base_path), "-i", str(overlay_path), "-filter_complex", vf, "-t", str(duration), "-r", str(fps), "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out_path)])
+    """Show the original image unchanged, with only a separate text overlay."""
+    run(["ffmpeg", "-y", "-loop", "1", "-framerate", str(fps),
+         "-i", str(base_path), "-loop", "1", "-framerate", str(fps),
+         "-i", str(overlay_path), "-filter_complex",
+         "[0:v][1:v]overlay=0:0:format=auto",
+         "-t", str(duration), "-r", str(fps), "-an", "-c:v", "libx264",
+         "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+         "-movflags", "+faststart", str(out_path)])
 
 
 def concat_segments(paths, out_path):
