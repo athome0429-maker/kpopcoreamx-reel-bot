@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from urllib.parse import urlparse
 import requests
+from io import BytesIO
 from PIL import Image
 
 ROOT = Path.cwd().resolve()
@@ -68,6 +69,48 @@ def main():
             except (requests.RequestException, ValueError, OSError) as exc:
                 failures.append(f"{src}: {type(exc).__name__}: {str(exc)[:180]}")
                 print("SOURCE_ATTEMPT_FAILED", i, len(failures), failures[-1])
+        if selected is None and scene.get("screenshot_page_url"):
+            page_url = scene["screenshot_page_url"]
+            if not page_url.startswith("https://"):
+                raise ValueError("Screenshot source must be HTTPS")
+            try:
+                from playwright.sync_api import sync_playwright
+                with sync_playwright() as playwright:
+                    browser = playwright.chromium.launch(headless=True)
+                    page = browser.new_page(viewport={"width": 1365, "height": 1000}, device_scale_factor=1)
+                    page.goto(page_url, wait_until="domcontentloaded", timeout=45000)
+                    page.wait_for_timeout(2500)
+                    imgs = page.locator("img")
+                    best = None
+                    best_area = 0
+                    for index in range(min(imgs.count(), 60)):
+                        img = imgs.nth(index)
+                        try:
+                            box = img.bounding_box(timeout=1200)
+                            if box and box["width"] >= 500 and box["height"] >= 280:
+                                area = box["width"] * box["height"]
+                                if area > best_area:
+                                    best = img
+                                    best_area = area
+                        except Exception:
+                            continue
+                    if best is None:
+                        raise ValueError("No sufficiently large displayed image found")
+                    blob = best.screenshot(timeout=12000)
+                    browser.close()
+                with Image.open(BytesIO(blob)) as im:
+                    size = im.size
+                    im.verify()
+                if max(size) < 720: raise ValueError("Screenshot below 720px")
+                digest = hashlib.sha256(blob).hexdigest()
+                dest = CACHE / (digest + ".png")
+                dest.write_bytes(blob)
+                selected = "screenshot:" + page_url
+                records[selected] = {"sha256":digest,"local_path":str(dest.relative_to(ROOT)),
+                                     "source_url":selected,"width":size[0],"height":size[1]}
+                print("SCREENSHOT_FALLBACK_OK",i,page_url,digest)
+            except Exception as exc:
+                failures.append("Screenshot fallback: " + type(exc).__name__ + ": " + str(exc)[:220])
         if selected is None:
             raise RuntimeError(f"Scene {i}: all {len(candidates)} sources failed: " + " | ".join(failures))
         rec = records[selected]
