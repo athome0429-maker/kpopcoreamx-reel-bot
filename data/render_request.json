@@ -15,30 +15,46 @@
       "duration": 0.7,
       "headline": "KATSEYE CDMX",
       "subheadline": "¡POCOS BOLETOS!",
-      "image_url": "https://www.cryptoarena.com/assets/img/1130x665_KATSEYE_EDP_Hero-741e32c551.jpg",
+      "image_url": "https://images.universal-music.de/img/assets/583/583845/4/720/katseye.jpg",
       "source_url": "https://www.cryptoarena.com/news/detail/katseye-announces-2026-headline-arena-tour-of-uk-eu-and-north-america",
-      "image_credit": "KATSEYE / HYBE x Geffen / Live Nation tour promo"
+      "image_credit": "KATSEYE / HYBE x Geffen / Live Nation tour promo",
+      "image_fallback_urls": [
+        "https://s1.ticketm.net/dam/a/5ea/296334a4-8af5-47b8-8566-bd04b79545ea_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+        "https://cdn.shopify.com/s/files/1/0469/3927/5428/files/Bildschirmfoto_2026-05-19_um_13.21.41.jpg?v=1779189829",
+        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp"
+      ]
     },
     {
       "duration": 2.8,
       "headline": "27 Y 28 NOV",
       "subheadline": "8 PM · PALACIO DE LOS DEPORTES",
-      "image_url": "https://www.cryptoarena.com/assets/img/1130x665_KATSEYE_EDP_Hero-741e32c551.jpg",
+      "image_url": "https://images.universal-music.de/img/assets/583/583845/4/720/katseye.jpg",
       "source_url": "https://www.ticketmaster.com.mx/palacio-de-los-deportes-boletos-ciudad-de-mexico/venue/163842?page=1",
-      "image_credit": "KATSEYE tour promotional photo"
+      "image_credit": "KATSEYE tour promotional photo",
+      "image_fallback_urls": [
+        "https://s1.ticketm.net/dam/a/5ea/296334a4-8af5-47b8-8566-bd04b79545ea_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+        "https://cdn.shopify.com/s/files/1/0469/3927/5428/files/Bildschirmfoto_2026-05-19_um_13.21.41.jpg?v=1779189829",
+        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp"
+      ]
     },
     {
       "duration": 3.5,
       "headline": "POCA DISPONIBILIDAD",
       "subheadline": "REVISA TICKETMASTER · @kpopcoreamx",
-      "image_url": "https://www.cryptoarena.com/assets/img/1130x665_KATSEYE_EDP_Hero-741e32c551.jpg",
+      "image_url": "https://images.universal-music.de/img/assets/583/583845/4/720/katseye.jpg",
       "source_url": "https://www.ticketmaster.com.mx/palacio-de-los-deportes-boletos-ciudad-de-mexico/venue/163842?page=1",
-      "image_credit": "KATSEYE tour promotional photo"
+      "image_credit": "KATSEYE tour promotional photo",
+      "image_fallback_urls": [
+        "https://s1.ticketm.net/dam/a/5ea/296334a4-8af5-47b8-8566-bd04b79545ea_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+        "https://cdn.shopify.com/s/files/1/0469/3927/5428/files/Bildschirmfoto_2026-05-19_um_13.21.41.jpg?v=1779189829",
+        "https://www.aceshowbiz.com/display/images/photo/2026/05/14/auto_00257705_1778708913.webp"
+      ]
     }
   ],
   "pipeline_test": {
     "purpose": "real_original_photo_end_to_end_test",
     "instagram_auto_post": false,
-    "requires_asset_preflight": true
+    "requires_asset_preflight": true,
+    "image_fallbacks": 4
   }
 }
