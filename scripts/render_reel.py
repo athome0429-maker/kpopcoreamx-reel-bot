@@ -86,7 +86,8 @@ def fit_text(draw, text, max_w, max_h, start=108, minimum=34, spacing=6):
 
 def prepare_photo(scene, src_path, out_path, width, height):
     """Keep the source image intact: no crop, blur, recolor or zoom."""
-    src = ImageOps.exif_transpose(Image.open(src_path)).convert("RGB")
+    with Image.open(src_path) as original:
+        src = ImageOps.exif_transpose(original).convert("RGB")
     src.thumbnail((width, height), Image.Resampling.LANCZOS)
     canvas = Image.new("RGB", (width, height), (0, 0, 0))
     canvas.paste(src, ((width - src.width) // 2, (height - src.height) // 2))
@@ -106,14 +107,14 @@ def add_gradient(im, top_y):
 
 def make_overlay(scene, brand, width, height, out_path):
     im = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-    add_gradient(im, int(height * 0.54))
+    # Keep original media pixels untouched; only use transparent text overlay.
     d = ImageDraw.Draw(im, "RGBA")
     headline = scene.get("headline", "").strip()
     sub = scene.get("subheadline", "").strip()
     headline_y, sub_y, brand_y = int(height * 0.67), int(height * 0.81), int(height * 0.88)
     accent = (246, 207, 40, 255)
 
-    d.rounded_rectangle((width // 2 - 96, headline_y - 42, width // 2 + 96, headline_y - 30), radius=6, fill=accent)
+    # No decorative bars or opaque backplates over the original media.
     hf = fit_text(d, headline, width - 130, 250, 106, 40)
     d.multiline_text((width // 2, headline_y + 6), headline, font=hf, anchor="mm", align="center", fill=(0, 0, 0, 125), spacing=4)
     d.multiline_text((width // 2, headline_y), headline, font=hf, anchor="mm", align="center", fill="white", spacing=4, stroke_width=2, stroke_fill=(0, 0, 0, 115))
@@ -133,7 +134,7 @@ def make_overlay(scene, brand, width, height, out_path):
 
 
 def render_scene(base_path, overlay_path, out_path, duration, width, height, fps, scene):
-    """Show the original image unchanged, with only a separate text overlay."""
+    """Show the original image without zoom, pan, crop, blur or color grading."""
     run(["ffmpeg", "-y", "-loop", "1", "-framerate", str(fps),
          "-i", str(base_path), "-loop", "1", "-framerate", str(fps),
          "-i", str(overlay_path), "-filter_complex",
