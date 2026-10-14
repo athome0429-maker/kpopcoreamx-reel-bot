@@ -85,12 +85,13 @@ def fit_text(draw, text, max_w, max_h, start=108, minimum=34, spacing=6):
 
 
 def prepare_photo(scene, src_path, out_path, width, height):
-    """Keep the source image intact: no crop, blur, recolor or zoom."""
+    """Preserve the entire source photo, and reserve a separate caption area."""
     with Image.open(src_path) as original:
         src = ImageOps.exif_transpose(original).convert("RGB")
-    src.thumbnail((width, height), Image.Resampling.LANCZOS)
+    caption_top = int(height * 0.74)
+    src.thumbnail((width, caption_top), Image.Resampling.LANCZOS)
     canvas = Image.new("RGB", (width, height), (0, 0, 0))
-    canvas.paste(src, ((width - src.width) // 2, (height - src.height) // 2))
+    canvas.paste(src, ((width - src.width) // 2, (caption_top - src.height) // 2))
     canvas.save(out_path, quality=95)
 
 
@@ -106,30 +107,22 @@ def add_gradient(im, top_y):
 
 
 def make_overlay(scene, brand, width, height, out_path):
+    """Text is drawn only inside the separate bottom caption strip."""
     im = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-    # Keep original media pixels untouched; only use transparent text overlay.
     d = ImageDraw.Draw(im, "RGBA")
+    caption_top = int(height * 0.74)
     headline = scene.get("headline", "").strip()
     sub = scene.get("subheadline", "").strip()
-    headline_y, sub_y, brand_y = int(height * 0.67), int(height * 0.81), int(height * 0.88)
-    accent = (246, 207, 40, 255)
-
-    # No decorative bars or opaque backplates over the original media.
-    hf = fit_text(d, headline, width - 130, 250, 106, 40)
-    d.multiline_text((width // 2, headline_y + 6), headline, font=hf, anchor="mm", align="center", fill=(0, 0, 0, 125), spacing=4)
-    d.multiline_text((width // 2, headline_y), headline, font=hf, anchor="mm", align="center", fill="white", spacing=4, stroke_width=2, stroke_fill=(0, 0, 0, 115))
-
-    if sub and sub != brand:
-        sf = fit_text(d, sub, width - 180, 120, 42, 28, 3)
-        b = d.multiline_textbbox((0, 0), sub, font=sf, spacing=3, align="center")
-        sw, sh = b[2] - b[0], b[3] - b[1]
-        if sw + 52 < width - 120 and sh < 80:
-            x1, x2 = width // 2 - sw // 2 - 26, width // 2 + sw // 2 + 26
-            y1, y2 = sub_y - sh // 2 - 13, sub_y + sh // 2 + 13
-            d.rounded_rectangle((x1, y1, x2, y2), radius=(y2 - y1) // 2, fill=(0, 0, 0, 105), outline=(255, 255, 255, 55), width=2)
-        d.multiline_text((width // 2, sub_y), sub, font=sf, anchor="mm", align="center", fill=(255, 255, 255, 245), spacing=3)
-
-    d.text((width // 2, brand_y), brand, font=font(29), anchor="mm", fill=(255, 255, 255, 190))
+    hf = fit_text(d, headline, width - 110, 210, 84, 30)
+    d.multiline_text((width // 2, caption_top + 160), headline, font=hf,
+                     anchor="mm", align="center", fill="white", spacing=4)
+    if sub:
+        sf = fit_text(d, sub, width - 100, 95, 38, 22)
+        d.multiline_text((width // 2, caption_top + 325), sub, font=sf,
+                         anchor="mm", align="center", fill="white", spacing=3)
+    if brand:
+        d.text((width // 2, height - 48), brand, font=font(25),
+               anchor="mm", fill=(255, 255, 255, 190))
     im.save(out_path)
 
 
