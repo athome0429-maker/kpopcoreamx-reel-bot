@@ -1,0 +1,25 @@
+name: Test KATSEYE Source Image
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  asset-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Download and verify source image without modifying it
+        run: python scripts/test_source_asset.py
+      - name: Save original and provenance report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: katseye-source-asset-test
+          path: asset-test-output/
+          retention-days: 7
+          if-no-files-found: warn
