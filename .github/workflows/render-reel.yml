@@ -56,42 +56,8 @@ jobs:
       - name: Normalize payload
         run: python scripts/normalize_payload.py --input "${{ steps.payload.outputs.path }}" --output data/_render_normalized.json
 
-      - name: Preflight image sources and payload
-        run: |
-          python - <<'PY'
-          import json, requests
-          from PIL import Image
-          from io import BytesIO
-          from pathlib import Path
-          p = json.loads(Path('data/_render_normalized.json').read_text(encoding='utf-8'))
-          scenes = p.get('scenes', [])
-          assert 2 <= len(scenes) <= 5, 'Expected 2-5 scenes'
-          duration = sum(float(s['duration']) for s in scenes)
-          assert 6 <= duration <= 8, f'Invalid total duration: {duration}'
-          assert 0.5 <= float(scenes[0]['duration']) <= 0.9, 'Invalid hook duration'
-          seen = set()
-          for i, scene in enumerate(scenes, 1):
-              src = scene.get('image_url') or scene.get('image_path')
-              assert src, f'Scene {i} missing image'
-              if src in seen: continue
-              seen.add(src)
-              if src.startswith(('https://', 'http://')):
-                  resp = requests.get(src, timeout=30, headers={'User-Agent': 'Mozilla/5.0'})
-                  resp.raise_for_status()
-                  assert len(resp.content) <= 20*1024*1024, f'Image too large: {src}'
-                  im = Image.open(BytesIO(resp.content))
-              else:
-                  path = Path(src).resolve()
-                  assert path.is_relative_to(Path.cwd().resolve()), 'Image path outside repository'
-                  assert path.is_file(), f'Local image missing: {src}'
-                  assert path.stat().st_size <= 20*1024*1024, f'Image too large: {src}'
-                  im = Image.open(path)
-              with im:
-                  assert max(im.size) >= 720, f'Image too small {im.size}: {src}'
-                  im.verify()
-              print(f'PASS scene {i}: {src}')
-          print('PREFLIGHT_OK')
-          PY
+      - name: Cache and verify source images once
+        run: python scripts/cache_source_images.py
 
       - name: Render and verify reel
         run: python scripts/render_reel.py --payload data/_render_normalized.json
